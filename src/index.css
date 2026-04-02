@@ -1,0 +1,217 @@
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/poppins-400.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('/fonts/poppins-600.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/fonts/poppins-700.woff2') format('woff2');
+}
+
+:root {
+  --matera-blue: #010025;
+  --matera-green: #5CFF4D;
+  --matera-purple: #461CDC;
+  --matera-black: #000000;
+  --matera-white: #FFFFFF;
+  --matera-gray: #F5F5F5;
+  --font-poppins: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Real site uses Poppins for EVERYTHING */
+body,
+a,
+button,
+p,
+li,
+input,
+label,
+span {
+  font-family: var(--font-poppins);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: var(--matera-white);
+  color: var(--matera-blue);
+}
+
+/* Body text sizes — exact match from real site */
+p, li {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+@media (min-width: 1024px) {
+  p, li {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+}
+
+/* Headings */
+h1, h2, h3, h4, h5 {
+  font-family: var(--font-poppins);
+  font-weight: 700;
+  line-height: 1.2em;
+}
+
+a {
+  text-decoration: none;
+  color: currentColor;
+  transition: color 0.3s ease;
+}
+
+b, strong {
+  font-weight: 600;
+}
+
+/* Heading scale — exact from real site CSS */
+[class*="heading-"] {
+  line-height: 1.2em;
+  font-family: var(--font-poppins);
+}
+
+.heading-xl  { font-size: 1.125rem; }
+@media (min-width: 768px) { .heading-xl  { font-size: 1.25rem; } }
+
+.heading-2xl { font-size: 1.25rem; }
+@media (min-width: 768px) { .heading-2xl { font-size: 1.5rem; } }
+
+.heading-3xl { font-size: 1.5rem; }
+@media (min-width: 768px) { .heading-3xl { font-size: 2rem; } }
+
+.heading-4xl { font-size: 2rem; }
+@media (min-width: 768px) { .heading-4xl { font-size: 2.5rem; } }
+
+.heading-5xl { font-size: 2.5rem; }
+@media (min-width: 768px) { .heading-5xl { font-size: 3rem; } }
+
+.heading-6xl { font-size: 3rem; }
+@media (min-width: 768px) { .heading-6xl { font-size: 3.875rem; } }
+
+.heading-7xl { font-size: 3.875rem; }
+@media (min-width: 768px) { .heading-7xl { font-size: 4.75rem; } }
+
+.heading-8xl { font-size: 4rem; }
+@media (min-width: 768px) { .heading-8xl { font-size: 6rem; } }
+
+/* Hero heading — exact from real site */
+.hero-heading {
+  font-size: 2.4rem;
+  line-height: 3.4rem;
+}
+@media (min-width: 1024px) {
+  .hero-heading {
+    font-size: 3rem;
+    line-height: 3.6rem;
+  }
+}
+@media (min-width: 1280px) {
+  .hero-heading {
+    font-size: 3.75rem;
+    line-height: 4.4rem;
+  }
+}
+
+/* Container */
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Section spacing */
+.py-20,
+.section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+@media (min-width: 1024px) {
+  .py-20,
+  .section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+}
+
+/* Buttons */
+.btn-matera {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 28px;
+  border-radius: 8px;
+  font-family: var(--font-poppins);
+  font-weight: 700;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: none;
+  white-space: nowrap;
+}
+
+.btn-green {
+  background-color: var(--matera-green);
+  color: var(--matera-black);
+}
+
+.btn-green:hover {
+  background-color: #4ee640;
+  transform: translateY(-2px);
+}
+
+/* Mobile: hide desktop nav */
+@media (max-width: 1023px) {
+  .desktop-nav {
+    display: none !important;
+  }
+  .mobile-menu-btn {
+    display: flex !important;
+  }
+}
+
+/* Blog article body */
+.blog-content h1,
+.blog-content h2,
+.blog-content h3 {
+  color: var(--matera-blue);
+  margin: 32px 0 12px;
+}
+.blog-content h2 { font-size: 1.5rem; }
+.blog-content h3 { font-size: 1.25rem; }
+.blog-content p {
+  color: #444;
+  line-height: 1.8;
+  margin-bottom: 16px;
+}
+.blog-content ul,
+.blog-content ol {
+  color: #444;
+  line-height: 1.8;
+  margin-bottom: 16px;
+}
+.blog-content strong {
+  color: var(--matera-blue);
+}
