@@ -1,87 +1,86 @@
 # Matera NA Website — Project Context
 
 ## Goal
-Static copy of **matera.com/en** — a React + Vite + TypeScript site that matches the real site visually, deployed via Wrangler to Cloudflare Pages. No CMS.
+Static copy of **matera.com/en** — a React + Vite + TypeScript site that matches the real site visually, deployed via Wrangler to Cloudflare Pages. No CMS, no database, no server.
 
 ## Stack
 - React 19 + TypeScript + Vite 8
+- react-router-dom (client-side routing, 16 routes)
 - Wrangler 4 (deploy: `npm run deploy`)
-- Poppins font — **bundled locally** in `public/fonts/` (400, 600, 700, 800 woff2)
+- Poppins font — **bundled locally** in `public/fonts/` (400, 600, 700 woff2)
+- HubSpot Forms API (whitepaper lead capture, portal ID: 20392958)
 - No external font CDN dependency
 
 ## Real Site Source Code
-The real matera.com source is at `$HOME/Git/site-matera-main` (Next.js + Strapi CMS + Tailwind). Use it to extract exact styles, assets, and structure. Navigation/content is CMS-driven so check the rendered HTML from matera.com/en for actual menu items.
+The real matera.com source is at `$HOME/Git/site-matera-main` (Next.js + Strapi CMS + Tailwind). Use it to extract exact styles, assets, and structure. Navigation/content is CMS-driven so check the rendered HTML from matera.com/en for actual menu items. **The live site always wins** over the source code when there's a conflict.
 
-## Chrome DevTools MCP
-Installed (`chrome-devtools-mcp` via npm). Chrome must be running with `--remote-debugging-port=9222`:
-```bash
-/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --remote-debugging-port=9222
+## Content Architecture (ADR-001)
+Blog, Press, Podcasts, and Whitepapers use static JSON files — one JSON per article, one `index.json` per content type. See [ADR.md](./ADR.md) for full details.
+
 ```
-Use MCP tools to navigate, screenshot, and compare local vs real site.
+public/data/
+├── blog/        35 posts    (index.json + individual JSONs)
+├── press/       56 articles (index.json + individual JSONs)
+├── podcasts/    11 episodes (index.json + individual JSONs, Spotify + Apple URLs)
+└── whitepapers/ 12 papers   (index.json + individual JSONs, HubSpot form IDs + PDF URLs)
+```
+
+### Content sourcing process
+1. Find URLs via `matera.com/sitemap.xml`
+2. Fetch each page via WebFetch
+3. Write individual JSONs to `public/data/{type}/`
+4. Regenerate index with Node one-liner (see ADR.md)
+
+### Filename convention
+`YYYY-MM-DD - Title.json` — special chars removed, truncated to 80 chars max.
 
 ## Key Design Tokens (from real site Tailwind config)
 ```
---matera-blue:   #010025   (dark navy, primary bg — real site uses #0A0A40 / #000023)
---matera-green:  #5CFF4D   (accent green — real site uses #6BFF50)
+--matera-blue:   #010025   (dark navy, primary bg)
+--matera-green:  #5CFF4D   (accent green)
 --matera-purple: #461CDC   (secondary accent, CTA bg)
---matera-black:  #000000
+--matera-black:  #000000   (real site uses #000023)
 --matera-white:  #FFFFFF
---matera-gray:   #F5F5F5   (section backgrounds — real site #F2F2F2)
-Hero bg:         #000012   (near-black)
+--matera-gray:   #F5F5F5   (section backgrounds)
+Hero bg:         #000023   (near-black, from real site matera-black)
 ```
 
 ## Typography (exact from real site)
 - **Font**: Poppins everywhere. Real site loads weights **400, 600, 700** (NO 800).
 - **CSS variable**: `--font-poppins: 'Poppins', ui-sans-serif, system-ui, sans-serif`
-- **Heading line-height**: `1.2em` (from `*[class*='heading-']`)
-- **Hero heading** (exact from real site HTML):
-  - `font-bold text-[2.4rem] leading-[3.4rem]`
-  - `lg:text-[3rem] lg:leading-[3.6rem]`
-  - `xl:text-[3.75rem] xl:leading-[4.4rem]`
+- **Heading line-height**: `1.2em`
+- **PageHero headings**: fontWeight 400 (thin/regular, not bold)
 - **Body text**: `1rem / 1.5rem` mobile → `1.125rem / 1.75rem` at 1024px+
-- **Heading scale** (exact from real site):
-  - `.heading-5xl`: 2.5rem → 3rem (768px+)
-  - `.heading-6xl`: 3rem → 3.875rem (768px+)
-  - `.heading-7xl`: 3.875rem → 4.75rem (768px+)
-  - `.heading-8xl`: 4rem → 6rem (768px+)
 
 ## Header
 - Height: `4rem` (64px)
 - Background: **transparent** at top, transitions to `rgba(1, 0, 37, 0.97)` on scroll
-- Logo: **SVG image** at `/matera-logo.svg` (downloaded from cloudfront)
+- Logo: **SVG image** at `/matera-logo.svg`
 - Nav: plain text links with chevrons, **mega menu dropdowns** on hover for Solutions/News/Company
+- Mega menu has invisible hover bridge to prevent dropdown from closing when mouse travels down
 - "Contact us" is a plain text link (no button)
 - "English" is an outline button with chevron
 
-## Mega Menu Structure (from real site HTML)
-- **Solutions** → "Get to know our solutions": Digital Twin for Stablecoins, Digital Twin for Real-Time Payments, QR Code Payments, Wallet as a Service + header image
-- **News** → "News & Insights": Blog, Press, Whitepaper, Podcasts + news image
-- **Company** → "About us": About us, Timeline + header image
-- **Contact us** → Direct link (no dropdown)
+## Pages (16 routes)
+1. `/` `/en` — Home (Hero, TrustBanner, Solutions, Features, Stats, WhyMatera, CTA)
+2. `/en/contact-us` — Contact form + offices
+3. `/en/stablecoin` — Stablecoin product page (9 sections)
+4. `/en/solutions/digital-twin` — Digital Twin product page (12 sections)
+5. `/en/solutions/qr-code-solutions` — QR Code product page
+6. `/en/solutions/wallet-as-a-service` — Wallet page
+7. `/en/about-us` — Company, stats, timeline (1987-2022)
+8. `/en/blog` + `/en/blog/:slug` — Blog listing + article (JSON-driven)
+9. `/en/press` + `/en/press/:slug` — Press listing + article (JSON-driven)
+10. `/en/whitepapers` + `/en/whitepapers/:slug` — Whitepapers with gated HubSpot form
+11. `/en/podcasts` + `/en/podcasts/:slug` — Podcasts with Spotify + Apple links
+12. `/en/privacy-policy` — Privacy policy
 
-## Hero Section
-- Two-column grid: text left, video right
-- Hero bg: `#000012`
-- Video: `https://d2lq74zxbg4jiz.cloudfront.net/anim_matera_V2_82378a33e4.mp4`
-- Video height: `100vh`, width: auto
-- Heading uses custom `.hero-heading` class with exact real site sizes (see Typography above)
-
-## Section Order
-1. Hero
-2. TrustBanner (dark blue, centered inline stats, scrolling client logo carousel with real PNGs)
-3. Solutions (light gray bg, 3 **dark navy** cards with cloudfront SVG icons)
-4. Features (black bg, **2x2 grid**: API-First, Unified Payments, Modern Infrastructure, 24x7 Banking)
-5. Stats (dark blue bg, 1100+, 280+, 90M+)
-6. WhyMatera (dark blue bg, real photo on right `/why-matera-bg.webp`, vertical text on left with green underlines)
-7. CTA (solid purple `#461CDC` rounded card, two-column layout)
-8. Footer (dark blue #010025, SVG logo, email signup, columns: Solutions/About us/Contact us/Policies)
-
-## Local Assets (downloaded from cloudfront)
+## Local Assets
 - Logo: `public/matera-logo.svg` and `public/matera-logo-notag.svg`
-- Client logos: `public/logos/` (15 PNG files — BofA, Santander, Bradesco, etc.)
-- Why Matera bg: `public/why-matera-bg.webp` and `public/why-matera-bg-mobile.webp`
+- Client logos: `public/logos/` (15 PNG files)
+- Why Matera bg: `public/why-matera-bg.webp`
 - Menu images: `public/header-menu-image.jpg`, `public/news-menu-image.jpg`
-- Solution icons: cloudfront URLs (stablecoin, RTP, QR code SVGs)
+- Favicon: `public/favicon.ico`, `public/icon.png` (from matera.com)
 
 ## Cloudfront Assets
 - Video: `d2lq74zxbg4jiz.cloudfront.net/anim_matera_V2_82378a33e4.mp4`
@@ -98,20 +97,8 @@ npm run deploy   # build + wrangler deploy to Cloudflare Pages
 ```
 
 ## What NOT To Do
-- Do not use `var(--font-heading)` or `var(--font-body)` — these variables are removed
+- Do not use `var(--font-heading)` or `var(--font-body)` — these variables don't exist
 - Do not load fonts from Google Fonts — use local woff2 files in public/fonts/
 - Do not use `font-family` inline overrides on components — Poppins is set globally on body
 - Do not use fontWeight: 800 for headings — real site only uses 400/600/700
-
-## Recent Changes (April 2, 2026)
-- Replaced text "MATERA" logo with real SVG logo image everywhere
-- Added mega menu dropdowns for Solutions/News/Company with images
-- Changed Solutions cards from white to dark navy backgrounds
-- Changed Features layout from 3+1 to 2x2 grid
-- Rebuilt WhyMatera: dark bg + real photo + vertical text with green underlines
-- Rebuilt CTA: solid purple rounded card, two-column layout
-- Rebuilt Footer: SVG logo, email signup, reorganized columns
-- Updated Trust Banner: centered inline stats + scrolling real logo carousel
-- Fixed hero heading to exact real site font sizes (2.4rem → 3rem → 3.75rem)
-- Fixed heading weight from 800 → 700 across the board
-- Installed Chrome DevTools MCP server for browser automation
+- Do not link content pages to external insight.matera.com — use local `/en/whitepapers/:slug` routes
