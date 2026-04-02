@@ -247,7 +247,7 @@ function WhitepaperDetail() {
                   </div>
                 ) : (
                   <div>
-                    <h3 style={{ fontSize: '1.25rem', fontWeight: 700, color: 'var(--matera-blue)', marginBottom: '8px' }}>
+                    <h3 style={{ fontSize: '1.5rem', fontWeight: 700, color: 'var(--matera-blue)', marginBottom: '8px' }}>
                       Get your free copy
                     </h3>
                     <p style={{ color: '#666', marginBottom: '24px', fontSize: '0.9rem' }}>
