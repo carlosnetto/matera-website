@@ -29,7 +29,7 @@ export default function WalletAsAService() {
             Turn your mobile app into the everyday spend experience customers rely on
           </h2>
           <p style={{ color: '#555', lineHeight: 1.8, marginBottom: '40px' }}>
-            Matera's Wallet as a Service provides a complete set of APIs that let financial institutions, fintechs, and retailers embed payment functionality directly into their mobile apps — without building and maintaining the underlying infrastructure. Launch faster, iterate quickly, and focus on your customer experience while Matera handles the payments plumbing.
+            Matera's Wallet as a Service provides a complete set of APIs that let financial institutions, fintechs, and retailers embed payment functionality directly into their mobile apps — without building and maintaining the underlying infrastructure. Launch faster, iterate quickly, and focus on your customer experience while Matera handles the complex payments plumbing.
           </p>
         </div>
       </section>
@@ -42,7 +42,10 @@ export default function WalletAsAService() {
           </h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '32px' }}>
             {[
-              { title: 'QR Code Payments', text: 'Merchant-present and consumer-present modes, online and offline. Compatible with the X9.150 standard and all major payment rails.' },
+              { 
+                title: 'QR Code Payments', 
+                text: <>Merchant-present and consumer-present modes, online and offline. Compatible with the X9.150 standard and all major payment rails. See our full <Link to="/en/solutions/qr-code-solutions" style={{ color: 'var(--matera-purple)', fontWeight: 600 }}>QR Code Solutions</Link>.</>
+              },
               { title: 'Prepaid Card Loading', text: 'Let users load and manage prepaid cards directly from your app. Real-time balance updates and transaction history.' },
               { title: 'P2P Transfers', text: 'Enable instant person-to-person transfers within your ecosystem or across connected networks.' },
               { title: 'Bill Payments', text: 'Allow customers to pay bills, utilities, and invoices from the wallet with one-tap convenience.' },
@@ -51,7 +54,7 @@ export default function WalletAsAService() {
             ].map((c, i) => (
               <div key={i} style={{ backgroundColor: '#fff', borderRadius: '12px', padding: '32px', borderLeft: '4px solid var(--matera-green)' }}>
                 <h3 style={{ fontSize: '1.1rem', fontWeight: 700, color: 'var(--matera-blue)', marginBottom: '12px' }}>{c.title}</h3>
-                <p style={{ color: '#555', lineHeight: 1.7 }}>{c.text}</p>
+                <div style={{ color: '#555', lineHeight: 1.7 }}>{c.text}</div>
               </div>
             ))}
           </div>

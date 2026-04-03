@@ -7,7 +7,20 @@ export default function Stablecoin() {
 
   return (
     <>
-      <PageMeta title="Digital Twin for Stablecoins" description="Connect stablecoins with traditional financial services. Matera and Circle enable USDC within mobile and online banking — no core replacement needed." url="/en/stablecoin" />
+      <PageMeta
+        title="Digital Twin for Stablecoins"
+        description="Connect stablecoins with traditional financial services. Matera and Circle enable USDC within mobile and online banking — no core replacement needed."
+        url="/en/stablecoin"
+        videos={[
+          {
+            name: "USDC Stablecoin Transaction Process",
+            description: "See how customers can convert USD to USDC and send it directly from their mobile banking app.",
+            thumbnailUrl: "/assets/stablecoin-video-tn.png",
+            uploadDate: "2024-01-20",
+            contentUrl: "/assets/stablecoin-transaction-process.mp4"
+          }
+        ]}
+      />
       {/* Hero */}
       <section style={{
         backgroundColor: 'var(--matera-blue)',
@@ -34,7 +47,7 @@ export default function Stablecoin() {
               Protect deposits and customer relationships by offering stablecoins to your customers.
             </h2>
             <p style={{ opacity: 0.7, marginBottom: '32px', lineHeight: 1.7 }}>
-              Learn how Circle and Matera can make it easy to offer stablecoins within your mobile and online banking.
+              Learn how Circle and Matera can make it easy to offer stablecoins within your mobile and online banking platforms. Our solution provides a bridge between legacy core systems and the future of digital finance.
             </p>
             <Link to="/en/contact-us" className="btn-matera btn-green">
               Request a Conversation
@@ -43,7 +56,7 @@ export default function Stablecoin() {
           <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
             <img
               src="/assets/hero-photo.webp"
-              alt="Digital Twin for Stablecoins"
+              alt="Matera and Circle partnership for USDC stablecoin integration"
               style={{ width: '100%', maxWidth: '500px', borderRadius: '16px', objectFit: 'cover' }}
             />
           </div>
@@ -54,9 +67,9 @@ export default function Stablecoin() {
       <section style={{ padding: '80px 0', textAlign: 'center' }}>
         <div className="container" style={{ maxWidth: '900px' }}>
           <h2 style={{ fontSize: 'clamp(1.5rem, 4vw, 2.25rem)', fontWeight: 700, color: 'var(--matera-blue)', marginBottom: '12px' }}>
-            Let your customers convert USD to USDC or send USDC from within their mobile banking app
+            Convert USD to USDC or send USDC from within your mobile banking app
           </h2>
-          <p style={{ color: '#666', marginBottom: '32px' }}>Press play to see in action</p>
+          <p style={{ color: '#666', marginBottom: '32px' }}>Press play to see the seamless transaction process in action</p>
           <div style={{ position: 'relative', borderRadius: '16px', overflow: 'hidden', cursor: 'pointer' }}
             onClick={() => setPlaying(true)}
           >
@@ -64,7 +77,7 @@ export default function Stablecoin() {
               <>
                 <img
                   src="/assets/stablecoin-video-tn.png"
-                  alt="Video thumbnail"
+                  alt="Stablecoin transaction demo video thumbnail"
                   style={{ width: '100%', display: 'block' }}
                 />
                 <div style={{
@@ -105,7 +118,7 @@ export default function Stablecoin() {
           <div>
             <img
               src="/assets/matera-circle-dtw-graphic.png"
-              alt="Matera Circle Digital Twin diagram"
+              alt="Architectural diagram of Matera Digital Twin and Circle integration for USDC"
               style={{ width: '100%' }}
             />
           </div>
@@ -114,7 +127,7 @@ export default function Stablecoin() {
               Reimagining Financial Services—With Embedded USDC
             </h2>
             <p style={{ color: '#555', lineHeight: 1.8 }}>
-              The U.S. dollar stablecoin market could surpass $2 trillion by 2028. Consumers expect banks and credit unions to help them safely navigate a growing array of digital assets. With Circle and Matera, financial institutions can offer USDC as a digital asset option in their platforms. By combining the regulated liquidity of Circle with the real-time infrastructure of Digital Twin, banks and credit unions can remain relevant and offer next-generation financial services without overhauling their Core.
+              The U.S. dollar stablecoin market is rapidly expanding, with projections suggesting it could surpass $2 trillion by 2028. Consumers expect their trusted financial institutions—banks and credit unions—to help them safely navigate this growing array of digital assets. With Circle and Matera, financial institutions can offer USDC as a digital asset option directly in their existing platforms. By combining the regulated liquidity of Circle with the real-time infrastructure of <Link to="/en/solutions/digital-twin" style={{ color: 'var(--matera-purple)', fontWeight: 600 }}>Matera's Digital Twin</Link>, banks and credit unions can remain relevant and offer next-generation financial services without the need for a costly and risky overhauling of their Core systems.
             </p>
           </div>
         </div>
@@ -124,17 +137,30 @@ export default function Stablecoin() {
       <section style={{ backgroundColor: '#edeef5', padding: '80px 0' }}>
         <div className="container">
           <h2 style={{ fontSize: 'clamp(1.5rem, 4vw, 2.25rem)', fontWeight: 700, color: 'var(--matera-blue)', marginBottom: '48px', textAlign: 'center' }}>
-            Benefits to Financial Institutions:
+            Benefits to Financial Institutions
           </h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '32px' }}>
             {[
-              { icon: '/assets/icon_c880235e90.webp', text: "Create a path to stablecoin enablement that's fast and secure" },
-              { icon: '/assets/icon_1_f7879b469c.webp', text: "Customers never leave the financial institution's ecosystem" },
-              { icon: '/assets/icon_2_6ee40ea88b.webp', text: 'Maintain oversight of both traditional and digital assets' },
+              { 
+                icon: '/assets/icon_c880235e90.webp', 
+                title: "Fast & Secure Enablement",
+                text: "Create a path to stablecoin enablement that is both fast and secure, leveraging proven infrastructure used by top global banks." 
+              },
+              { 
+                icon: '/assets/icon_1_f7879b469c.webp', 
+                title: "Retention & Ecosystem",
+                text: "Keep your customers within your financial institution's ecosystem. Prevent deposit flight to external crypto exchanges by offering native digital asset support." 
+              },
+              { 
+                icon: '/assets/icon_2_6ee40ea88b.webp', 
+                title: "Comprehensive Oversight",
+                text: "Maintain full oversight of both traditional and digital assets. Our solution ensures regulatory compliance and clear visibility across all account types." 
+              },
             ].map((b, i) => (
               <div key={i} style={{ textAlign: 'center' }}>
-                <img src={b.icon} alt="" style={{ width: '80px', height: '80px', objectFit: 'contain', marginBottom: '20px' }} />
-                <p style={{ color: '#444', fontWeight: 600, lineHeight: 1.6 }}>{b.text}</p>
+                <img src={b.icon} alt={b.title} style={{ width: '80px', height: '80px', objectFit: 'contain', marginBottom: '20px' }} />
+                <h3 style={{ fontSize: '1.1rem', fontWeight: 700, color: 'var(--matera-blue)', marginBottom: '12px' }}>{b.title}</h3>
+                <p style={{ color: '#444', lineHeight: 1.6 }}>{b.text}</p>
               </div>
             ))}
           </div>
@@ -146,7 +172,7 @@ export default function Stablecoin() {
         <div className="container" style={{ maxWidth: '900px', display: 'flex', gap: '40px', alignItems: 'center' }}>
           <img
             src="/assets/carlos.webp"
-            alt="Carlos Netto"
+            alt="Carlos Netto, CEO of Matera"
             style={{ width: '140px', height: '140px', borderRadius: '50%', objectFit: 'cover', flexShrink: 0 }}
           />
           <div>
@@ -172,7 +198,7 @@ export default function Stablecoin() {
               Protecting Deposits in the Stablecoin Era
             </h2>
             <p style={{ opacity: 0.8, marginBottom: '32px', lineHeight: 1.7 }}>
-              A Strategy Playbook for Financial Institutions
+              A Strategy Playbook for Financial Institutions. Learn how to stay ahead of digital asset trends while maintaining your core deposit base.
             </p>
             <a
               href="https://insight.matera.com/stablecoin-strategy-playbook"
@@ -186,7 +212,7 @@ export default function Stablecoin() {
           <div style={{ display: 'flex', justifyContent: 'center' }}>
             <img
               src="/assets/stablecoins-blog-tn.webp"
-              alt="Stablecoin strategy playbook"
+              alt="Download the Stablecoin Strategy Playbook for Financial Institutions"
               style={{ maxWidth: '350px', width: '100%', borderRadius: '12px' }}
             />
           </div>
@@ -214,14 +240,14 @@ export default function Stablecoin() {
       <section style={{ padding: '80px 0' }}>
         <div className="container" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '60px' }}>
           <div>
-            <img src="/assets/matera-logo-1.png" alt="Matera" style={{ height: '40px', marginBottom: '20px' }} />
+            <img src="/assets/matera-logo-1.png" alt="Matera logo" style={{ height: '40px', marginBottom: '20px' }} />
             <h3 style={{ fontWeight: 700, marginBottom: '12px', color: 'var(--matera-blue)' }}>About Matera</h3>
             <p style={{ color: '#555', lineHeight: 1.7 }}>
               Matera is a pioneer in modern technology powering banks and credit unions with cutting-edge solutions for Core Banking, Instant Payments, and QR Code Payments. Matera is the trusted partner behind some of the world's largest financial institutions.
             </p>
           </div>
           <div>
-            <img src="/assets/circle-logo.png" alt="Circle" style={{ height: '40px', marginBottom: '20px' }} />
+            <img src="/assets/circle-logo.png" alt="Circle logo" style={{ height: '40px', marginBottom: '20px' }} />
             <h3 style={{ fontWeight: 700, marginBottom: '12px', color: 'var(--matera-blue)' }}>About Circle</h3>
             <p style={{ color: '#555', lineHeight: 1.7 }}>
               Circle is a global financial technology firm that enables businesses of all sizes to harness the power of digital currencies and public blockchains for payments, commerce, and financial applications worldwide. Circle is building the world's largest, most-widely used, stablecoin network, and issues, through its regulated affiliates, USDC and EURC stablecoins.

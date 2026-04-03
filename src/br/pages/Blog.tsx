@@ -8,7 +8,6 @@ interface BlogEntry {
   title: string;
   slug: string;
   date: string;
-  author: string;
   thumbnail: string;
   excerpt: string;
   file: string;
@@ -16,12 +15,11 @@ interface BlogEntry {
 
 interface BlogPost extends BlogEntry {
   body: string;
-  images: string[];
+  author?: string;
 }
 
 function BrBlogList() {
   const [posts, setPosts] = useState<BlogEntry[]>([]);
-  const [visible, setVisible] = useState(12);
 
   useEffect(() => {
     fetch('/data/br/blog/index.json')
@@ -40,7 +38,7 @@ function BrBlogList() {
             gridTemplateColumns: 'repeat(3, 1fr)',
             gap: '32px',
           }}>
-            {posts.slice(0, visible).map((p) => (
+            {posts.map((p) => (
               <Link
                 key={p.slug}
                 to={`/br/blog/${p.slug}`}
@@ -64,7 +62,7 @@ function BrBlogList() {
               >
                 {p.thumbnail && (
                   <div style={{ aspectRatio: '16/10', overflow: 'hidden' }}>
-                    <img src={p.thumbnail} alt="" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                    <img src={p.thumbnail} alt={p.title} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                   </div>
                 )}
                 <div style={{ padding: '24px', flex: 1, display: 'flex', flexDirection: 'column' }}>
@@ -74,27 +72,13 @@ function BrBlogList() {
                   <h3 style={{ fontSize: '1.05rem', fontWeight: 700, color: 'var(--matera-blue)', marginBottom: '8px', lineHeight: 1.4 }}>
                     {p.title}
                   </h3>
-                  <p style={{ fontSize: '0.9rem', color: '#666', lineHeight: 1.6, flex: 1 }}>
+                  <p style={{ fontSize: '0.875rem', color: '#666', lineHeight: 1.6, flex: 1 }}>
                     {p.excerpt}
                   </p>
                 </div>
               </Link>
             ))}
           </div>
-          {visible < posts.length && (
-            <div style={{ textAlign: 'center', marginTop: '48px' }}>
-              <button
-                onClick={() => setVisible(v => v + 12)}
-                className="btn-matera"
-                style={{
-                  backgroundColor: 'var(--matera-blue)',
-                  color: 'var(--matera-white)',
-                }}
-              >
-                Carregar mais
-              </button>
-            </div>
-          )}
         </div>
       </section>
     </>
@@ -134,7 +118,13 @@ function BrBlogArticle() {
 
   return (
     <>
-      <PageMeta title={post.title} description={post.excerpt || ''} image={post.thumbnail} url={'/br/blog/' + post.slug} article={{ date: post.date, author: post.author }} />
+      <PageMeta 
+        title={post.title} 
+        description={post.excerpt || ''} 
+        image={post.thumbnail} 
+        url={'/br/blog/' + post.slug} 
+        article={{ date: post.date, author: post.author }} 
+      />
       {/* Hero */}
       <section style={{
         backgroundColor: 'var(--matera-blue)',
@@ -149,9 +139,9 @@ function BrBlogArticle() {
           <h1 style={{ fontSize: 'clamp(1.75rem, 4vw, 2.75rem)', fontWeight: 700, lineHeight: 1.25, marginBottom: '16px' }}>
             {post.title}
           </h1>
-          <div style={{ display: 'flex', gap: '16px', opacity: 0.7, fontSize: '0.9rem' }}>
+          <div style={{ opacity: 0.7, fontSize: '0.9rem', display: 'flex', gap: '20px' }}>
             <span>{new Date(post.date).toLocaleDateString('pt-BR', { year: 'numeric', month: 'long', day: 'numeric' })}</span>
-            {post.author && <span>· {post.author}</span>}
+            {post.author && <span>Por {post.author}</span>}
           </div>
         </div>
       </section>
@@ -159,7 +149,7 @@ function BrBlogArticle() {
       {/* Thumbnail */}
       {post.thumbnail && (
         <div className="container" style={{ maxWidth: '800px', marginTop: '-30px', position: 'relative', zIndex: 1 }}>
-          <img src={post.thumbnail} alt="" style={{ width: '100%', borderRadius: '12px', display: 'block' }} />
+          <img src={post.thumbnail} alt={post.title} style={{ width: '100%', borderRadius: '12px', display: 'block' }} />
         </div>
       )}
 

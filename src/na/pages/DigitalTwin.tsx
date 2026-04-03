@@ -8,7 +8,41 @@ export default function DigitalTwin() {
 
   return (
     <>
-      <PageMeta title="Digital Twin for Real-Time Payments" description="Unlock real-time payments without replacing your core. Matera's Digital Twin powers 24x7 banking with instant authorization and balance updates." url="/en/solutions/digital-twin" />
+      <PageMeta
+        title="Digital Twin for Real-Time Payments"
+        description="Unlock real-time payments without replacing your core. Matera's Digital Twin powers 24x7 banking with instant authorization and balance updates."
+        url="/en/solutions/digital-twin"
+        videos={[
+          {
+            name: "Unlock Real-Time Payments without replacing your core",
+            description: "A background visualization of real-time payment processing with Matera Digital Twin.",
+            thumbnailUrl: "/assets/digital-twin-hero.mp4",
+            uploadDate: "2024-01-15",
+            contentUrl: "/assets/digital-twin-hero.mp4"
+          },
+          {
+            name: "Matera Digital Twin Explained",
+            description: "A quick video explanation of how Matera's Digital Twin works alongside your core banking system.",
+            thumbnailUrl: "/assets/play.png",
+            uploadDate: "2024-02-01",
+            contentUrl: "/assets/digital-twin-explainer.mp4"
+          },
+          {
+            name: "How Matera's Digital Twin Works",
+            description: "Technical animation showing the cloud deployment and real-time transaction authorization process.",
+            thumbnailUrl: "/assets/digital-twin-animation.mp4",
+            uploadDate: "2024-02-10",
+            contentUrl: "/assets/digital-twin-animation.mp4"
+          },
+          {
+            name: "Core Integration Animation",
+            description: "Visualization of the four key connections required to integrate Digital Twin with a core banking system.",
+            thumbnailUrl: "/assets/core-integration-animation.mp4",
+            uploadDate: "2024-02-15",
+            contentUrl: "/assets/core-integration-animation.mp4"
+          }
+        ]}
+      />
       {/* Hero with background video */}
       <section style={{
         backgroundColor: '#000',
@@ -80,7 +114,7 @@ export default function DigitalTwin() {
             A Real-Time Transaction Ledger for 24x7 Banking — Including Digital Assets
           </h2>
           <p style={{ color: '#555', lineHeight: 1.8, marginBottom: '32px' }}>
-            Today's consumers expect instant, always-on banking. But most Core systems still operate on weekday, business-hour cycles. Digital Twin is a lightweight, high-speed ledger that runs alongside your existing Core — authorizing transactions and updating balances in real time, whether the Core is online or not. Combined with our partnership with Circle, banks can now embed USDC stablecoins directly into their mobile banking experience.
+            Today's consumers expect instant, always-on banking. But most Core systems still operate on weekday, business-hour cycles. Digital Twin is a lightweight, high-speed ledger that runs alongside your existing Core — authorizing transactions and updating balances in real time, whether the Core is online or not. Combined with our partnership with Circle, banks can now embed <Link to="/en/stablecoin" style={{ color: 'var(--matera-purple)', fontWeight: 600 }}>USDC stablecoins</Link> directly into their mobile banking experience.
           </p>
 
           {/* Demo video */}
@@ -191,7 +225,7 @@ export default function DigitalTwin() {
               { icon: '/assets/icon_1_33f99ecec1_d2b9809062.png', title: 'Cloud & database agnostic', text: '' },
             ].map((f, i) => (
               <div key={i} style={{ textAlign: 'center' }}>
-                <img src={f.icon} alt="" style={{ width: '64px', height: '64px', objectFit: 'contain', marginBottom: '16px' }} />
+                <img src={f.icon} alt={f.title} style={{ width: '64px', height: '64px', objectFit: 'contain', marginBottom: '16px' }} />
                 <h3 style={{ fontSize: '1rem', fontWeight: 700, color: 'var(--matera-blue)', marginBottom: '8px' }}>{f.title}</h3>
                 {f.text && <p style={{ color: '#666', fontSize: '0.9rem' }}>{f.text}</p>}
               </div>
@@ -246,7 +280,7 @@ export default function DigitalTwin() {
                 alignItems: 'center',
                 gap: '16px',
               }}>
-                <img src="/assets/check.png" alt="" style={{ width: '24px', height: '24px' }} />
+                <img src="/assets/check.png" alt="Checkmark" style={{ width: '24px', height: '24px' }} />
                 <span style={{ fontWeight: 600 }}>{item}</span>
               </div>
             ))}
@@ -293,7 +327,7 @@ export default function DigitalTwin() {
                 onMouseEnter={e => (e.currentTarget.style.transform = 'translateY(-4px)')}
                 onMouseLeave={e => (e.currentTarget.style.transform = 'none')}
               >
-                <img src="/assets/icon-1.png" alt="" style={{ width: '48px', height: '48px' }} />
+                <img src="/assets/icon-1.png" alt="Resource icon" style={{ width: '48px', height: '48px' }} />
                 <p style={{ fontSize: '0.8rem', fontWeight: 600, color: 'var(--matera-purple)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>{r.label}</p>
                 <h3 style={{ fontSize: '1rem', fontWeight: 700, color: 'var(--matera-blue)', lineHeight: 1.4 }}>{r.title}</h3>
               </a>

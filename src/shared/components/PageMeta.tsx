@@ -1,5 +1,13 @@
 import { Helmet } from 'react-helmet-async';
 
+interface VideoMeta {
+  name: string;
+  description: string;
+  thumbnailUrl: string;
+  uploadDate: string;
+  contentUrl: string;
+}
+
 interface PageMetaProps {
   title: string;
   description: string;
@@ -9,6 +17,7 @@ interface PageMetaProps {
     date: string;
     author?: string;
   };
+  videos?: VideoMeta[];
 }
 
 const ORG_SCHEMA = JSON.stringify({
@@ -21,6 +30,8 @@ const ORG_SCHEMA = JSON.stringify({
     'https://br.linkedin.com/company/matera',
     'https://www.instagram.com/matera.oficial/',
     'https://www.youtube.com/@Materaoficial',
+    'https://x.com/matera',
+    'https://www.facebook.com/matera.oficial',
   ],
   description: 'Banking technology for stablecoins, instant payments, QR codes, and core modernization.',
   foundingDate: '1987',
@@ -43,7 +54,7 @@ const WEBSITE_SCHEMA = JSON.stringify({
   inLanguage: ['en', 'pt-BR'],
 });
 
-export default function PageMeta({ title, description, image, url, article }: PageMetaProps) {
+export default function PageMeta({ title, description, image, url, article, videos }: PageMetaProps) {
   const fullTitle = title === 'Matera' ? title : `${title} | Matera`;
   const baseUrl = 'https://matera.com';
   const fullUrl = url ? `${baseUrl}${url}` : undefined;
@@ -55,7 +66,7 @@ export default function PageMeta({ title, description, image, url, article }: Pa
   // Build breadcrumb from URL path
   const breadcrumbs = url ? buildBreadcrumbs(url, baseUrl) : null;
 
-  // Article schema for blog/press/podcast content
+  // Article schema
   const articleSchema = article ? JSON.stringify({
     '@context': 'https://schema.org',
     '@type': 'Article',
@@ -68,10 +79,22 @@ export default function PageMeta({ title, description, image, url, article }: Pa
     mainEntityOfPage: fullUrl,
   }) : null;
 
+  // Video schema
+  const videoSchemas = videos?.map(v => JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'VideoObject',
+    name: v.name,
+    description: v.description,
+    thumbnailUrl: v.thumbnailUrl.startsWith('http') ? v.thumbnailUrl : `${baseUrl}${v.thumbnailUrl}`,
+    uploadDate: v.uploadDate,
+    contentUrl: v.contentUrl.startsWith('http') ? v.contentUrl : `${baseUrl}${v.contentUrl}`,
+  })) || [];
+
   return (
     <Helmet htmlAttributes={{ lang }}>
       <title>{fullTitle}</title>
       <meta name="description" content={description} />
+      {fullUrl && <link rel="canonical" href={fullUrl} />}
       <meta property="og:title" content={fullTitle} />
       <meta property="og:description" content={description} />
       <meta property="og:type" content={article ? 'article' : 'website'} />
@@ -88,6 +111,9 @@ export default function PageMeta({ title, description, image, url, article }: Pa
       <script type="application/ld+json">{WEBSITE_SCHEMA}</script>
       {breadcrumbs && <script type="application/ld+json">{breadcrumbs}</script>}
       {articleSchema && <script type="application/ld+json">{articleSchema}</script>}
+      {videoSchemas.map((s, i) => (
+        <script key={i} type="application/ld+json">{s}</script>
+      ))}
     </Helmet>
   );
 }

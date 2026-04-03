@@ -1,162 +1,143 @@
 # Change History
 
-## 2026-04-03: SEO cross-check — WebSite schema, office addresses, StoneX alt text
-
-**Context:** Cross-referenced against SEO report from the old Next.js + Strapi site.
-
-**What was done:**
-- Added `WebSite` JSON-LD schema (name, url, inLanguage)
-- Added office addresses (NY + Campinas) and contact points to Organization schema
-- Fixed 7 "Image without alt" instances in StoneX BR case study body markdown
-
-**Files changed:** `src/shared/components/PageMeta.tsx`, `public/data/br/cases/2025-08-19 - StoneX.json`
+Reverse-chronological log of improvements to the Matera website.
 
 ---
 
-## 2026-04-03: SEO P3 fixes — JSON-LD structured data, expanded Wallet page
+## 2026-04-03: SEO technical enhancements — Canonical links, Video schema, Social expansion
 
-**What was done:**
-- Added JSON-LD structured data via PageMeta component:
-  - **Organization schema** on every page (name, logo, social profiles, founding date, employee count)
-  - **BreadcrumbList schema** auto-generated from URL path on every page
-  - **Article schema** on blog, press, podcast, and case study detail pages (headline, date, author, publisher, image)
-- Added `article` prop to PageMeta for content pages (Blog, Press, Podcasts articles + BR Blog, Cases)
-- Expanded WalletAsAService from ~150 words to ~500 words with 6 capability cards, 4 value props, 3 use case segments
-
-**Files changed:** `src/shared/components/PageMeta.tsx`, `src/na/pages/Blog.tsx`, `src/na/pages/Press.tsx`, `src/na/pages/Podcasts.tsx`, `src/na/pages/WalletAsAService.tsx`, `src/br/pages/Blog.tsx`, `src/br/pages/Cases.tsx`
+- Added `<link rel="canonical" />` to `PageMeta` component to consolidate link equity and prevent duplicate content
+- Implemented **VideoObject JSON-LD schema** support in `PageMeta.tsx` to enable rich results for embedded videos
+- Added video structured data to high-value pages: **Digital Twin** (4 videos) and **Stablecoin** (1 video)
+- Expanded **Organization schema** with additional social profiles: X (Twitter), Facebook
+- Improved **internal linking** between core solution pages (Digital Twin ↔ Stablecoin, Wallet as a Service → QR Code Solutions)
+- Fixed missing/empty `alt` text for content thumbnails in the **Brazil (/br)** market pages
+- Enriched content on **Stablecoin** and **Digital Twin** pages with more descriptive benefit sections
 
 ---
 
-## 2026-04-03: SEO P2 fixes — hreflang, html lang, lazy loading, form labels, CTA link
+## 2026-04-03: SEO cross-check against old site report
 
-**What was done:**
-- Added `hreflang` tags (en, pt-BR, x-default) via PageMeta component — all pages now declare language alternates
-- Dynamic `<html lang>` — EN pages set `lang="en"`, BR pages set `lang="pt-BR"` automatically
-- Added `loading="lazy"` to below-fold images: listing thumbnails (Blog, Press, Whitepapers, Podcasts), client logos (TrustBanner), dropdown menu images (Header)
-- Fixed form label/input associations in ContactUs.tsx and Whitepapers.tsx — added `htmlFor`/`id`/`name` attributes
-- Fixed CTA broken link — changed `href="#"` to `href="/en/contact-us"` in CTA.tsx
+Cross-referenced against the SEO report from the previous Next.js + Strapi site. Issues flagged in that report and their status:
 
-**Files changed:** `src/shared/components/PageMeta.tsx`, `src/na/components/CTA.tsx`, `src/na/components/Header.tsx`, `src/na/components/TrustBanner.tsx`, `src/na/pages/ContactUs.tsx`, `src/na/pages/Whitepapers.tsx`, `src/na/pages/Blog.tsx`, `src/na/pages/Press.tsx`, `src/na/pages/Podcasts.tsx`
-
----
-
-## 2026-04-03: SEO P1 fixes — sitemap, robots.txt, 404 page, duplicate routes
-
-**What was done:**
-- Generated `public/sitemap.xml` with 256 URLs (all static routes + blog/press/whitepaper/podcast/case slugs from index.json)
-- Created `public/robots.txt` with sitemap reference
-- Added 404 catch-all route (`<Route path="*">`) with branded error page showing links to EN and BR sites
-- Removed duplicate route `/` (was identical to `/en` — `_worker.js` already handles root redirect)
-- Removed duplicate route `/en/solutions/digital-twin-stablecoins` (was identical to `/en/stablecoin`)
-- Added `scripts/generate-sitemap.mjs` for regenerating sitemap when content changes
-
-**Files changed:** `src/App.tsx`, `src/shared/components/NotFound.tsx` (new), `public/robots.txt` (new), `public/sitemap.xml` (new), `scripts/generate-sitemap.mjs` (new), `SEO-ANALYSIS.md`
+| Old site issue | Status |
+|---|---|
+| Missing `x-default` hreflang | Already fixed (P2) |
+| Organization JSON-LD | Already fixed (P3), enhanced with office addresses + contact points |
+| Twitter cards | Already fixed (P0) |
+| BreadcrumbList | Already fixed (P3) |
+| **WebSite schema** | Added — name, url, inLanguage |
+| **"Image without alt" fallback** | Fixed 7 instances in StoneX BR case study |
+| Noindex for tags/categories | N/A (no tag pages) |
+| Metadata length warnings | N/A (no CMS) |
 
 ---
 
-## 2026-04-03: SEO P0 fixes — dynamic titles, meta descriptions, OG tags, server-side meta injection
+## 2026-04-03: SEO — full audit and all fixes (P0 through P3)
 
-**Problem:** Every page showed `<title>Matera</title>` with no meta descriptions, no OG tags, and no Twitter cards. Social media crawlers saw blank previews.
+**Scope:** Full site — `/en` (NA market) and `/br` (BR market). Source code analysis + live Chrome DevTools inspection.
 
-**What was done:**
-- Installed `react-helmet-async` for client-side meta tag management
-- Created `src/shared/components/PageMeta.tsx` — shared component for title, description, OG, and Twitter tags
-- Added PageMeta to all 30+ pages across EN and BR markets (static pages with hand-written descriptions, content pages with dynamic data from JSON)
-- Updated `public/_worker.js` to inject meta tags server-side at the Cloudflare edge — social crawlers (LinkedIn, Twitter, Facebook) now see full meta without JS execution
-- Worker handles both static routes (hardcoded meta) and dynamic routes (reads index.json to look up slug → title/description)
+16 issues found. All 16 resolved in one session.
 
-**Files changed:** `package.json`, `src/main.tsx`, `src/shared/components/PageMeta.tsx` (new), all page components in `src/na/pages/` and `src/br/pages/`, `public/_worker.js`
+### P0 — Critical (all fixed)
+
+| Issue | Fix |
+|---|---|
+| Every page showed `<title>Matera</title>` | Installed `react-helmet-async`, added `PageMeta` component with unique titles to all 30+ pages |
+| No `<meta name="description">` | Hand-written descriptions for static pages, `excerpt` field for content pages |
+| No Open Graph / Twitter cards | Added `og:title`, `og:description`, `og:image`, `twitter:card` to every page |
+| Social crawlers saw blank page (CSR-only) | `_worker.js` injects meta tags server-side at Cloudflare edge — static routes hardcoded, dynamic routes read index.json |
+
+### P1 — High (all fixed)
+
+| Issue | Fix |
+|---|---|
+| No `sitemap.xml` | Generated with 256 URLs. Script: `scripts/generate-sitemap.mjs` |
+| No `robots.txt` | Created with sitemap reference |
+| No 404 page (blank + HTTP 200) | Added `<Route path="*">` catch-all with branded error page |
+| Duplicate content (`/` = `/en`, stablecoin alias) | Removed duplicate routes. Worker handles `/` geo-redirect |
+
+### P2 — Medium (all fixed)
+
+| Issue | Fix |
+|---|---|
+| No hreflang tags | Added `en`, `pt-BR`, `x-default` via PageMeta |
+| `<html lang>` hardcoded to `en` | Dynamic: `lang="en"` for /en, `lang="pt-BR"` for /br |
+| No `loading="lazy"` on images | Added to listing thumbnails, client logos, dropdown images |
+| Form labels missing `for`/`id` | Added `htmlFor`/`id`/`name` in ContactUs + Whitepapers |
+| CTA broken link (`href="#"`) | Changed to `href="/en/contact-us"` |
+
+### P3 — Low (all fixed)
+
+| Issue | Fix |
+|---|---|
+| No JSON-LD structured data | Organization (with addresses + contacts), WebSite, BreadcrumbList (auto from URL), Article (on content pages) |
+| Thin content (WalletAsAService ~150 words) | Expanded to ~500 words with 6 capabilities, 4 value props, 3 use case segments |
+
+### What was already good
+
+URL structure, heading hierarchy, semantic HTML (`<main>`, `<header>`, `<nav>`, `<section>`), internal linking from header/footer, external link `rel` attributes, font loading (`font-display: swap`), HTTPS via Cloudflare.
+
+### Live verification (before/after)
+
+```
+BEFORE:
+  /en          → title: "Matera" | description: MISSING | og:title: MISSING
+  /nonexistent → blank page, HTTP 200
+
+AFTER:
+  /en          → title: "Modern Banking Meets Digital Currency | Matera"
+                 description, og:title, og:description, twitter:card all present
+  /br          → title: "Tecnologia para Instituições Financeiras | Matera"
+                 lang="pt-BR", hreflang tags present
+  /nonexistent → branded 404 page
+```
 
 ---
 
-## 2026-04-03: Update QR Code payment count to 3.6 billion/year
+## 2026-04-03: Update stats — Pix 7.2B/year, QR Code 3.6B/year, accounts 90M
 
-**Files fixed:**
-- `src/na/components/WhyMatera.tsx` — 300M+ QR Code payments/month → 3.6B+ QR Code payments/year
-
----
-
-## 2026-04-03: Update Pix transaction count to 7.2 billion/year
-
-**Problem:** All pages showed "6 BI" (6 billion) Pix transactions per year. Updated to 7.2 billion. RegTech showed "4,5 BI+ transações processadas" — also updated to 7.2 BI. EN WhyMatera showed "600M+ instant payments per month" — updated to "7.2B+ Pix transactions per year".
-
-**Files fixed:**
-- `src/br/pages/Home.tsx` — 6BI+ → 7,2BI+ (two occurrences)
-- `src/br/pages/SobreNos.tsx` — 6 BI+ → 7,2 BI+
-- `src/br/pages/solucoes/CoreBanking.tsx` — 6 BI → 7,2 BI
-- `src/br/pages/solucoes/Pagamentos.tsx` — 6 BI → 7,2 BI
-- `src/br/pages/solucoes/RegTech.tsx` — 4,5 BI+ → 7,2 BI+
-- `src/na/components/WhyMatera.tsx` — 600M+ instant payments/month → 7.2B+ Pix transactions/year
+- Pix transactions updated from 6 BI to 7.2 BI on all BR pages (Home, SobreNos, CoreBanking, Pagamentos, RegTech) and EN WhyMatera (600M/month → 7.2B/year)
+- QR Code payments updated from 300M/month to 3.6B/year on EN WhyMatera
+- Account count fixed from 60 MI to 90 MI on BR CoreBanking and Pagamentos (was already correct on Home, SobreNos, EN Stats, EN AboutUs)
 
 ---
 
-## 2026-04-03: Fix inconsistent account count (60M → 90M)
+## 2026-04-03: SEO fixes for /en site — image alt text, Portuguese content audit
 
-**Problem:** Some pages showed "60 MI de contas" while others showed "90+ Million accounts". The correct figure is 90M.
-
-**Files fixed:**
-- `src/br/pages/solucoes/CoreBanking.tsx` — changed "60 MI" to "90 MI"
-- `src/br/pages/solucoes/Pagamentos.tsx` — changed "60 MI" to "90 MI"
-
-**Already correct:** `src/na/components/Stats.tsx` (90+ Million), `src/na/pages/AboutUs.tsx` (90+ M), `src/br/pages/Home.tsx` (+90MM), `src/br/pages/SobreNos.tsx` (+90 MM)
-
----
-
-## 2026-04-03: SEO fixes for /en site
-
-**Problem:** SEO analysis flagged Portuguese content on English pages, particularly in image attributes.
-
-**What was found:**
-- All content images (blog, press, whitepapers, podcasts) had empty `alt=""` — search engines and screen readers saw no description (HIGH impact)
-- 14 Cloudfront image URLs contained Portuguese filenames like `Copia_de_shutterstock_...` (LOW impact, resolved by Cloudfront migration below)
-- 4 press articles linked to Portuguese-language external sources (acceptable — proper nouns)
-- BR homepage had a purple announcement banner that didn't exist on the real matera.com/br
-
-**What was fixed:**
-- Added descriptive `alt` text (article titles) to all content thumbnails across Blog, Press, Whitepapers, Podcasts, DigitalTwin, Stablecoin, and AboutUs pages
-- Removed the non-existent announcement banner from BR homepage
-
-**Files changed:** `src/na/pages/Blog.tsx`, `Press.tsx`, `Whitepapers.tsx`, `Podcasts.tsx`, `DigitalTwin.tsx`, `Stablecoin.tsx`, `AboutUs.tsx`, `src/br/pages/Home.tsx`
-
-**Full audit:** See `BADSEO.md`
+- All content images had empty `alt=""` → added descriptive alt text (article titles) to Blog, Press, Whitepapers, Podcasts, DigitalTwin, Stablecoin, AboutUs
+- Removed non-existent purple announcement banner from BR homepage
+- Audited Portuguese content on EN pages: only CDN filenames (fixed by Cloudfront migration) and 4 press articles linking to Brazilian publications (acceptable, proper nouns)
+- Full audit in `BADSEO.md`
 
 ---
 
 ## 2026-04-03: Migrate all assets from Cloudfront to local
 
-**Problem:** 377 images, videos, and PDFs were served from `d2lq74zxbg4jiz.cloudfront.net` (Matera's old Strapi CMS CDN). Since the site deploys to Cloudflare Pages, having a second CDN dependency was unnecessary and created risks: Cloudfront could go down, URLs could change, and Portuguese filenames in image URLs hurt SEO.
+377 images, videos, and PDFs moved from `d2lq74zxbg4jiz.cloudfront.net` to `public/assets/`:
 
-**What was done:**
-- Downloaded 289 images + 5 small videos + 6 PDFs to `public/assets/` (18MB images + 6MB videos + 8MB PDFs)
-- Renamed all files with clean English names (stripped CMS hashes, translated Portuguese words)
-- Replaced 621 URL references across 247+ source files (`src/` and `public/data/`)
-- 1 large video (38MB `digital-twin-explainer.mp4`) downloaded locally but gitignored
-
-**What remains on Cloudfront:** Nothing. Zero references in source code. One legacy `/_next/image/` encoded URL in a BR case study body (StoneX) — inert, from old Next.js site.
-
-**Scripts:** `scripts/migrate-cloudfront.mjs` (images), `scripts/migrate-remaining.mjs` (videos + PDFs), `scripts/cloudfront-mapping.json` (full URL-to-filename mapping)
+- 289 images downloaded with clean English filenames (Portuguese words translated, CMS hashes stripped)
+- 5 small videos + 6 PDFs downloaded locally
+- 1 large video (38MB `digital-twin-explainer.mp4`) gitignored
+- 621 URL replacements across 247+ source files
+- Zero Cloudfront references remain in source code
+- Scripts: `scripts/migrate-cloudfront.mjs`, `scripts/migrate-remaining.mjs`, `scripts/cloudfront-mapping.json`
 
 ---
 
 ## 2026-04-03: Territory selector and geo-redirect
 
-**What was done:**
-- Replaced the "English"/"Portugues" language button in both NA and BR headers with a compact flag-based territory selector (US, Canada, Brazil)
-- Added `public/_worker.js` — Cloudflare Pages worker that redirects `/` to `/br` for visitors from Brazil, `/en` for everyone else (uses `request.cf.country`, no external API)
-- Worker also sets a `cf-country` cookie so the frontend shows the correct flag (US visitors see US flag, Canadians see Canadian flag, Brazilians see Brazilian flag)
-- Territory selector navigates to market root (`/en` or `/br`), not equivalent pages
-
-**Files changed:** `src/shared/components/TerritorySelector.tsx` (new), `src/na/components/Header.tsx`, `src/br/components/Header.tsx`, `public/_worker.js` (new)
+- Replaced "English"/"Portugues" language button with compact flag-based territory selector (US, Canada, Brazil) in both headers
+- Added `public/_worker.js` — Cloudflare Pages worker that redirects `/` → `/br` for Brazil, `/en` for everyone else (uses `request.cf.country`)
+- Worker sets `cf-country` cookie so frontend shows correct flag per visitor
+- Territory selector navigates to market root (`/en` or `/br`)
 
 ---
 
 ## 2026-04-03: Multi-region architecture and BR market migration
 
-**What was done:**
-- Reorganized codebase from flat `src/components/` + `src/pages/` to market-based `src/na/`, `src/br/`, `src/shared/`
+- Reorganized from flat `src/components/` + `src/pages/` to market-based `src/na/`, `src/br/`, `src/shared/`
 - Moved EN content from `public/data/` to `public/data/en/`
 - Built complete BR market: 22 routes, 99 blog posts, 11 case studies, 9 solution pages, 7 static pages
 - Added `.mcp.json` for Chrome DevTools MCP auto-configuration
 - Added project docs: `ADR.md` (ADR-003), `CONTEXT.md`, `STRUCTURE.md`, `IMPLEMENTATION-PLAN.md`
-
-**See:** `ADR.md` (ADR-003), `IMPLEMENTATION-PLAN.md`

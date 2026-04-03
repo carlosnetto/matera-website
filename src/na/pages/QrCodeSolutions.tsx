@@ -20,7 +20,7 @@ export default function QrCodeSolutions() {
             QR Code Solutions
           </h1>
           <p style={{ fontSize: '1.15rem', opacity: 0.9, lineHeight: 1.7 }}>
-            Facilitate end-to-end mobile payments. Proven software processing millions of QR code payments per month and built to scale.
+            Facilitate end-to-end mobile payments. Proven software processing millions of QR code payments per month and built to scale. Powered by <Link to="/en/solutions/digital-twin" style={{ color: 'var(--matera-green)', fontWeight: 600 }}>Matera Digital Twin</Link> for real-time authorization.
           </p>
         </div>
       </section>
