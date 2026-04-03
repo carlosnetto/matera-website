@@ -9,7 +9,7 @@ export default function Pagamentos() {
         image: '/assets/heropagamentos_d94b60886f.jpg',
       }}
       stats={[
-        { value: '60 MI', label: 'de contas' },
+        { value: '90 MI', label: 'de contas' },
         { value: '6 BI', label: 'transações Pix por ano' },
         { value: '70 M', label: 'CPFs/mês em regulatórios BACEN' },
       ]}

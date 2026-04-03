@@ -1,5 +1,17 @@
 # Change History
 
+## 2026-04-03: Fix inconsistent account count (60M → 90M)
+
+**Problem:** Some pages showed "60 MI de contas" while others showed "90+ Million accounts". The correct figure is 90M.
+
+**Files fixed:**
+- `src/br/pages/solucoes/CoreBanking.tsx` — changed "60 MI" to "90 MI"
+- `src/br/pages/solucoes/Pagamentos.tsx` — changed "60 MI" to "90 MI"
+
+**Already correct:** `src/na/components/Stats.tsx` (90+ Million), `src/na/pages/AboutUs.tsx` (90+ M), `src/br/pages/Home.tsx` (+90MM), `src/br/pages/SobreNos.tsx` (+90 MM)
+
+---
+
 ## 2026-04-03: SEO fixes for /en site
 
 **Problem:** SEO analysis flagged Portuguese content on English pages, particularly in image attributes.
