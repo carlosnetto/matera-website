@@ -34,7 +34,7 @@ const CTA: React.FC = () => {
             }}>
               Start modernizing without the risk. Connect with Matera to explore real-time, API-first solutions that work with your existing core.
             </p>
-            <a href="#" className="btn-matera btn-green" style={{ display: 'inline-flex', alignItems: 'center', gap: '8px' }}>
+            <a href="/en/contact-us" className="btn-matera btn-green" style={{ display: 'inline-flex', alignItems: 'center', gap: '8px' }}>
               Contact Us <span aria-hidden="true">→</span>
             </a>
           </div>

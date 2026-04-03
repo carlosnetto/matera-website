@@ -1,5 +1,18 @@
 # Change History
 
+## 2026-04-03: SEO P2 fixes — hreflang, html lang, lazy loading, form labels, CTA link
+
+**What was done:**
+- Added `hreflang` tags (en, pt-BR, x-default) via PageMeta component — all pages now declare language alternates
+- Dynamic `<html lang>` — EN pages set `lang="en"`, BR pages set `lang="pt-BR"` automatically
+- Added `loading="lazy"` to below-fold images: listing thumbnails (Blog, Press, Whitepapers, Podcasts), client logos (TrustBanner), dropdown menu images (Header)
+- Fixed form label/input associations in ContactUs.tsx and Whitepapers.tsx — added `htmlFor`/`id`/`name` attributes
+- Fixed CTA broken link — changed `href="#"` to `href="/en/contact-us"` in CTA.tsx
+
+**Files changed:** `src/shared/components/PageMeta.tsx`, `src/na/components/CTA.tsx`, `src/na/components/Header.tsx`, `src/na/components/TrustBanner.tsx`, `src/na/pages/ContactUs.tsx`, `src/na/pages/Whitepapers.tsx`, `src/na/pages/Blog.tsx`, `src/na/pages/Press.tsx`, `src/na/pages/Podcasts.tsx`
+
+---
+
 ## 2026-04-03: SEO P1 fixes — sitemap, robots.txt, 404 page, duplicate routes
 
 **What was done:**

@@ -145,7 +145,7 @@ function PodcastList() {
               >
                 {ep.thumbnail && (
                   <div style={{ aspectRatio: '16/10', overflow: 'hidden' }}>
-                    <img src={ep.thumbnail} alt={ep.title} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                    <img src={ep.thumbnail} alt={ep.title} loading="lazy" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                   </div>
                 )}
                 <div style={{ padding: '24px', flex: 1, display: 'flex', flexDirection: 'column' }}>

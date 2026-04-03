@@ -110,29 +110,29 @@ export default function ContactUs() {
               <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
                 <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px' }}>
                   <div>
-                    <label style={labelStyle}>First name *</label>
-                    <input type="text" required style={inputStyle} />
+                    <label htmlFor="contact-firstname" style={labelStyle}>First name *</label>
+                    <input id="contact-firstname" name="firstname" type="text" required style={inputStyle} />
                   </div>
                   <div>
-                    <label style={labelStyle}>Last name *</label>
-                    <input type="text" required style={inputStyle} />
+                    <label htmlFor="contact-lastname" style={labelStyle}>Last name *</label>
+                    <input id="contact-lastname" name="lastname" type="text" required style={inputStyle} />
                   </div>
                 </div>
                 <div>
-                  <label style={labelStyle}>Business email *</label>
-                  <input type="email" required style={inputStyle} />
+                  <label htmlFor="contact-email" style={labelStyle}>Business email *</label>
+                  <input id="contact-email" name="email" type="email" required style={inputStyle} />
                 </div>
                 <div>
-                  <label style={labelStyle}>Company name *</label>
-                  <input type="text" required style={inputStyle} />
+                  <label htmlFor="contact-company" style={labelStyle}>Company name *</label>
+                  <input id="contact-company" name="company" type="text" required style={inputStyle} />
                 </div>
                 <div>
-                  <label style={labelStyle}>Job title *</label>
-                  <input type="text" required style={inputStyle} />
+                  <label htmlFor="contact-jobtitle" style={labelStyle}>Job title *</label>
+                  <input id="contact-jobtitle" name="jobtitle" type="text" required style={inputStyle} />
                 </div>
                 <div>
-                  <label style={labelStyle}>How can we help?</label>
-                  <textarea rows={4} style={{ ...inputStyle, resize: 'vertical' }} />
+                  <label htmlFor="contact-message" style={labelStyle}>How can we help?</label>
+                  <textarea id="contact-message" name="message" rows={4} style={{ ...inputStyle, resize: 'vertical' }} />
                 </div>
                 <button type="submit" className="btn-matera btn-green" style={{ alignSelf: 'flex-start' }}>
                   Send

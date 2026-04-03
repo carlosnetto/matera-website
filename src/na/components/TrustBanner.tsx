@@ -91,6 +91,7 @@ const TrustBanner: React.FC = () => {
                 <img
                   src={client.logo}
                   alt={client.name}
+                  loading="lazy"
                   style={{
                     height: '28px',
                     width: 'auto',

@@ -175,9 +175,9 @@ Both `/` and `/en` render the identical `Home` component. Similarly, `/en/stable
 
 ---
 
-### 9. No `<html lang>` Per Market
+### ~~9. No `<html lang>` Per Market~~ FIXED 2026-04-03
 
-**Severity:** MEDIUM
+**Severity:** ~~MEDIUM~~ RESOLVED — PageMeta sets `lang="en"` for /en, `lang="pt-BR"` for /br dynamically
 
 The `<html>` tag has `lang="en"` hardcoded in `index.html`. This is correct for `/en` pages but wrong for `/br` pages, which are in Portuguese.
 
@@ -187,9 +187,9 @@ The `<html>` tag has `lang="en"` hardcoded in `index.html`. This is correct for 
 
 ---
 
-### 10. No hreflang Tags
+### ~~10. No hreflang Tags~~ FIXED 2026-04-03
 
-**Severity:** MEDIUM
+**Severity:** ~~MEDIUM~~ RESOLVED — Added en, pt-BR, x-default hreflang links via PageMeta
 
 No `<link rel="alternate" hreflang="...">` tags exist. Search engines cannot understand the relationship between `/en` (English) and `/br` (Portuguese) pages.
 
@@ -206,9 +206,9 @@ No `<link rel="alternate" hreflang="...">` tags exist. Search engines cannot und
 
 ## Moderate Issues
 
-### 11. No Lazy Loading on Images
+### ~~11. No Lazy Loading on Images~~ FIXED 2026-04-03
 
-**Severity:** MEDIUM
+**Severity:** ~~MEDIUM~~ RESOLVED — Added loading="lazy" to listing thumbnails, client logos, dropdown images
 
 Zero images use `loading="lazy"`. All 39 images on the homepage (including below-the-fold client logos, solution cards, footer images) load immediately.
 
@@ -218,9 +218,9 @@ Zero images use `loading="lazy"`. All 39 images on the homepage (including below
 
 ---
 
-### 12. Form Labels Missing `for`/`id` Associations
+### ~~12. Form Labels Missing `for`/`id` Associations~~ FIXED 2026-04-03
 
-**Severity:** MEDIUM
+**Severity:** ~~MEDIUM~~ RESOLVED — Added htmlFor/id/name to all form fields in ContactUs and Whitepapers
 
 Contact form (`ContactUs.tsx`) and whitepaper form (`Whitepapers.tsx`) use `<label>` elements without `htmlFor` attributes and `<input>` elements without `id` attributes.
 
@@ -230,9 +230,9 @@ Contact form (`ContactUs.tsx`) and whitepaper form (`Whitepapers.tsx`) use `<lab
 
 ---
 
-### 13. Broken CTA Link
+### ~~13. Broken CTA Link~~ FIXED 2026-04-03
 
-**Severity:** MEDIUM
+**Severity:** ~~MEDIUM~~ RESOLVED — Changed href="#" to href="/en/contact-us"
 
 `src/na/components/CTA.tsx:37` has `<a href="#">Contact Us</a>` — a non-functional placeholder link.
 
@@ -304,11 +304,11 @@ No schema.org structured data. Missing opportunities for rich snippets:
 | ~~P1~~ | ~~Create `robots.txt`~~ | ~~Low~~ | ~~High~~ | FIXED 2026-04-03 |
 | ~~P1~~ | ~~Add 404 catch-all route~~ | ~~Low~~ | ~~High~~ | FIXED 2026-04-03 |
 | ~~P1~~ | ~~Fix duplicate routes (`/` vs `/en`, stablecoin alias)~~ | ~~Low~~ | ~~High~~ | FIXED 2026-04-03 |
-| P2 | Add `hreflang` tags | Low | Medium | Open |
-| P2 | Set `<html lang>` dynamically per market | Low | Medium | Open |
-| P2 | Add `loading="lazy"` to below-fold images | Low | Medium | Open |
-| P2 | Fix form label associations | Low | Medium | Open |
-| P2 | Fix CTA broken link | Low | Medium | Open |
+| ~~P2~~ | ~~Add `hreflang` tags~~ | ~~Low~~ | ~~Medium~~ | FIXED 2026-04-03 |
+| ~~P2~~ | ~~Set `<html lang>` dynamically per market~~ | ~~Low~~ | ~~Medium~~ | FIXED 2026-04-03 |
+| ~~P2~~ | ~~Add `loading="lazy"` to below-fold images~~ | ~~Low~~ | ~~Medium~~ | FIXED 2026-04-03 |
+| ~~P2~~ | ~~Fix form label associations~~ | ~~Low~~ | ~~Medium~~ | FIXED 2026-04-03 |
+| ~~P2~~ | ~~Fix CTA broken link~~ | ~~Low~~ | ~~Medium~~ | FIXED 2026-04-03 |
 | P3 | Add JSON-LD structured data | Medium | Medium | Open |
 | P3 | Expand thin content (WalletAsAService) | Medium | Low | Open |
 

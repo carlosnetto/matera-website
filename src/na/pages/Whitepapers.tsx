@@ -59,7 +59,7 @@ function WhitepaperList() {
                 }}
               >
                 <div style={{ aspectRatio: '16/10', overflow: 'hidden' }}>
-                  <img src={wp.thumbnail} alt={wp.title} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                  <img src={wp.thumbnail} alt={wp.title} loading="lazy" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                 </div>
                 <div style={{ padding: '24px', flex: 1, display: 'flex', flexDirection: 'column' }}>
                   <p style={{ fontSize: '0.8rem', color: '#999', marginBottom: '8px' }}>
@@ -258,28 +258,28 @@ function WhitepaperDetail() {
                     </p>
                     <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
                       <div>
-                        <label style={labelStyle}>First name *</label>
-                        <input type="text" value={form.firstname} onChange={e => updateField('firstname', e.target.value)} style={inputStyle('firstname')} />
+                        <label htmlFor="wp-firstname" style={labelStyle}>First name *</label>
+                        <input id="wp-firstname" name="firstname" type="text" value={form.firstname} onChange={e => updateField('firstname', e.target.value)} style={inputStyle('firstname')} />
                         {errors.firstname && <p style={{ color: '#ef4444', fontSize: '0.8rem', marginTop: '4px' }}>{errors.firstname}</p>}
                       </div>
                       <div>
-                        <label style={labelStyle}>Last name *</label>
-                        <input type="text" value={form.lastname} onChange={e => updateField('lastname', e.target.value)} style={inputStyle('lastname')} />
+                        <label htmlFor="wp-lastname" style={labelStyle}>Last name *</label>
+                        <input id="wp-lastname" name="lastname" type="text" value={form.lastname} onChange={e => updateField('lastname', e.target.value)} style={inputStyle('lastname')} />
                         {errors.lastname && <p style={{ color: '#ef4444', fontSize: '0.8rem', marginTop: '4px' }}>{errors.lastname}</p>}
                       </div>
                       <div>
-                        <label style={labelStyle}>Business email *</label>
-                        <input type="email" value={form.email} onChange={e => updateField('email', e.target.value)} style={inputStyle('email')} />
+                        <label htmlFor="wp-email" style={labelStyle}>Business email *</label>
+                        <input id="wp-email" name="email" type="email" value={form.email} onChange={e => updateField('email', e.target.value)} style={inputStyle('email')} />
                         {errors.email && <p style={{ color: '#ef4444', fontSize: '0.8rem', marginTop: '4px' }}>{errors.email}</p>}
                       </div>
                       <div>
-                        <label style={labelStyle}>Company *</label>
-                        <input type="text" value={form.company} onChange={e => updateField('company', e.target.value)} style={inputStyle('company')} />
+                        <label htmlFor="wp-company" style={labelStyle}>Company *</label>
+                        <input id="wp-company" name="company" type="text" value={form.company} onChange={e => updateField('company', e.target.value)} style={inputStyle('company')} />
                         {errors.company && <p style={{ color: '#ef4444', fontSize: '0.8rem', marginTop: '4px' }}>{errors.company}</p>}
                       </div>
                       <div>
-                        <label style={labelStyle}>Job title *</label>
-                        <input type="text" value={form.jobtitle} onChange={e => updateField('jobtitle', e.target.value)} style={inputStyle('jobtitle')} />
+                        <label htmlFor="wp-jobtitle" style={labelStyle}>Job title *</label>
+                        <input id="wp-jobtitle" name="jobtitle" type="text" value={form.jobtitle} onChange={e => updateField('jobtitle', e.target.value)} style={inputStyle('jobtitle')} />
                         {errors.jobtitle && <p style={{ color: '#ef4444', fontSize: '0.8rem', marginTop: '4px' }}>{errors.jobtitle}</p>}
                       </div>
                       {/* Consent checkbox */}

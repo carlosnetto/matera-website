@@ -13,8 +13,12 @@ export default function PageMeta({ title, description, image, url }: PageMetaPro
   const fullUrl = url ? `${baseUrl}${url}` : undefined;
   const fullImage = image?.startsWith('http') ? image : image ? `${baseUrl}${image}` : `${baseUrl}/matera-logo.svg`;
 
+  // Determine language from URL
+  const isBR = url?.startsWith('/br');
+  const lang = isBR ? 'pt-BR' : 'en';
+
   return (
-    <Helmet>
+    <Helmet htmlAttributes={{ lang }}>
       <title>{fullTitle}</title>
       <meta name="description" content={description} />
       <meta property="og:title" content={fullTitle} />
@@ -26,6 +30,9 @@ export default function PageMeta({ title, description, image, url }: PageMetaPro
       <meta name="twitter:title" content={fullTitle} />
       <meta name="twitter:description" content={description} />
       {fullImage && <meta name="twitter:image" content={fullImage} />}
+      <link rel="alternate" hrefLang="en" href={`${baseUrl}/en`} />
+      <link rel="alternate" hrefLang="pt-BR" href={`${baseUrl}/br`} />
+      <link rel="alternate" hrefLang="x-default" href={`${baseUrl}/en`} />
     </Helmet>
   );
 }
