@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import PageHero from '../../shared/components/PageHero';
+import PageMeta from '../../shared/components/PageMeta';
 
 const forces = [
   {
@@ -29,6 +30,7 @@ export default function Tendencias2026() {
 
   return (
     <>
+      <PageMeta title="Tendências 2026" description="Tendências do mercado financeiro para 2026. Análises e perspectivas da Matera." url="/br/tendencias-mercado-financeiro-2026" />
       <PageHero title="Tendências do Mercado Financeiro em 2026" />
 
       {/* Intro */}

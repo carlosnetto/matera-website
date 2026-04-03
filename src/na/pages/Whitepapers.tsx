@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import PageHero from '../../shared/components/PageHero';
+import PageMeta from '../../shared/components/PageMeta';
 
 const HUBSPOT_PORTAL_ID = '20392958';
 
@@ -26,6 +27,7 @@ function WhitepaperList() {
 
   return (
     <>
+      <PageMeta title="White Papers" description="Free whitepapers on instant payments, Pix, stablecoins, and QR codes from Matera." url="/en/whitepapers" />
       <PageHero title="White Papers" />
       <section style={{ padding: '80px 0' }}>
         <div className="container">
@@ -187,6 +189,7 @@ function WhitepaperDetail() {
 
   return (
     <>
+      <PageMeta title={wp.title} description={wp.description || ''} image={wp.thumbnail} url={'/en/whitepapers/' + wp.slug} />
       {/* Hero */}
       <section style={{
         backgroundColor: 'var(--matera-purple)',

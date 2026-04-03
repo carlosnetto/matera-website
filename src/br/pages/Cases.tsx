@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import PageHero from '../../shared/components/PageHero';
+import PageMeta from '../../shared/components/PageMeta';
 import { markdownToHtml } from '../../shared/utils/markdown';
 
 interface CaseEntry {
@@ -29,6 +30,7 @@ function BrCasesList() {
 
   return (
     <>
+      <PageMeta title="Cases" description="Conheça os cases de sucesso da Matera com instituições financeiras." url="/br/cases" />
       <PageHero title="Cases" />
       <section style={{ padding: '80px 0' }}>
         <div className="container">
@@ -114,6 +116,7 @@ function BrCaseDetail() {
 
   return (
     <>
+      <PageMeta title={caseStudy.title} description={caseStudy.excerpt || ''} image={caseStudy.thumbnail} url={'/br/cases/' + caseStudy.slug} />
       {/* Hero */}
       <section style={{
         backgroundColor: 'var(--matera-blue)',

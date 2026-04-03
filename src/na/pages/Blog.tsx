@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import PageHero from '../../shared/components/PageHero';
+import PageMeta from '../../shared/components/PageMeta';
 import { markdownToHtml } from '../../shared/utils/markdown';
 
 interface BlogEntry {
@@ -30,6 +31,7 @@ function BlogList() {
 
   return (
     <>
+      <PageMeta title="Blog" description="Insights on instant payments, stablecoins, QR codes, and banking technology from Matera." url="/en/blog" />
       <PageHero title="Blog" />
       <section style={{ padding: '80px 0' }}>
         <div className="container">
@@ -132,6 +134,7 @@ function BlogArticle() {
 
   return (
     <>
+      <PageMeta title={post.title} description={post.excerpt || ''} image={post.thumbnail} url={`/en/blog/${post.slug}`} />
       {/* Hero */}
       <section style={{
         backgroundColor: 'var(--matera-blue)',

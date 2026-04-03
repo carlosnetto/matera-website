@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import PageHero from '../../shared/components/PageHero';
+import PageMeta from '../../shared/components/PageMeta';
 import { markdownToHtml } from '../../shared/utils/markdown';
 
 interface PressEntry {
@@ -30,6 +31,7 @@ function PressList() {
 
   return (
     <>
+      <PageMeta title="Press" description="Matera in the news. Coverage from American Banker, Forbes, Bloomberg, PYMNTS, and more." url="/en/press" />
       <PageHero title="Press" />
       <section style={{ padding: '80px 0' }}>
         <div className="container">
@@ -139,6 +141,7 @@ function PressArticle() {
 
   return (
     <>
+      <PageMeta title={post.title} description={post.excerpt || ''} image={post.thumbnail} url={'/en/press/' + post.slug} />
       {/* Hero */}
       <section style={{
         backgroundColor: 'var(--matera-blue)',

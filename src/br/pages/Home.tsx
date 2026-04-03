@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import PageMeta from '../../shared/components/PageMeta';
 
 // Solutions data from matera.com/br
 const solutions = [
@@ -117,6 +118,7 @@ export default function Home() {
 
   return (
     <>
+      <PageMeta title="Tecnologia para Instituições Financeiras" description="Matera — tecnologia de ponta para bancos, fintechs e instituições financeiras. Core banking, pagamentos, crédito, Pix e mais." url="/br" />
       {/* Hero */}
       <section style={{
         backgroundColor: '#000023',

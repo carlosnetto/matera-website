@@ -1,7 +1,10 @@
 import SolutionPage from './SolutionPage';
+import PageMeta from '../../../shared/components/PageMeta';
 
 export default function TesourariaAvancada() {
   return (
+    <>
+    <PageMeta title="Tesouraria Avançada" description="Gestão completa de tesouraria. Renda fixa, SWAP, NDF, COE e operações de mercado futuro em um único sistema." url="/br/solucoes/tesouraria-avancada" />
     <SolutionPage
       hero={{
         title: 'Tesouraria Avançada',
@@ -39,5 +42,6 @@ export default function TesourariaAvancada() {
         },
       ]}
     />
+    </>
   );
 }

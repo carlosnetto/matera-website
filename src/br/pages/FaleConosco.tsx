@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import PageHero from '../../shared/components/PageHero';
+import PageMeta from '../../shared/components/PageMeta';
 
 const offices = [
   { region: 'São Paulo', city: 'Campinas', address: 'Av. Selma Parada, nº 505 - 7º andar, salas 701/703, Jardim Madalena', zip: 'CEP 13091-605', phone: '+55 (19) 3794-7700' },
@@ -22,6 +23,7 @@ export default function FaleConosco() {
 
   return (
     <>
+      <PageMeta title="Fale Conosco" description="Entre em contato com a Matera. Escritórios em Campinas e São Paulo." url="/br/fale-conosco" />
       <PageHero title="Contato" />
 
       <section style={{ padding: '80px 0' }}>

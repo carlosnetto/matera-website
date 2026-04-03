@@ -1,4 +1,5 @@
 import PageHero from '../../shared/components/PageHero';
+import PageMeta from '../../shared/components/PageMeta';
 
 const timeline = [
   { year: '1987', text: 'Carlos Netto and Carlos André launched Software Design in São Paulo, Brazil' },
@@ -23,6 +24,7 @@ const stats = [
 export default function AboutUs() {
   return (
     <>
+      <PageMeta title="About Us" description="Matera is the leading banking technology provider for the digital currency era. 1,100+ employees, 280+ clients, 90M+ digital accounts. Founded in 1987." url="/en/about-us" />
       <PageHero
         title="Company"
         image="/assets/hero-about-us.jpg"

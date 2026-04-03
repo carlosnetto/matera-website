@@ -1,7 +1,10 @@
 import SolutionPage from './SolutionPage';
+import PageMeta from '../../../shared/components/PageMeta';
 
 export default function BrDigitalTwin() {
   return (
+    <>
+    <PageMeta title="Digital Twin" description="Contas globais e multimoedas com operação 24x7. Ledger de alto volume para pagamentos instantâneos e stablecoins." url="/br/solucoes/matera-digital-twin" />
     <SolutionPage
       hero={{
         title: 'Digital Twin',
@@ -44,5 +47,6 @@ export default function BrDigitalTwin() {
         },
       ]}
     />
+    </>
   );
 }

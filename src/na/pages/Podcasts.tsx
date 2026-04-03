@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { markdownToHtml } from '../../shared/utils/markdown';
+import PageMeta from '../../shared/components/PageMeta';
 interface PodcastEntry {
   title: string;
   slug: string;
@@ -28,6 +29,7 @@ function PodcastList() {
 
   return (
     <>
+      <PageMeta title="Podcasts" description="Matera podcast episodes on payments, QR codes, stablecoins, and banking innovation." url="/en/podcasts" />
       {/* Hero */}
       <section style={{
         backgroundColor: 'var(--matera-black)',
@@ -225,6 +227,7 @@ function PodcastEpisode() {
 
   return (
     <>
+      <PageMeta title={post.title} description={post.excerpt || ''} image={post.thumbnail} url={'/en/podcasts/' + post.slug} />
       {/* Hero */}
       <section style={{
         backgroundColor: 'var(--matera-black)',

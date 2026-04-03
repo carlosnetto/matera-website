@@ -1,8 +1,10 @@
 import PageHero from '../../shared/components/PageHero';
+import PageMeta from '../../shared/components/PageMeta';
 
 export default function PoliticaDePrivacidade() {
   return (
     <>
+      <PageMeta title="Política de Privacidade" description="Política de privacidade da Matera. Como coletamos, usamos e protegemos seus dados." url="/br/politica-de-privacidade" />
       <PageHero title="Política de Privacidade" />
       <section style={{ padding: '80px 0' }}>
         <div className="container blog-content" style={{ maxWidth: '800px' }}>

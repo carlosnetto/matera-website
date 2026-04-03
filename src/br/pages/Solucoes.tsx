@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import PageMeta from '../../shared/components/PageMeta';
 
 const valueProps = [
   {
@@ -137,6 +138,7 @@ const clientLogos = [
 export default function Solucoes() {
   return (
     <>
+      <PageMeta title="Soluções" description="Soluções completas para o mercado financeiro. Core banking, pagamentos, crédito, gestão de riscos e mais." url="/br/solucoes" />
       {/* Hero */}
       <section style={{
         backgroundColor: 'var(--matera-purple)',

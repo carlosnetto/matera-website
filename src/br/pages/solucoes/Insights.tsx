@@ -1,7 +1,10 @@
 import SolutionPage from './SolutionPage';
+import PageMeta from '../../../shared/components/PageMeta';
 
 export default function Insights() {
   return (
+    <>
+    <PageMeta title="Insights" description="Hub de dados e inteligência artificial para instituições financeiras. Transforme dados transacionais em decisões inteligentes." url="/br/solucoes/insights" />
     <SolutionPage
       hero={{
         title: 'Insights',
@@ -51,5 +54,6 @@ export default function Insights() {
         },
       ]}
     />
+    </>
   );
 }

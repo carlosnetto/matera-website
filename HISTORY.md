@@ -1,5 +1,20 @@
 # Change History
 
+## 2026-04-03: SEO P0 fixes — dynamic titles, meta descriptions, OG tags, server-side meta injection
+
+**Problem:** Every page showed `<title>Matera</title>` with no meta descriptions, no OG tags, and no Twitter cards. Social media crawlers saw blank previews.
+
+**What was done:**
+- Installed `react-helmet-async` for client-side meta tag management
+- Created `src/shared/components/PageMeta.tsx` — shared component for title, description, OG, and Twitter tags
+- Added PageMeta to all 30+ pages across EN and BR markets (static pages with hand-written descriptions, content pages with dynamic data from JSON)
+- Updated `public/_worker.js` to inject meta tags server-side at the Cloudflare edge — social crawlers (LinkedIn, Twitter, Facebook) now see full meta without JS execution
+- Worker handles both static routes (hardcoded meta) and dynamic routes (reads index.json to look up slug → title/description)
+
+**Files changed:** `package.json`, `src/main.tsx`, `src/shared/components/PageMeta.tsx` (new), all page components in `src/na/pages/` and `src/br/pages/`, `public/_worker.js`
+
+---
+
 ## 2026-04-03: Update QR Code payment count to 3.6 billion/year
 
 **Files fixed:**

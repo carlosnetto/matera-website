@@ -5,10 +5,16 @@ import Features from '../components/Features'
 import Stats from '../components/Stats'
 import WhyMatera from '../components/WhyMatera'
 import CTA from '../components/CTA'
+import PageMeta from '../../shared/components/PageMeta'
 
 export default function Home() {
   return (
     <>
+      <PageMeta
+        title="Modern Banking Meets Digital Currency"
+        description="Matera provides next-gen banking technology for stablecoins, instant payments, and QR codes. Trusted by 2/3 of top global banks and 3/10 top U.S. banks."
+        url="/en"
+      />
       <Hero />
       <TrustBanner />
       <Solutions />

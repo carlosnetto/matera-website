@@ -1,7 +1,10 @@
 import SolutionPage from './SolutionPage';
+import PageMeta from '../../../shared/components/PageMeta';
 
 export default function Credito() {
   return (
+    <>
+    <PageMeta title="Plataforma de Crédito" description="Tecnologia para concessão de crédito com eficiência e agilidade. Consignado, crédito pessoal, CDC e capital de giro." url="/br/solucoes/credito" />
     <SolutionPage
       hero={{
         title: 'Plataforma de Crédito',
@@ -44,5 +47,6 @@ export default function Credito() {
         },
       ]}
     />
+    </>
   );
 }

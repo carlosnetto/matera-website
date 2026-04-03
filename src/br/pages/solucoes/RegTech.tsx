@@ -1,7 +1,10 @@
 import SolutionPage from './SolutionPage';
+import PageMeta from '../../../shared/components/PageMeta';
 
 export default function RegTech() {
   return (
+    <>
+    <PageMeta title="RegTech" description="Conformidade regulatória com tecnologia. Atenda exigências do Banco Central e Receita Federal com segurança." url="/br/solucoes/reg-tech" />
     <SolutionPage
       hero={{
         title: 'RegTech',
@@ -56,5 +59,6 @@ export default function RegTech() {
         },
       ]}
     />
+    </>
   );
 }

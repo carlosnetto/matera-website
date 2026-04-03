@@ -1,4 +1,5 @@
 import PageHero from '../../shared/components/PageHero';
+import PageMeta from '../../shared/components/PageMeta';
 
 const committees = [
   { title: 'Ambiental', description: 'Ações voltadas ao meio ambiente e conscientização.' },
@@ -10,6 +11,7 @@ const committees = [
 export default function Esg() {
   return (
     <>
+      <PageMeta title="ESG" description="Compromisso da Matera com sustentabilidade, responsabilidade social e governança corporativa." url="/br/esg" />
       <PageHero
         title="ESG"
         image="/assets/hero-esg.jpg"

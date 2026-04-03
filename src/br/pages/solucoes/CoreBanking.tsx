@@ -1,7 +1,10 @@
 import SolutionPage from './SolutionPage';
+import PageMeta from '../../../shared/components/PageMeta';
 
 export default function CoreBanking() {
   return (
+    <>
+    <PageMeta title="Core Banking" description="Solução de core banking abrangente e flexível. Conta digital, crédito, tesouraria e pagamentos em uma única plataforma." url="/br/solucoes/core-banking" />
     <SolutionPage
       hero={{
         title: 'Core Banking',
@@ -53,5 +56,6 @@ export default function CoreBanking() {
         },
       ]}
     />
+    </>
   );
 }

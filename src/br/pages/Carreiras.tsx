@@ -1,4 +1,5 @@
 import PageHero from '../../shared/components/PageHero';
+import PageMeta from '../../shared/components/PageMeta';
 
 const values = [
   { title: 'Deixa comigo', description: 'Entrega comprometida com responsabilidade definida.' },
@@ -25,6 +26,7 @@ const areas = [
 export default function Carreiras() {
   return (
     <>
+      <PageMeta title="Carreiras" description="Trabalhe na Matera. Vagas em tecnologia, engenharia e mercado financeiro." url="/br/carreiras" />
       <PageHero
         title="Carreiras"
         image="/assets/capa-pagina-carreiras-1.jpg"

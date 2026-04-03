@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import PageHero from '../../shared/components/PageHero';
+import PageMeta from '../../shared/components/PageMeta';
 
 const timeline = [
   { year: '1987', text: 'Início como Software Design, fundada na Unicamp por cinco entusiastas de tecnologia' },
@@ -44,6 +45,7 @@ const clientLogos = [
 export default function SobreNos() {
   return (
     <>
+      <PageMeta title="Sobre Nós" description="Matera — líder em tecnologia bancária. 1.100+ colaboradores, 280+ clientes, 90M+ contas digitais." url="/br/sobre-nos" />
       <PageHero
         title="Sobre nós"
         image="/assets/hero-about-us.jpg"

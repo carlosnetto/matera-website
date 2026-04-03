@@ -1,8 +1,10 @@
 import { Link } from 'react-router-dom';
+import PageMeta from '../../shared/components/PageMeta';
 
 export default function WalletAsAService() {
   return (
     <>
+      <PageMeta title="Wallet as a Service" description="Mobile wallet APIs for payments, prepaid cards, QR codes, loyalty and more. Power your wallet with Matera's proven infrastructure." url="/en/solutions/wallet-as-a-service" />
       {/* Hero */}
       <section style={{
         backgroundColor: 'var(--matera-purple)',

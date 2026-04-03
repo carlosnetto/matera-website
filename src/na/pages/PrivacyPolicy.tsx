@@ -1,4 +1,5 @@
 import PageHero from '../../shared/components/PageHero';
+import PageMeta from '../../shared/components/PageMeta';
 
 export default function PrivacyPolicy() {
   const sectionStyle: React.CSSProperties = { marginBottom: '40px' };
@@ -7,6 +8,7 @@ export default function PrivacyPolicy() {
 
   return (
     <>
+      <PageMeta title="Privacy Policy" description="Matera's privacy policy. How we collect, use, and protect your personal information." url="/en/privacy-policy" />
       <PageHero title="Privacy Policy" />
 
       <section style={{ padding: '80px 0' }}>

@@ -1,11 +1,13 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import PageMeta from '../../shared/components/PageMeta';
 
 export default function Stablecoin() {
   const [playing, setPlaying] = useState(false);
 
   return (
     <>
+      <PageMeta title="Digital Twin for Stablecoins" description="Connect stablecoins with traditional financial services. Matera and Circle enable USDC within mobile and online banking — no core replacement needed." url="/en/stablecoin" />
       {/* Hero */}
       <section style={{
         backgroundColor: 'var(--matera-blue)',

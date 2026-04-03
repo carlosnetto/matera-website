@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import PageMeta from '../../shared/components/PageMeta';
 
 export default function DigitalTwin() {
   const [showExplainer, setShowExplainer] = useState(false);
@@ -7,6 +8,7 @@ export default function DigitalTwin() {
 
   return (
     <>
+      <PageMeta title="Digital Twin for Real-Time Payments" description="Unlock real-time payments without replacing your core. Matera's Digital Twin powers 24x7 banking with instant authorization and balance updates." url="/en/solutions/digital-twin" />
       {/* Hero with background video */}
       <section style={{
         backgroundColor: '#000',

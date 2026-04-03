@@ -1,7 +1,10 @@
 import SolutionPage from './SolutionPage';
+import PageMeta from '../../../shared/components/PageMeta';
 
 export default function CashManagement() {
   return (
+    <>
+    <PageMeta title="Cash Management" description="Gestão integrada de pagamentos e recebíveis para instituições financeiras. Processamento em lote e Pix." url="/br/solucoes/cash-management" />
     <SolutionPage
       hero={{
         title: 'Cash Management',
@@ -43,5 +46,6 @@ export default function CashManagement() {
         },
       ]}
     />
+    </>
   );
 }

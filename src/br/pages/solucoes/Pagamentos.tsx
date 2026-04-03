@@ -1,7 +1,10 @@
 import SolutionPage from './SolutionPage';
+import PageMeta from '../../../shared/components/PageMeta';
 
 export default function Pagamentos() {
   return (
+    <>
+    <PageMeta title="Pagamentos" description="Plataforma moderna e escalável para Pix, Boleto, TED, Débito Automático e mais. Alta performance para operações críticas." url="/br/solucoes/pagamentos" />
     <SolutionPage
       hero={{
         title: 'Pagamentos',
@@ -35,5 +38,6 @@ export default function Pagamentos() {
         },
       ]}
     />
+    </>
   );
 }

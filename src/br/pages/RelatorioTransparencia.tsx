@@ -1,4 +1,5 @@
 import PageHero from '../../shared/components/PageHero';
+import PageMeta from '../../shared/components/PageMeta';
 
 const reports = [
   {
@@ -20,6 +21,7 @@ const reports = [
 export default function RelatorioTransparencia() {
   return (
     <>
+      <PageMeta title="Relatório de Transparência" description="Relatórios de transparência e igualdade salarial da Matera." url="/br/relatorio-de-transparencia-e-igualdade-salarial" />
       <PageHero title="Relatório de Transparência e Igualdade Salarial" />
       <section style={{ padding: '80px 0' }}>
         <div className="container" style={{ maxWidth: '800px' }}>

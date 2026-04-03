@@ -1,8 +1,10 @@
 import { Link } from 'react-router-dom';
+import PageMeta from '../../shared/components/PageMeta';
 
 export default function QrCodeSolutions() {
   return (
     <>
+      <PageMeta title="QR Code Payment Solutions" description="End-to-end QR code payment solutions for financial institutions. Supports FedNow, RTP, ACH, and push-to-card. Proven at scale." url="/en/solutions/qr-code-solutions" />
       {/* Hero */}
       <section style={{
         backgroundColor: 'var(--matera-purple)',

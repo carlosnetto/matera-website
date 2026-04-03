@@ -1,7 +1,10 @@
 import SolutionPage from './SolutionPage';
+import PageMeta from '../../../shared/components/PageMeta';
 
 export default function GestaoDeRiscos() {
   return (
+    <>
+    <PageMeta title="Gestão de Riscos" description="Plataforma de riscos regulatórios e gerenciais para instituições financeiras de todos os portes." url="/br/solucoes/gestao-de-riscos" />
     <SolutionPage
       hero={{
         title: 'Gestão de Riscos',
@@ -48,5 +51,6 @@ export default function GestaoDeRiscos() {
         },
       ]}
     />
+    </>
   );
 }

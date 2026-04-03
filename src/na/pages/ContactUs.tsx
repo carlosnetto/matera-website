@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import PageHero from '../../shared/components/PageHero';
+import PageMeta from '../../shared/components/PageMeta';
 
 const offices = [
   {
@@ -58,6 +59,7 @@ export default function ContactUs() {
 
   return (
     <>
+      <PageMeta title="Contact Us" description="Get in touch with Matera. Offices in New York and São Paulo. Learn how we can help modernize your banking infrastructure." url="/en/contact-us" />
       <PageHero title="Contact" />
 
       {/* Contact Form Section */}
