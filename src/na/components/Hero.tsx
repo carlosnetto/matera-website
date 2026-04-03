@@ -11,12 +11,11 @@ const Hero: React.FC = () => {
       paddingTop: '60px',
       paddingBottom: '60px',
     }}>
-      <div className="container" style={{
+      <div className="container hero-layout" style={{
         display: 'flex',
-        flexDirection: 'row',
         justifyContent: 'space-between',
         alignItems: 'center',
-        gap: '6rem',
+        gap: '4rem',
         paddingTop: '83px',
         paddingBottom: '123px',
       }}>
@@ -43,8 +42,8 @@ const Hero: React.FC = () => {
           </a>
         </div>
 
-        {/* Right: Video */}
-        <div style={{
+        {/* Right: Video — hidden on mobile via CSS */}
+        <div className="hero-video" style={{
           width: '100%',
           maxWidth: '470px',
           display: 'flex',

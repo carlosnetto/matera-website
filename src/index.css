@@ -203,6 +203,17 @@ b, strong {
   }
 }
 
+/* Hero: hide video on mobile, reduce padding */
+@media (max-width: 767px) {
+  .hero-video {
+    display: none !important;
+  }
+  .hero-layout {
+    padding-top: 40px !important;
+    padding-bottom: 60px !important;
+  }
+}
+
 /* Prevent horizontal overflow */
 html, body {
   overflow-x: hidden;
