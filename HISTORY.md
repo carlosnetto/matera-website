@@ -4,6 +4,16 @@ Reverse-chronological log of improvements to the Matera website.
 
 ---
 
+## 2026-04-03: Payment imagery guideline + fix Pagamentos hero
+
+- Added `CONSTITUTION.md` — brand guidelines for imagery, stats, navigation order
+- Key rule: always use QR code / instant payment imagery, never card/POS imagery
+- Replaced Pagamentos solution page hero from card-at-POS image to QR code image
+- Added guidance to `CLAUDE.md` "What NOT to Do" section
+- Created `TODO.md` with hero carousel personalization backlog
+
+---
+
 ## 2026-04-03: Update BR homepage hero to match real matera.com/br
 
 - Replaced generic "Transforme seu banco com tecnologia de ponta" hero with current real site content: "Opere Ativos Virtuais em Conformidade com o Bacen"

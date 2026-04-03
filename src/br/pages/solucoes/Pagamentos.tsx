@@ -9,7 +9,7 @@ export default function Pagamentos() {
       hero={{
         title: 'Pagamentos',
         subtitle: 'A solução Matera Pagamentos garante flexibilidade para integração e capacidade para processamento em grande escala. Ofereça as principais formas de pagamentos como Pix, Boleto, Débito Automático, TED, Contas de Concessionárias, Tributos e Folha de Pagamento.',
-        image: '/assets/heropagamentos_d94b60886f.jpg',
+        image: '/assets/qr-code-payments-how-they-work.jpg',
       }}
       stats={[
         { value: '90 MI', label: 'de contas' },

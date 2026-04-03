@@ -133,3 +133,4 @@ npm run deploy   # build + wrangler deploy to Cloudflare Pages
 - Do not use fontWeight: 800 for headings — real site only uses 400/600/700
 - Do not link content pages to external insight.matera.com — use local `/en/whitepapers/:slug` routes
 - Do not put NA-specific components in `src/shared/` — only truly locale-agnostic code goes there
+- Do not use images depicting card payments (credit cards, debit cards, plastic) for payment visuals — Matera's payment products are **QR Code payments and instant payments (Pix, FedNow, RTP)**, not card-based. Always use QR code imagery or instant payment visuals instead. Card references in text are acceptable only when describing supported payment rails (e.g., "push-to-card") or account types, never as the primary payment method.
