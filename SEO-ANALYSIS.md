@@ -9,7 +9,7 @@
 
 ### Executive Summary
 
-The site has **clean URL structure, good semantic HTML, and proper internal linking**. The initial analysis found critical gaps in meta tags and crawlability. **All P0 issues have been fixed** in this session. Remaining P1/P2 issues are documented below.
+The site has **clean URL structure, good semantic HTML, and proper internal linking**. The initial analysis found 16 issues across P0–P3 priorities. **All 16 issues have been fixed** in this session, plus additional items from a cross-check against the old Next.js site's SEO report.
 
 ### P0 Fixes Applied (2026-04-03)
 
@@ -44,9 +44,43 @@ The site has **clean URL structure, good semantic HTML, and proper internal link
 
 ---
 
+### P1 Fixes Applied (2026-04-03)
+
+- **sitemap.xml** — Generated with 256 URLs (all static routes + dynamic content slugs). Script: `scripts/generate-sitemap.mjs`
+- **robots.txt** — Created with sitemap reference and video asset exclusion
+- **404 page** — Added `<Route path="*">` catch-all with branded error page (`src/shared/components/NotFound.tsx`)
+- **Duplicate routes removed** — Removed `/` (worker handles geo-redirect) and `/en/solutions/digital-twin-stablecoins` (alias of `/en/stablecoin`)
+
+### P2 Fixes Applied (2026-04-03)
+
+- **hreflang tags** — Added `en`, `pt-BR`, `x-default` alternate links via PageMeta on every page
+- **Dynamic `<html lang>`** — EN pages set `lang="en"`, BR pages set `lang="pt-BR"` automatically via Helmet `htmlAttributes`
+- **Image lazy loading** — Added `loading="lazy"` to listing thumbnails (Blog, Press, Whitepapers, Podcasts), client logos (TrustBanner), and dropdown images (Header)
+- **Form label associations** — Added `htmlFor`/`id`/`name` to all form fields in ContactUs and Whitepapers
+- **CTA broken link** — Fixed `href="#"` → `href="/en/contact-us"` in CTA.tsx
+
+### P3 Fixes Applied (2026-04-03)
+
+- **JSON-LD structured data** via PageMeta:
+  - `Organization` — name, logo, social profiles, founding date, employee count, office addresses (NY + Campinas), contact points (US + BR)
+  - `WebSite` — name, url, inLanguage (en, pt-BR)
+  - `BreadcrumbList` — auto-generated from URL path on every page
+  - `Article` — on blog, press, podcast, and case detail pages (headline, datePublished, author, publisher)
+- **Expanded WalletAsAService** — from ~150 words to ~500 words with 6 capabilities, 4 value props, 3 use case segments
+
+### Cross-Check Fixes (2026-04-03)
+
+Validated against SEO report from the previous Next.js + Strapi site:
+
+- **WebSite schema** — Added (was missing, flagged in old report)
+- **Office addresses in Organization** — Added NY and Campinas postal addresses + phone contact points
+- **"Image without alt" fallback** — Fixed 7 instances in StoneX BR case study (`![Image without alt]` → descriptive Portuguese alt text)
+
+**All issues from old site report are resolved or N/A for our stack.**
+
 ---
 
-## Remaining Issues
+## Remaining Issues (all resolved as of 2026-04-03)
 
 ### ~~1. No Dynamic Page Titles~~ FIXED 2026-04-03
 
