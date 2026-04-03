@@ -40,8 +40,8 @@ export default function Stablecoin() {
           </div>
           <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
             <img
-              src="https://d2lq74zxbg4jiz.cloudfront.net/HERO_PHOTO_e3f08e4743.webp"
-              alt=""
+              src="/assets/hero-photo.webp"
+              alt="Digital Twin for Stablecoins"
               style={{ width: '100%', maxWidth: '500px', borderRadius: '16px', objectFit: 'cover' }}
             />
           </div>
@@ -61,7 +61,7 @@ export default function Stablecoin() {
             {!playing ? (
               <>
                 <img
-                  src="https://d2lq74zxbg4jiz.cloudfront.net/Stablecoin_Video_TN_bdfd424dee.png"
+                  src="/assets/stablecoin-video-tn.png"
                   alt="Video thumbnail"
                   style={{ width: '100%', display: 'block' }}
                 />
@@ -85,7 +85,7 @@ export default function Stablecoin() {
                 controls
                 style={{ width: '100%', display: 'block' }}
               >
-                <source src="https://d2lq74zxbg4jiz.cloudfront.net/Matera_Stablecoin_Transaction_Process_Updated_dfc6644ea4.mp4" type="video/mp4" />
+                <source src="/assets/stablecoin-transaction-process.mp4" type="video/mp4" />
               </video>
             )}
           </div>
@@ -102,7 +102,7 @@ export default function Stablecoin() {
         }}>
           <div>
             <img
-              src="https://d2lq74zxbg4jiz.cloudfront.net/matera_circle_dtw_graphic_3a0447417c.png"
+              src="/assets/matera-circle-dtw-graphic.png"
               alt="Matera Circle Digital Twin diagram"
               style={{ width: '100%' }}
             />
@@ -126,9 +126,9 @@ export default function Stablecoin() {
           </h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '32px' }}>
             {[
-              { icon: 'https://d2lq74zxbg4jiz.cloudfront.net/icon_c880235e90.webp', text: "Create a path to stablecoin enablement that's fast and secure" },
-              { icon: 'https://d2lq74zxbg4jiz.cloudfront.net/icon_1_f7879b469c.webp', text: "Customers never leave the financial institution's ecosystem" },
-              { icon: 'https://d2lq74zxbg4jiz.cloudfront.net/icon_2_6ee40ea88b.webp', text: 'Maintain oversight of both traditional and digital assets' },
+              { icon: '/assets/icon_c880235e90.webp', text: "Create a path to stablecoin enablement that's fast and secure" },
+              { icon: '/assets/icon_1_f7879b469c.webp', text: "Customers never leave the financial institution's ecosystem" },
+              { icon: '/assets/icon_2_6ee40ea88b.webp', text: 'Maintain oversight of both traditional and digital assets' },
             ].map((b, i) => (
               <div key={i} style={{ textAlign: 'center' }}>
                 <img src={b.icon} alt="" style={{ width: '80px', height: '80px', objectFit: 'contain', marginBottom: '20px' }} />
@@ -143,7 +143,7 @@ export default function Stablecoin() {
       <section style={{ padding: '80px 0' }}>
         <div className="container" style={{ maxWidth: '900px', display: 'flex', gap: '40px', alignItems: 'center' }}>
           <img
-            src="https://d2lq74zxbg4jiz.cloudfront.net/carlos_5f23790270.webp"
+            src="/assets/carlos.webp"
             alt="Carlos Netto"
             style={{ width: '140px', height: '140px', borderRadius: '50%', objectFit: 'cover', flexShrink: 0 }}
           />
@@ -183,7 +183,7 @@ export default function Stablecoin() {
           </div>
           <div style={{ display: 'flex', justifyContent: 'center' }}>
             <img
-              src="https://d2lq74zxbg4jiz.cloudfront.net/Stablecoins_blog_tn_9bb9c98042.webp"
+              src="/assets/stablecoins-blog-tn.webp"
               alt="Stablecoin strategy playbook"
               style={{ maxWidth: '350px', width: '100%', borderRadius: '12px' }}
             />
@@ -212,14 +212,14 @@ export default function Stablecoin() {
       <section style={{ padding: '80px 0' }}>
         <div className="container" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '60px' }}>
           <div>
-            <img src="https://d2lq74zxbg4jiz.cloudfront.net/matera_logo_1_c5ca02afd0.png" alt="Matera" style={{ height: '40px', marginBottom: '20px' }} />
+            <img src="/assets/matera-logo-1.png" alt="Matera" style={{ height: '40px', marginBottom: '20px' }} />
             <h3 style={{ fontWeight: 700, marginBottom: '12px', color: 'var(--matera-blue)' }}>About Matera</h3>
             <p style={{ color: '#555', lineHeight: 1.7 }}>
               Matera is a pioneer in modern technology powering banks and credit unions with cutting-edge solutions for Core Banking, Instant Payments, and QR Code Payments. Matera is the trusted partner behind some of the world's largest financial institutions.
             </p>
           </div>
           <div>
-            <img src="https://d2lq74zxbg4jiz.cloudfront.net/circle_logo_d1a5d8aa71.png" alt="Circle" style={{ height: '40px', marginBottom: '20px' }} />
+            <img src="/assets/circle-logo.png" alt="Circle" style={{ height: '40px', marginBottom: '20px' }} />
             <h3 style={{ fontWeight: 700, marginBottom: '12px', color: 'var(--matera-blue)' }}>About Circle</h3>
             <p style={{ color: '#555', lineHeight: 1.7 }}>
               Circle is a global financial technology firm that enables businesses of all sizes to harness the power of digital currencies and public blockchains for payments, commerce, and financial applications worldwide. Circle is building the world's largest, most-widely used, stablecoin network, and issues, through its regulated affiliates, USDC and EURC stablecoins.

@@ -3,8 +3,8 @@
   "slug": "matera-qr-payments-finovate",
   "date": "2025-09-29",
   "author": "matera",
-  "thumbnail": "https://d2lq74zxbg4jiz.cloudfront.net/finovate_demo_tn_ec8ba4ca67.png",
+  "thumbnail": "/assets/finewte-demo-tn.png",
   "excerpt": "At Finovate 2025, Matera and Payfinia demonstrated how QR payments can transform the traditional bill payment experience for consumers, small businesses, and financial institutions.",
   "body": "At Finovate 2025, Matera and Payfinia demonstrated how QR payments can transform the traditional bill payment experience for consumers, small businesses, and financial institutions. Today, more than 17 billion bills are issued annually in the U.S., yet many are paid late, often through expensive credit card transactions or delayed ACH and check payments. Payfinia, in partnership with Matera, has built a composable QR payment solution that addresses these challenges by enabling consumers to simply scan, review, and pay an invoice instantly, without entering account numbers, usernames, or passwords. This experience not only improves convenience and transparency for the consumer but also reduces costs and accelerates settlement for small businesses, creating new revenue and retention opportunities for community banks and credit unions.\n\nThe demo highlights how this technology leverages the FedNow and RTP networks to deliver secure, real-time payments with native fraud controls, all embedded within digital banking platforms. Using a standard developed by X9, consumers can scan a QR code on an invoice and transfer funds directly from their bank account to a business in seconds. The result is a faster, safer, and more transparent payment experience that mirrors how QR codes are already used in markets around the world. See the full demo in action to explore how financial institutions can bring this next-generation bill payment experience to their customers.",
-  "images": ["https://d2lq74zxbg4jiz.cloudfront.net/finovate_demo_tn_ec8ba4ca67.png"]
+  "images": ["/assets/finewte-demo-tn.png"]
 }

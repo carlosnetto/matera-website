@@ -6,7 +6,7 @@ export default function Pagamentos() {
       hero={{
         title: 'Pagamentos',
         subtitle: 'A solução Matera Pagamentos garante flexibilidade para integração e capacidade para processamento em grande escala. Ofereça as principais formas de pagamentos como Pix, Boleto, Débito Automático, TED, Contas de Concessionárias, Tributos e Folha de Pagamento.',
-        image: 'https://d2lq74zxbg4jiz.cloudfront.net/heropagamentos_d94b60886f.jpg',
+        image: '/assets/heropagamentos_d94b60886f.jpg',
       }}
       stats={[
         { value: '60 MI', label: 'de contas' },
@@ -26,11 +26,11 @@ export default function Pagamentos() {
         {
           heading: 'Por que escolher a solução Matera Pagamentos?',
           features: [
-            { icon: 'https://d2lq74zxbg4jiz.cloudfront.net/icon_icon4_c4d39fbed2.svg', title: 'Todos os meios de pagamento', description: 'Atendimento completo a todos os meios de pagamento do mercado.' },
-            { icon: 'https://d2lq74zxbg4jiz.cloudfront.net/icon_icon4_1_b3d33a4e77.svg', title: 'PF e PJ', description: 'Adequada para demandas de pessoas físicas e jurídicas.' },
-            { icon: 'https://d2lq74zxbg4jiz.cloudfront.net/icon_icon4_2_90889a114a.svg', title: 'Alto desempenho', description: 'Alta performance e disponibilidade para operações críticas.' },
-            { icon: 'https://d2lq74zxbg4jiz.cloudfront.net/icon_icon4_3_13053d6e7f.svg', title: 'APIs intuitivas', description: 'Integração fácil através de APIs intuitivas e bem documentadas.' },
-            { icon: 'https://d2lq74zxbg4jiz.cloudfront.net/icon_icon4_4_12c356e4c6.svg', title: 'Flexibilidade', description: 'Flexibilidade para adaptação às necessidades específicas de cada operação.' },
+            { icon: '/assets/icon_icon4_c4d39fbed2.svg', title: 'Todos os meios de pagamento', description: 'Atendimento completo a todos os meios de pagamento do mercado.' },
+            { icon: '/assets/icon_icon4_1_b3d33a4e77.svg', title: 'PF e PJ', description: 'Adequada para demandas de pessoas físicas e jurídicas.' },
+            { icon: '/assets/icon_icon4_2_90889a114a.svg', title: 'Alto desempenho', description: 'Alta performance e disponibilidade para operações críticas.' },
+            { icon: '/assets/icon_icon4_3_13053d6e7f.svg', title: 'APIs intuitivas', description: 'Integração fácil através de APIs intuitivas e bem documentadas.' },
+            { icon: '/assets/icon_icon4_4_12c356e4c6.svg', title: 'Flexibilidade', description: 'Flexibilidade para adaptação às necessidades específicas de cada operação.' },
           ],
         },
       ]}

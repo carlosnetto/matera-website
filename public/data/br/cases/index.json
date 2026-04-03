@@ -4,7 +4,7 @@
     "slug": "stonex",
     "date": "2025-08-19",
     "client": "Stonex",
-    "thumbnail": "https://d2lq74zxbg4jiz.cloudfront.net/Stonex_Pagina_Site_Matera_Download_033172cf3e.webp",
+    "thumbnail": "/assets/stonex-pagina-site-matera-download.webp",
     "excerpt": "A StoneX, rede global de serviços financeiros customizados e especialista em consultoria e gestão de riscos, encontrou na Matera uma parceira estratégica para l",
     "file": "2025-08-19 - StoneX.json"
   },
@@ -13,7 +13,7 @@
     "slug": "travelex",
     "date": "2025-04-01",
     "client": "Travelex",
-    "thumbnail": "https://d2lq74zxbg4jiz.cloudfront.net/travelex_b91b5e03e4.webp",
+    "thumbnail": "/assets/travelex.webp",
     "excerpt": "Entenda como a solução de Core Banking da Matera apoiou os objetivos e desafios da Travelex.",
     "file": "2025-04-01 - Travelex.json"
   },
@@ -22,7 +22,7 @@
     "slug": "pefisa",
     "date": "2025-03-28",
     "client": "Pefisa",
-    "thumbnail": "https://d2lq74zxbg4jiz.cloudfront.net/Logo_PEFISA_fdd859861c.webp",
+    "thumbnail": "/assets/logo-pefisa.webp",
     "excerpt": "A Pefisa se destacou como a primeira varejista a disponibilizar Pix e investiu em um processo de concessão de Crédito Pessoal facilitado para seus clientes.",
     "file": "2025-03-28 - Pefisa.json"
   },
@@ -31,7 +31,7 @@
     "slug": "banco-xp",
     "date": "2025-02-26",
     "client": "Banco Xp",
-    "thumbnail": "https://d2lq74zxbg4jiz.cloudfront.net/xp_ee1b62837e.webp",
+    "thumbnail": "/assets/xp.webp",
     "excerpt": "Core Banking para uma das maiores plataformas de investimento do mundo: entenda como a Matera atendeu as necessidades do Banco XP.",
     "file": "2025-02-26 - XP.json"
   },
@@ -40,7 +40,7 @@
     "slug": "cielo",
     "date": "2025-01-15",
     "client": "Cielo",
-    "thumbnail": "https://d2lq74zxbg4jiz.cloudfront.net/15012025_Cielo_Premiacao_Inovacao_Blog_3eb332b4c0.webp",
+    "thumbnail": "/assets/15012025-cielo-premiacao-inewcao-blog.webp",
     "excerpt": "A Matera foi premiada pela Cielo, uma das maiores empresas de pagamentos eletrônicos da América Latina, como Melhor Fornecedor na categoria Inovação!",
     "file": "2025-01-15 - Cielo.json"
   },
@@ -49,7 +49,7 @@
     "slug": "digio",
     "date": "2024-06-17",
     "client": "Digio",
-    "thumbnail": "https://d2lq74zxbg4jiz.cloudfront.net/Logo_Matera_77cc1e9385.png",
+    "thumbnail": "/assets/logo-matera.png",
     "excerpt": "Com foco em criar soluções digitais para descomplicar a forma como os brasileiros cuidam do dinheiro, o Digio, banco digital do Bradesco, nasceu em 2016.",
     "file": "2024-06-17 - Digio.json"
   },
@@ -58,7 +58,7 @@
     "slug": "valia",
     "date": "2024-05-22",
     "client": "Valia",
-    "thumbnail": "https://d2lq74zxbg4jiz.cloudfront.net/Logo_VALIA_632e77d645.png",
+    "thumbnail": "/assets/logo-valia.png",
     "excerpt": "A Valia é uma Entidade Fechada de Previdência Complementar, com 50 anos de história. Conheça o case com a Matera!",
     "file": "2024-05-22 - Valia.json"
   },
@@ -67,7 +67,7 @@
     "slug": "c6-bank",
     "date": "2024-05-21",
     "client": "C6 Bank",
-    "thumbnail": "https://d2lq74zxbg4jiz.cloudfront.net/Logo_Matera_77cc1e9385.png",
+    "thumbnail": "/assets/logo-matera.png",
     "excerpt": "C6 Bank é um banco completo, totalmente digital, com agilidade e capacidade de oferecer produtos e serviços inovadores. Conheça o case!",
     "file": "2024-05-21 - C6 Bank.json"
   },
@@ -76,7 +76,7 @@
     "slug": "alesta",
     "date": "2024-05-19",
     "client": "Alesta",
-    "thumbnail": "https://d2lq74zxbg4jiz.cloudfront.net/Logo_Matera_77cc1e9385.png",
+    "thumbnail": "/assets/logo-matera.png",
     "excerpt": "Como a CPFL expandiu seu braço financeiro, a Alesta, com a Matera.",
     "file": "2024-05-19 - Alesta.json"
   },
@@ -85,7 +85,7 @@
     "slug": "olx",
     "date": "2024-05-18",
     "client": "Olx",
-    "thumbnail": "https://d2lq74zxbg4jiz.cloudfront.net/Logo_Matera_77cc1e9385.png",
+    "thumbnail": "/assets/logo-matera.png",
     "excerpt": "Um marketplace que também é fintech!",
     "file": "2024-05-18 - OLX.json"
   },
@@ -94,7 +94,7 @@
     "slug": "pagol",
     "date": "2024-05-17",
     "client": "Pagol",
-    "thumbnail": "https://d2lq74zxbg4jiz.cloudfront.net/Logo_Matera_77cc1e9385.png",
+    "thumbnail": "/assets/logo-matera.png",
     "excerpt": "Os gigantes do mercado de viagens, a Gol e a Smiles se juntaram para oferecer uma nova oportunidade para seus clientes. Conheça o case com a Matera.",
     "file": "2024-05-17 - PaGol.json"
   }

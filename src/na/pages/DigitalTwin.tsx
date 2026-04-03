@@ -21,7 +21,7 @@ export default function DigitalTwin() {
           autoPlay muted loop playsInline
           style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', opacity: 0.4 }}
         >
-          <source src="https://d2lq74zxbg4jiz.cloudfront.net/Matera_Digital_Twin_Hero_V2_400kbps_5a7e796539_9fae38d584_120ce253c1.mp4" type="video/mp4" />
+          <source src="/assets/digital-twin-hero.mp4" type="video/mp4" />
         </video>
         <div className="container" style={{ position: 'relative', zIndex: 1, maxWidth: '800px', textAlign: 'center', padding: '120px 24px' }}>
           <h1 style={{ fontSize: 'clamp(2.5rem, 6vw, 4rem)', fontWeight: 700, lineHeight: 1.1, marginBottom: '20px' }}>
@@ -46,7 +46,7 @@ export default function DigitalTwin() {
           >
             <div style={{ width: '90%', maxWidth: '900px' }} onClick={e => e.stopPropagation()}>
               <video autoPlay controls style={{ width: '100%', borderRadius: '12px' }}>
-                <source src="https://d2lq74zxbg4jiz.cloudfront.net/Matera_Digital_Twin_Explainer_402d1651a0_c842e5c0c1.mp4" type="video/mp4" />
+                <source src="/assets/digital-twin-explainer.mp4" type="video/mp4" />
               </video>
             </div>
           </div>
@@ -87,7 +87,7 @@ export default function DigitalTwin() {
           }} onClick={() => setShowDemo(true)}>
             {!showDemo ? (
               <>
-                <img src="https://d2lq74zxbg4jiz.cloudfront.net/play_d70a160611_03db58e46f.png" alt="Watch demo" style={{ width: '100%', display: 'block' }} />
+                <img src="/assets/play.png" alt="Watch demo" style={{ width: '100%', display: 'block' }} />
                 <div style={{ position: 'absolute', inset: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'rgba(0,0,0,0.2)' }}>
                   <div style={{ width: '72px', height: '72px', borderRadius: '50%', backgroundColor: 'var(--matera-green)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                     <svg width="24" height="28" viewBox="0 0 24 28" fill="#000"><path d="M0 0L24 14L0 28V0Z" /></svg>
@@ -96,7 +96,7 @@ export default function DigitalTwin() {
               </>
             ) : (
               <video autoPlay controls style={{ width: '100%', display: 'block' }}>
-                <source src="https://d2lq74zxbg4jiz.cloudfront.net/Matera_Digital_Twin_Explainer_402d1651a0_c842e5c0c1.mp4" type="video/mp4" />
+                <source src="/assets/digital-twin-explainer.mp4" type="video/mp4" />
               </video>
             )}
           </div>
@@ -104,12 +104,12 @@ export default function DigitalTwin() {
           {/* 3 feature icons */}
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '32px' }}>
             {[
-              { icon: 'https://d2lq74zxbg4jiz.cloudfront.net/usdc_icon_85321a5880.png', text: 'Bring USDC to your customers without overhauling your Core' },
-              { icon: 'https://d2lq74zxbg4jiz.cloudfront.net/icon_2_0b1bf066c1_69636581e0.png', text: 'Create better experiences for your customers' },
-              { icon: 'https://d2lq74zxbg4jiz.cloudfront.net/icon_5522aa6188_435d396f64.png', text: 'Save money (NO charge per transaction or API call)' },
+              { icon: '/assets/usdc_icon_85321a5880.png', text: 'Bring USDC to your customers without overhauling your Core' },
+              { icon: '/assets/icon_2_0b1bf066c1_69636581e0.png', text: 'Create better experiences for your customers' },
+              { icon: '/assets/icon_5522aa6188_435d396f64.png', text: 'Save money (NO charge per transaction or API call)' },
             ].map((f, i) => (
               <div key={i} style={{ textAlign: 'center' }}>
-                <img src={f.icon} alt="" style={{ width: '64px', height: '64px', objectFit: 'contain', marginBottom: '16px' }} />
+                <img src={f.icon} alt={f.text} style={{ width: '64px', height: '64px', objectFit: 'contain', marginBottom: '16px' }} />
                 <p style={{ color: '#444', fontWeight: 600, fontSize: '0.95rem', lineHeight: 1.6 }}>{f.text}</p>
               </div>
             ))}
@@ -118,7 +118,7 @@ export default function DigitalTwin() {
       </section>
 
       {/* Capabilities */}
-      <section style={{ padding: '80px 0', backgroundImage: 'url(https://d2lq74zxbg4jiz.cloudfront.net/Layer_1_1_6dde0bc90f_3b818f81b9.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+      <section style={{ padding: '80px 0', backgroundImage: 'url(/assets/layer-1-1.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
         <div className="container">
           <h2 style={{ fontSize: 'clamp(1.75rem, 4vw, 2.5rem)', fontWeight: 700, color: 'var(--matera-blue)', marginBottom: '48px', textAlign: 'center' }}>
             Built for today's real-time needs. Ready to power what's next.
@@ -183,10 +183,10 @@ export default function DigitalTwin() {
           </p>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '32px' }}>
             {[
-              { icon: 'https://d2lq74zxbg4jiz.cloudfront.net/icon_3_e60c0b7ee9_8205b1d4a5.png', title: 'Hosts many account types', text: '(Stablecoins, DDA, Savings, Credit Card, Loyalty Points, Crypto, etc.)' },
-              { icon: 'https://d2lq74zxbg4jiz.cloudfront.net/icon_549dec2b14_8a1bca81d5.png', title: 'Multi-currency, Multi-decimal point, Multi-time zone', text: '' },
-              { icon: 'https://d2lq74zxbg4jiz.cloudfront.net/icon_2_cd30bec03c_e8bcdb4822.png', title: 'Every transaction is immutable', text: 'to provide perfect journaling' },
-              { icon: 'https://d2lq74zxbg4jiz.cloudfront.net/icon_1_33f99ecec1_d2b9809062.png', title: 'Cloud & database agnostic', text: '' },
+              { icon: '/assets/icon_3_e60c0b7ee9_8205b1d4a5.png', title: 'Hosts many account types', text: '(Stablecoins, DDA, Savings, Credit Card, Loyalty Points, Crypto, etc.)' },
+              { icon: '/assets/icon_549dec2b14_8a1bca81d5.png', title: 'Multi-currency, Multi-decimal point, Multi-time zone', text: '' },
+              { icon: '/assets/icon_2_cd30bec03c_e8bcdb4822.png', title: 'Every transaction is immutable', text: 'to provide perfect journaling' },
+              { icon: '/assets/icon_1_33f99ecec1_d2b9809062.png', title: 'Cloud & database agnostic', text: '' },
             ].map((f, i) => (
               <div key={i} style={{ textAlign: 'center' }}>
                 <img src={f.icon} alt="" style={{ width: '64px', height: '64px', objectFit: 'contain', marginBottom: '16px' }} />
@@ -216,7 +216,7 @@ export default function DigitalTwin() {
           </div>
           <div style={{ borderRadius: '16px', overflow: 'hidden' }}>
             <video autoPlay muted loop playsInline style={{ width: '100%', display: 'block' }}>
-              <source src="https://d2lq74zxbg4jiz.cloudfront.net/DTW_Animation_for_webpage_V1_1mbps_697793d95d.mp4" type="video/mp4" />
+              <source src="/assets/digital-twin-animation.mp4" type="video/mp4" />
             </video>
           </div>
         </div>
@@ -244,7 +244,7 @@ export default function DigitalTwin() {
                 alignItems: 'center',
                 gap: '16px',
               }}>
-                <img src="https://d2lq74zxbg4jiz.cloudfront.net/check_2a6e6bb08e_1e167588ba.png" alt="" style={{ width: '24px', height: '24px' }} />
+                <img src="/assets/check.png" alt="" style={{ width: '24px', height: '24px' }} />
                 <span style={{ fontWeight: 600 }}>{item}</span>
               </div>
             ))}
@@ -263,7 +263,7 @@ export default function DigitalTwin() {
           </div>
           <div style={{ borderRadius: '16px', overflow: 'hidden' }}>
             <video autoPlay muted loop playsInline style={{ width: '100%', display: 'block' }}>
-              <source src="https://d2lq74zxbg4jiz.cloudfront.net/Core_Integration_Animation_Updated_e7a6ae776a.mp4" type="video/mp4" />
+              <source src="/assets/core-integration-animation.mp4" type="video/mp4" />
             </video>
           </div>
         </div>
@@ -291,7 +291,7 @@ export default function DigitalTwin() {
                 onMouseEnter={e => (e.currentTarget.style.transform = 'translateY(-4px)')}
                 onMouseLeave={e => (e.currentTarget.style.transform = 'none')}
               >
-                <img src="https://d2lq74zxbg4jiz.cloudfront.net/icon_1_c39503a9d7_cca429b15f.png" alt="" style={{ width: '48px', height: '48px' }} />
+                <img src="/assets/icon-1.png" alt="" style={{ width: '48px', height: '48px' }} />
                 <p style={{ fontSize: '0.8rem', fontWeight: 600, color: 'var(--matera-purple)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>{r.label}</p>
                 <h3 style={{ fontSize: '1rem', fontWeight: 700, color: 'var(--matera-blue)', lineHeight: 1.4 }}>{r.title}</h3>
               </a>

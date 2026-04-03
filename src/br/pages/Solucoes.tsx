@@ -2,32 +2,32 @@ import { Link } from 'react-router-dom';
 
 const valueProps = [
   {
-    icon: 'https://d2lq74zxbg4jiz.cloudfront.net/icon_icon2_b8b47b661a.svg',
+    icon: '/assets/icon_icon2_b8b47b661a.svg',
     title: 'Alta performance',
     description: 'Nossa plataforma é projetada para suportar altas demandas, oferecendo escalabilidade e segurança para acompanhar o crescimento da sua operação.',
   },
   {
-    icon: 'https://d2lq74zxbg4jiz.cloudfront.net/icon_icon2_1_e68dfb365b.svg',
+    icon: '/assets/icon_icon2_1_e68dfb365b.svg',
     title: 'Tecnologia no estado da arte',
     description: 'Soluções prontas para a nuvem e que utilizam as melhores tecnologias para cada missão.',
   },
   {
-    icon: 'https://d2lq74zxbg4jiz.cloudfront.net/icon_icon2_2_de70261f81.svg',
+    icon: '/assets/icon_icon2_2_de70261f81.svg',
     title: "Extensibilidade e API's",
     description: "As soluções Matera contam com milhares de API's, permitindo a criação de experiências únicas e personalizadas.",
   },
   {
-    icon: 'https://d2lq74zxbg4jiz.cloudfront.net/icon_icon2_3_0bf407c664.svg',
+    icon: '/assets/icon_icon2_3_0bf407c664.svg',
     title: 'Time-to-market acelerado',
     description: 'Com integração nativa entre todos os serviços, oferecemos rapidez e competitividade para lançar suas soluções no mercado.',
   },
   {
-    icon: 'https://d2lq74zxbg4jiz.cloudfront.net/icon_icon2_4_b57f9471ad.svg',
+    icon: '/assets/icon_icon2_4_b57f9471ad.svg',
     title: 'Plataforma completa e flexível',
     description: 'Atendemos de ponta a ponta os desafios do mercado financeiro.',
   },
   {
-    icon: 'https://d2lq74zxbg4jiz.cloudfront.net/icon_icon2_5_90639f0d4b.svg',
+    icon: '/assets/icon_icon2_5_90639f0d4b.svg',
     title: 'Conformidade regulatória',
     description: 'Acompanhamento ativo para que você não tenha que se preocupar com as exigências do Banco Central e Receita Federal.',
   },
@@ -35,55 +35,55 @@ const valueProps = [
 
 const solutions = [
   {
-    icon: 'https://d2lq74zxbg4jiz.cloudfront.net/icon_icon_829de8fecf.svg',
+    icon: '/assets/icon_icon_829de8fecf.svg',
     title: 'Core Banking',
     description: 'Transforme a experiência do seu cliente e impulsione o desenvolvimento do seu banco com uma solução abrangente e flexível que utiliza tecnologia robusta e pronta para a nuvem.',
     href: '/br/solucoes/core-banking',
   },
   {
-    icon: 'https://d2lq74zxbg4jiz.cloudfront.net/icon_icon_1_5dcf9bdba3.svg',
+    icon: '/assets/icon_icon_1_5dcf9bdba3.svg',
     title: 'Pagamentos',
     description: 'Conecte-se aos principais tipos de pagamentos através de uma plataforma moderna e escalável.',
     href: '/br/solucoes/pagamentos',
   },
   {
-    icon: 'https://d2lq74zxbg4jiz.cloudfront.net/icon_icon_2_f4af3b614b.svg',
+    icon: '/assets/icon_icon_2_f4af3b614b.svg',
     title: 'Cash Management',
     description: 'Atenda clientes corporativos com soluções de recebíveis e pagamentos, entregando valor e fortalecendo relacionamentos.',
     href: '/br/solucoes/cash-management',
   },
   {
-    icon: 'https://d2lq74zxbg4jiz.cloudfront.net/icon_icon_3_23d362b750.svg',
+    icon: '/assets/icon_icon_3_23d362b750.svg',
     title: 'Plataforma de Crédito',
     description: 'Tecnologia para conceder crédito com eficiência e agilidade para as jornadas de pessoas físicas e jurídicas.',
     href: '/br/solucoes/credito',
   },
   {
-    icon: 'https://d2lq74zxbg4jiz.cloudfront.net/icon_icon_4_e42b70153e.svg',
+    icon: '/assets/icon_icon_4_e42b70153e.svg',
     title: 'Gestão de Riscos',
     description: 'Mantenha os riscos regulatórios e operacionais sob controle. Para instituições financeiras de todos os portes.',
     href: '/br/solucoes/gestao-de-riscos',
   },
   {
-    icon: 'https://d2lq74zxbg4jiz.cloudfront.net/icon_icon_5_c0024899d9.svg',
+    icon: '/assets/icon_icon_5_c0024899d9.svg',
     title: 'RegTech',
     description: 'Atenda as exigências regulatórias do Banco Central, Receita Federal e Prefeituras com uma solução tecnológica confiável, robusta e segura.',
     href: '/br/solucoes/reg-tech',
   },
   {
-    icon: 'https://d2lq74zxbg4jiz.cloudfront.net/icon_icon_6_8889731610.svg',
+    icon: '/assets/icon_icon_6_8889731610.svg',
     title: 'Insights',
     description: 'Impulsione a rentabilidade e a fidelização de clientes e eleve o seu desempenho de crédito com modelos personalizados e scores exclusivos.',
     href: '/br/solucoes/insights',
   },
   {
-    icon: 'https://d2lq74zxbg4jiz.cloudfront.net/digital_twin_br_01c9d15309.svg',
+    icon: '/assets/digital_twin_br_01c9d15309.svg',
     title: 'Digital Twin',
     description: 'Ofereça a experiência de contas globais e multimoedas, assegurando uma operação 24x7 preparada para um futuro financeiro cada vez mais transfronteiriço.',
     href: '/br/solucoes/matera-digital-twin',
   },
   {
-    icon: 'https://d2lq74zxbg4jiz.cloudfront.net/tesouraria_avancada_ba8de41966.svg',
+    icon: '/assets/tesouraria_avancada_ba8de41966.svg',
     title: 'Tesouraria Avançada',
     description: 'Controle operações de Renda Fixa, SWAP, Termo de moedas, COE, Opções Cetip e BM&F em um único sistema.',
     href: '/br/solucoes/tesouraria-avancada',
@@ -94,44 +94,44 @@ const featuredCases = [
   {
     title: 'C6 Bank',
     description: 'Um banco completo para pessoas físicas e jurídicas, formado por uma arquitetura aberta e totalmente digital.',
-    image: 'https://d2lq74zxbg4jiz.cloudfront.net/hero_c6_146a5aab6a.png',
+    image: '/assets/hero_c6_146a5aab6a.png',
     href: '/br/cases/c6-bank',
   },
   {
     title: 'Pefisa',
     description: 'A primeira varejista a disponibilizar Pix, além de investir em um processo de concessão de Crédito Pessoal facilitado.',
-    image: 'https://d2lq74zxbg4jiz.cloudfront.net/Logo_PEFISA_fdd859861c.webp',
+    image: '/assets/Logo_PEFISA_fdd859861c.webp',
     href: '/br/cases/pefisa',
   },
   {
     title: 'Digio',
     description: 'Banco digital do Bradesco, focado em criar soluções digitais para descomplicar a forma como os brasileiros cuidam do dinheiro.',
-    image: 'https://d2lq74zxbg4jiz.cloudfront.net/hero_digio_dafe0ac5f7.png',
+    image: '/assets/hero_digio_dafe0ac5f7.png',
     href: '/br/cases/digio',
   },
 ];
 
 const clientLogos = [
-  'https://d2lq74zxbg4jiz.cloudfront.net/logo_alesta_azul_98307ae975.svg',
-  'https://d2lq74zxbg4jiz.cloudfront.net/logo_1_614acfb630.svg',
-  'https://d2lq74zxbg4jiz.cloudfront.net/logo_2_86eaeae422.svg',
-  'https://d2lq74zxbg4jiz.cloudfront.net/logo_3_b28c8ab148.svg',
-  'https://d2lq74zxbg4jiz.cloudfront.net/logo_4_7f396b8adb.svg',
-  'https://d2lq74zxbg4jiz.cloudfront.net/logo_5_7f8a5773f3.svg',
-  'https://d2lq74zxbg4jiz.cloudfront.net/logo_6_bee0d8329a.svg',
-  'https://d2lq74zxbg4jiz.cloudfront.net/logo_7_ec7b603de9.svg',
-  'https://d2lq74zxbg4jiz.cloudfront.net/logo_8_aae9c60684.svg',
-  'https://d2lq74zxbg4jiz.cloudfront.net/logo_9_a62db1b5b0.svg',
-  'https://d2lq74zxbg4jiz.cloudfront.net/logo_10_f6308c00d0.svg',
-  'https://d2lq74zxbg4jiz.cloudfront.net/logo_11_536b6a3d30.svg',
-  'https://d2lq74zxbg4jiz.cloudfront.net/logo_12_2d797d52ab.svg',
-  'https://d2lq74zxbg4jiz.cloudfront.net/logo_13_207c470c2a.svg',
-  'https://d2lq74zxbg4jiz.cloudfront.net/logo_14_c63e233350.svg',
-  'https://d2lq74zxbg4jiz.cloudfront.net/logo_15_56a63ba914.svg',
-  'https://d2lq74zxbg4jiz.cloudfront.net/logo_16_ef5f6b8338.svg',
-  'https://d2lq74zxbg4jiz.cloudfront.net/logo_17_cc242f75b5.svg',
-  'https://d2lq74zxbg4jiz.cloudfront.net/logo_18_9d2ece1f55.svg',
-  'https://d2lq74zxbg4jiz.cloudfront.net/logo_19_7e04976cd9.svg',
+  '/assets/logo_alesta_azul_98307ae975.svg',
+  '/assets/logo_1_614acfb630.svg',
+  '/assets/logo_2_86eaeae422.svg',
+  '/assets/logo_3_b28c8ab148.svg',
+  '/assets/logo_4_7f396b8adb.svg',
+  '/assets/logo_5_7f8a5773f3.svg',
+  '/assets/logo_6_bee0d8329a.svg',
+  '/assets/logo_7_ec7b603de9.svg',
+  '/assets/logo_8_aae9c60684.svg',
+  '/assets/logo_9_a62db1b5b0.svg',
+  '/assets/logo_10_f6308c00d0.svg',
+  '/assets/logo_11_536b6a3d30.svg',
+  '/assets/logo_12_2d797d52ab.svg',
+  '/assets/logo_13_207c470c2a.svg',
+  '/assets/logo_14_c63e233350.svg',
+  '/assets/logo_15_56a63ba914.svg',
+  '/assets/logo_16_ef5f6b8338.svg',
+  '/assets/logo_17_cc242f75b5.svg',
+  '/assets/logo_18_9d2ece1f55.svg',
+  '/assets/logo_19_7e04976cd9.svg',
 ];
 
 export default function Solucoes() {
@@ -150,7 +150,7 @@ export default function Solucoes() {
         alignItems: 'center',
       }}>
         <img
-          src="https://d2lq74zxbg4jiz.cloudfront.net/hero_solucoes_d7d7181e0e.jpg"
+          src="/assets/hero-solutions.jpg"
           alt=""
           style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', opacity: 0.3 }}
         />

@@ -6,7 +6,7 @@ export default function GestaoDeRiscos() {
       hero={{
         title: 'Gestão de Riscos',
         subtitle: 'Plataforma de riscos regulatórios e gerenciais para todos os tipos de instituições.',
-        image: 'https://d2lq74zxbg4jiz.cloudfront.net/Gestao_de_riscos_8a1c0590e6.png',
+        image: '/assets/Gestao_de_riscos_8a1c0590e6.png',
       }}
       sections={[
         {

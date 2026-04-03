@@ -24,21 +24,21 @@ const stats = [
 ];
 
 const clientLogos = [
-  'https://d2lq74zxbg4jiz.cloudfront.net/logo_alesta_azul_98307ae975.svg',
-  'https://d2lq74zxbg4jiz.cloudfront.net/logo_1_614acfb630.svg',
-  'https://d2lq74zxbg4jiz.cloudfront.net/logo_2_86eaeae422.svg',
-  'https://d2lq74zxbg4jiz.cloudfront.net/logo_3_b28c8ab148.svg',
-  'https://d2lq74zxbg4jiz.cloudfront.net/logo_4_7f396b8adb.svg',
-  'https://d2lq74zxbg4jiz.cloudfront.net/logo_5_7f8a5773f3.svg',
-  'https://d2lq74zxbg4jiz.cloudfront.net/logo_6_bee0d8329a.svg',
-  'https://d2lq74zxbg4jiz.cloudfront.net/logo_7_ec7b603de9.svg',
-  'https://d2lq74zxbg4jiz.cloudfront.net/logo_8_aae9c60684.svg',
-  'https://d2lq74zxbg4jiz.cloudfront.net/logo_9_a62db1b5b0.svg',
-  'https://d2lq74zxbg4jiz.cloudfront.net/logo_10_f6308c00d0.svg',
-  'https://d2lq74zxbg4jiz.cloudfront.net/logo_11_536b6a3d30.svg',
-  'https://d2lq74zxbg4jiz.cloudfront.net/logo_12_2d797d52ab.svg',
-  'https://d2lq74zxbg4jiz.cloudfront.net/logo_13_207c470c2a.svg',
-  'https://d2lq74zxbg4jiz.cloudfront.net/logo_14_c63e233350.svg',
+  '/assets/logo_alesta_azul_98307ae975.svg',
+  '/assets/logo_1_614acfb630.svg',
+  '/assets/logo_2_86eaeae422.svg',
+  '/assets/logo_3_b28c8ab148.svg',
+  '/assets/logo_4_7f396b8adb.svg',
+  '/assets/logo_5_7f8a5773f3.svg',
+  '/assets/logo_6_bee0d8329a.svg',
+  '/assets/logo_7_ec7b603de9.svg',
+  '/assets/logo_8_aae9c60684.svg',
+  '/assets/logo_9_a62db1b5b0.svg',
+  '/assets/logo_10_f6308c00d0.svg',
+  '/assets/logo_11_536b6a3d30.svg',
+  '/assets/logo_12_2d797d52ab.svg',
+  '/assets/logo_13_207c470c2a.svg',
+  '/assets/logo_14_c63e233350.svg',
 ];
 
 export default function SobreNos() {
@@ -46,7 +46,7 @@ export default function SobreNos() {
     <>
       <PageHero
         title="Sobre nós"
-        image="https://d2lq74zxbg4jiz.cloudfront.net/hero_about_us_91a5e16d48.jpg"
+        image="/assets/hero-about-us.jpg"
       />
 
       {/* Manifesto */}
@@ -88,7 +88,7 @@ export default function SobreNos() {
             Fundada na Unicamp em 1987 por cinco entusiastas de tecnologia, a Matera tem como missão transformar as operações dos seus clientes e ampliar o acesso a serviços financeiros.
           </p>
           <img
-            src="https://d2lq74zxbg4jiz.cloudfront.net/historia_a51bb96856.jpg"
+            src="/assets/historia.jpg"
             alt="História da Matera"
             style={{ width: '100%', borderRadius: '12px', marginBottom: '48px' }}
           />

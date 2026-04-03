@@ -4,15 +4,15 @@ const reports = [
   {
     year: '2025',
     files: [
-      { label: 'Relatório 1º Semestre 2025', url: 'https://d2lq74zxbg4jiz.cloudfront.net/Relatorio_Igualdade_Salarial_Lote_2026_1_57040040000184_1_1_f566f1424e.pdf' },
-      { label: 'Relatório Outubro 2025', url: 'https://d2lq74zxbg4jiz.cloudfront.net/Relatorio_de_Transparencia_outubro2025_a6fb38203e.pdf' },
+      { label: 'Relatório 1º Semestre 2025', url: '/assets/relatorio-igualdade-salarial-2026.pdf' },
+      { label: 'Relatório Outubro 2025', url: '/assets/relatorio-transparencia-outubro-2025.pdf' },
     ],
   },
   {
     year: '2024',
     files: [
-      { label: 'Relatório Matriz', url: 'https://d2lq74zxbg4jiz.cloudfront.net/Matriz_CNPJ_57_040_040_0001_84_24_03_2025_69bf790b81.pdf' },
-      { label: 'Relatório Filial', url: 'https://d2lq74zxbg4jiz.cloudfront.net/Filial_CNPJ_57_040_040_0003_46_24_03_2025_3420d7d2bc.pdf' },
+      { label: 'Relatório Matriz', url: '/assets/relatorio-matriz-2025.pdf' },
+      { label: 'Relatório Filial', url: '/assets/relatorio-filial-2025.pdf' },
     ],
   },
 ];

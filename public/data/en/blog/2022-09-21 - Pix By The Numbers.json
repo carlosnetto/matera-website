@@ -3,13 +3,13 @@
   "slug": "pix-by-the-numbers",
   "date": "2022-09-21",
   "author": "matera",
-  "thumbnail": "https://d2lq74zxbg4jiz.cloudfront.net/pix_by_the_numbers_8f73b3b9fc.jpg",
+  "thumbnail": "/assets/pix-by-the-numbers.jpg",
   "excerpt": "Pix is an instant payment scheme developed, managed, operated and owned by the Central Bank of Brazil. In 2018, they mandated that all banks be able to offer instant payments.",
   "body": "Pix is an instant payment scheme developed, managed, operated and owned by the Central Bank of Brazil. In 2018, they mandated that all banks be able to offer instant payments - why? In short, to modernize their economy.\n\nPix launched in Nov 2020 to instant success. The metrics tell the story.\n\n## There are over 2.1B Pix instant payments transactions per month.\n\n## Within 1 year after launch, the number of Pix transactions exceeded the number of credit and debit transactions.\n\n## In just 18 months after launch, nearly 120M consumers and 10M businesses were using Pix.\n\n## There are more than 420M aliases covering 280M accounts across 130M users in Brazil.",
   "images": [
-    "https://d2lq74zxbg4jiz.cloudfront.net/Pix_transactions_cef6abea55.png",
-    "https://d2lq74zxbg4jiz.cloudfront.net/Number_of_transactions_e504c81f19.png",
-    "https://d2lq74zxbg4jiz.cloudfront.net/Pix_using_f18a730078.png",
-    "https://d2lq74zxbg4jiz.cloudfront.net/Numbers_90f295d62f.png"
+    "/assets/pix-transactions.png",
+    "/assets/number-of-transactions.png",
+    "/assets/pix-using.png",
+    "/assets/numbers.png"
   ]
 }

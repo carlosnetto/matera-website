@@ -25,7 +25,7 @@ export default function AboutUs() {
     <>
       <PageHero
         title="Company"
-        image="https://d2lq74zxbg4jiz.cloudfront.net/hero_about_us_91a5e16d48.jpg"
+        image="/assets/hero-about-us.jpg"
       />
 
       {/* About */}
@@ -141,8 +141,8 @@ export default function AboutUs() {
           </p>
         </div>
         <img
-          src="https://d2lq74zxbg4jiz.cloudfront.net/banner_work_with_us_b267ae9019.png"
-          alt=""
+          src="/assets/banner-work-with-us.png"
+          alt="Work with us at Matera"
           style={{
             position: 'absolute',
             right: 0,

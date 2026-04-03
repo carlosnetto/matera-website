@@ -63,7 +63,7 @@ const Hero: React.FC = () => {
               display: 'block',
             }}
           >
-            <source src="https://d2lq74zxbg4jiz.cloudfront.net/anim_matera_V2_82378a33e4.mp4" type="video/mp4" />
+            <source src="/assets/matera-hero-animation.mp4" type="video/mp4" />
           </video>
         </div>
       </div>

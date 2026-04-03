@@ -113,7 +113,7 @@ const Footer: React.FC = () => {
                 >Privacy Policy</Link>
               </li>
               <li>
-                <a href="https://d2lq74zxbg4jiz.cloudfront.net/Code_of_Ethics_and_Conduct_6f42d645c7.pdf" target="_blank" rel="noopener noreferrer" style={{ opacity: 0.6, fontSize: '0.85rem', color: 'var(--matera-white)', transition: 'opacity 0.2s' }}
+                <a href="/assets/code-of-ethics-and-conduct.pdf" target="_blank" rel="noopener noreferrer" style={{ opacity: 0.6, fontSize: '0.85rem', color: 'var(--matera-white)', transition: 'opacity 0.2s' }}
                   onMouseEnter={(e) => (e.currentTarget.style.opacity = '1')}
                   onMouseLeave={(e) => (e.currentTarget.style.opacity = '0.6')}
                 >Code of Conduct</a>

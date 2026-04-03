@@ -4,7 +4,7 @@
     "slug": "qr-code-standard-blockchain-payments",
     "date": "2026-02-10",
     "author": "matera",
-    "thumbnail": "https://d2lq74zxbg4jiz.cloudfront.net/X9150_blog_matera_e9388ebec7.jpg",
+    "thumbnail": "/assets/x9150-blog-matera.jpg",
     "excerpt": "When you buy a burger with USDC, how do you prove what you paid for? The blockchain shows money moved, but it doesn't show you bought a burger, paid order #4123, or sent it to the right merchant.",
     "file": "2026-02-10 - X9150 The New QR Code Standard That Makes Blockchain Payments Provable.json"
   },
@@ -13,7 +13,7 @@
     "slug": "qa-real-time-authorization-power-legacy-core",
     "date": "2026-01-15",
     "author": "matera",
-    "thumbnail": "https://d2lq74zxbg4jiz.cloudfront.net/resource_thumbnail_qr_code_q_50df2b3ef9.jpg",
+    "thumbnail": "/assets/resource-thumbnail-qr-code-q.jpg",
     "excerpt": "As financial institutions modernize their payment and account-processing capabilities, one question comes up repeatedly: How do we support real-time, high-availability transaction processing witho",
     "file": "2026-01-15 - QA How Real-Time Authorization Engines Power 247 Payments on Legacy Core.json"
   },
@@ -22,7 +22,7 @@
     "slug": "matera-qr-payments-finovate",
     "date": "2025-09-29",
     "author": "matera",
-    "thumbnail": "https://d2lq74zxbg4jiz.cloudfront.net/finovate_demo_tn_ec8ba4ca67.png",
+    "thumbnail": "/assets/finewte-demo-tn.png",
     "excerpt": "At Finovate 2025, Matera and Payfinia demonstrated how QR payments can transform the traditional bill payment experience for consumers, small businesses, and financial institutions.",
     "file": "2025-09-29 - Matera  Payfinia Showcase Composable QR Payments at Finovate.json"
   },
@@ -31,7 +31,7 @@
     "slug": "power-next-gen-payments-stablecoins",
     "date": "2025-08-04",
     "author": "matera",
-    "thumbnail": "https://d2lq74zxbg4jiz.cloudfront.net/resource_thumbnail_stablecoin_a_2d53036576.jpg",
+    "thumbnail": "/assets/resource-thumbnail-stablecoin-a.jpg",
     "excerpt": "As stablecoins move from speculative tools to digital dollars, a growing number of businesses are beginning to explore their utility for real-world commerce. From faster cross-border payments to s",
     "file": "2025-08-04 - How Banks and Credit Unions Can Power the Next Generation of Business Payments.json"
   },
@@ -40,7 +40,7 @@
     "slug": "x9-qr-code-webinar",
     "date": "2025-07-31",
     "author": "matera",
-    "thumbnail": "https://d2lq74zxbg4jiz.cloudfront.net/qr_code_h_resource_tn_35c7239464.jpg",
+    "thumbnail": "/assets/qr-code-h-resource-tn.jpg",
     "excerpt": "X9 recently hosted a webinar highlighting the QR Code payments standard being developed by the X9A4 workgroup. The session featured a live demo showing how an invoice could be paid instantly throu",
     "file": "2025-07-31 - X9 Payment QR Code Standard Your Questions Answered.json"
   },
@@ -49,7 +49,7 @@
     "slug": "who-should-offer-stablecoins",
     "date": "2025-06-25",
     "author": "matera",
-    "thumbnail": "https://d2lq74zxbg4jiz.cloudfront.net/instant_payment_resource_tn_23763b61d4.jpg",
+    "thumbnail": "/assets/instant-payment-resource-tn.jpg",
     "excerpt": "As digital dollars like USDC begin to circulate more widely, their role in payments and finance is rapidly evolving. Many consumers are already buying and holding stablecoins through crypto exchan",
     "file": "2025-06-25 - Who Should Offer Stablecoins Why Banks and Credit Unions Have A Key Role.json"
   },
@@ -58,7 +58,7 @@
     "slug": "embedding-stablecoin-mobile-banking",
     "date": "2025-06-19",
     "author": "Carlos Netto, CEO/Co-Founder, Matera",
-    "thumbnail": "https://d2lq74zxbg4jiz.cloudfront.net/embedding_stablecoin_mobile_banking_blog_106ce6e5e7.jpg",
+    "thumbnail": "/assets/embedding-stablecoin-mobile-banking-blog.jpg",
     "excerpt": "Stablecoins are entering the financial mainstream. The U.S. dollar stablecoin market could surpass $2 trillion by 2028 according to the U.S. Treasury Secretary, Scott Bessent, a staggering",
     "file": "2025-06-19 - Practical Guide to Embedding a Stablecoin into a Mobile Banking App.json"
   },
@@ -67,7 +67,7 @@
     "slug": "protecting-deposits-stablecoin-era",
     "date": "2025-06-12",
     "author": "Carlos Netto, CEO/Co-Founder, Matera",
-    "thumbnail": "https://d2lq74zxbg4jiz.cloudfront.net/protecting_deposits_stablecoin_era_blog_b57bf30649.jpg",
+    "thumbnail": "/assets/protecting-deposits-stablecoin-era-blog.jpg",
     "excerpt": "Their adoption is accelerating across markets, signaling a pivotal moment for banks to evaluate their role in the evolving landscape. With legislation like the GENIUS Act gaining bipartisan",
     "file": "2025-06-12 - Protecting Deposits in the Stablecoin Era A Strategy Playbook for Financ.json"
   },
@@ -76,7 +76,7 @@
     "slug": "hollowing-out-the-core",
     "date": "2025-06-09",
     "author": "John Wilson, Head of Solutions Engineering",
-    "thumbnail": "https://d2lq74zxbg4jiz.cloudfront.net/hallowing_core_blog_84e60bfef4.jpg",
+    "thumbnail": "/assets/hallowing-core-blog.jpg",
     "excerpt": "Banking leaders know that their legacy core platforms weren't designed for a real-time world. But replacing the core is costly, risky, and time-consuming, especially for regional and community",
     "file": "2025-06-09 - Hollowing Out the Core A Smarter Path to Modernization Without Full Core.json"
   },
@@ -85,7 +85,7 @@
     "slug": "pki-secures-qr-code-payments",
     "date": "2025-05-23",
     "author": "Matera",
-    "thumbnail": "https://d2lq74zxbg4jiz.cloudfront.net/Behind_the_Scan_Blog_7619d56ed4.jpg",
+    "thumbnail": "/assets/behind-the-scan-blog.jpg",
     "excerpt": "QR codes are quickly becoming one of the simplest ways to make payments — just scan and go. But behind that simple scan is a sophisticated layer of digital security that makes sure you're not",
     "file": "2025-05-23 - Behind the Scan How PKI Secures QR Code Payments.json"
   },
@@ -94,7 +94,7 @@
     "slug": "instant-payments-spotlight-chesapeake-bank",
     "date": "2025-04-04",
     "author": "Matera",
-    "thumbnail": "https://d2lq74zxbg4jiz.cloudfront.net/instant_payments_spotlight_30de5ff7b4.jpg",
+    "thumbnail": "/assets/instant-payments-spotlight.jpg",
     "excerpt": "DJ Seeterlin, Chief Innovation Strategy Officer for Chesapeake Bank was interviewed by Greg MacSweeney on the Payments Nerds podcast and shared some great insight on their instant payments",
     "file": "2025-04-04 - Instant Payments Spotlight Chesapeake Bank.json"
   },
@@ -103,7 +103,7 @@
     "slug": "digital-twin-ensures-funds-availability",
     "date": "2025-03-11",
     "author": "John Wilson, Head of Solutions Engineering, Matera",
-    "thumbnail": "https://d2lq74zxbg4jiz.cloudfront.net/blog_funds_availability_78d83e59a0.png",
+    "thumbnail": "/assets/blog-funds-availability.png",
     "excerpt": "In modern banking, real-time transaction processing is crucial. Customers expect instant access to their money, whether they're making a purchase at midnight, withdrawing cash during a holiday",
     "file": "2025-03-11 - How Digital Twin Technology Ensures Funds Availability When the Core is Do.json"
   },
@@ -112,7 +112,7 @@
     "slug": "tap-to-pay-pix",
     "date": "2025-02-27",
     "author": "Bruno Samora",
-    "thumbnail": "https://d2lq74zxbg4jiz.cloudfront.net/core_banking_conundrum_keeping_up_with_instant_payments_and_digital_transactions_895894c1f1.jpg",
+    "thumbnail": "/assets/core-banking-conundrum-keeping-up-with-instant-payments-and-digital-transactions.jpg",
     "excerpt": "Pix has been a game-changer in the payments world, and Tap-to-Pay Pix is another step toward integrating technology with security and simplicity.",
     "file": "2025-02-27 - Tap-to-Pay Pix How This New Instant Payments Revolution Will Work.json"
   },
@@ -121,7 +121,7 @@
     "slug": "instant-payment-star-one-credit-union",
     "date": "2025-01-09",
     "author": "Matera",
-    "thumbnail": "https://d2lq74zxbg4jiz.cloudfront.net/instant_payments_experience_blog_graphic_d97fa862dc.png",
+    "thumbnail": "/assets/instant-payments-experience-blog-graphic.png",
     "excerpt": "Star One Credit Union is one of Silicon Valley's largest member-owned financial institutions. They have over 123,000 members worldwide and over $10 billion in assets.",
     "file": "2025-01-09 - The Instant Payments Experience  What Does It Look Like.json"
   },
@@ -130,7 +130,7 @@
     "slug": "instant-payment-abnb-federal-credit-union",
     "date": "2024-11-18",
     "author": "Sarah Hoisington",
-    "thumbnail": "https://d2lq74zxbg4jiz.cloudfront.net/unlocking_the_future_blog_graphic_71b7873137.jpg",
+    "thumbnail": "/assets/unlocking-the-future-blog-graphic.jpg",
     "excerpt": "In the rapidly evolving world of financial services, staying ahead of customer expectations and operational demands is paramount. Recently, Cassandra Tucker of ABNB Federal Credit Union shared the ins",
     "file": "2024-11-18 - Unlocking the Future of Payments with Instant Payment Implementation Lessons from ABNB.json"
   },
@@ -139,7 +139,7 @@
     "slug": "generating-qr-codes-for-payments-adapting-a-proven-standard-for-the-us",
     "date": "2024-01-24",
     "author": "Sarah Hoisington",
-    "thumbnail": "https://d2lq74zxbg4jiz.cloudfront.net/generating_qr_codes_for_payments_adapting_a_proven_standard_for_the_us_e688686768.jpg",
+    "thumbnail": "/assets/generating-qr-codes-for-payments-adapting-a-proven-standard-for-the-us.jpg",
     "excerpt": "QR codes are the key to unlocking instant payments in the U.S., and are powered by sophisticated technology that facilitates the secure transfer of encrypted financial data.",
     "file": "2024-01-24 - Generating QR Codes for Payments Adapting A Proven Standard For The US.json"
   },
@@ -148,7 +148,7 @@
     "slug": "qr-code-payments-whats-the-consumer-experience",
     "date": "2023-11-05",
     "author": "Sarah Hoisington",
-    "thumbnail": "https://d2lq74zxbg4jiz.cloudfront.net/qr_code_payments_whats_the_consumer_experience_eed3373f3b.jpg",
+    "thumbnail": "/assets/qr-code-payments-whats-the-consumer-experience.jpg",
     "excerpt": "The average American spends over five hours on their mobile device each day. They check their phones, on average, 96 times per day and 90% of mobile time is spent using apps.",
     "file": "2023-11-05 - QR Code Payments - Whats the Consumer Experience.json"
   },
@@ -157,7 +157,7 @@
     "slug": "qr-code-payments-whats-the-biller-experience",
     "date": "2023-11-05",
     "author": "Sarah Hoisington",
-    "thumbnail": "https://d2lq74zxbg4jiz.cloudfront.net/shutterstock_719542471_0578eed610.webp",
+    "thumbnail": "/assets/shutterstock.webp",
     "excerpt": "No one likes to have to pay to get paid. Billers pay 1 - 3% of the transaction value to accept debit and credit cards. ACH is cheaper, but takes time to settle so there's a risk tha",
     "file": "2023-11-05 - QR Code Payments - Whats the Biller Experience.json"
   },
@@ -166,7 +166,7 @@
     "slug": "five-reasons-to-say-yes-to-qr-code-payments",
     "date": "2023-10-27",
     "author": "Sarah Hoisington",
-    "thumbnail": "https://d2lq74zxbg4jiz.cloudfront.net/five_reasons_to_say_yes_to_qr_code_payments_8d9f007f19.jpg",
+    "thumbnail": "/assets/five-reasons-to-say-yes-to-qr-code-payments.jpg",
     "excerpt": "Apple and Google revolutionized mobile payments. Consumers who load their credit and debit cards into their Apple or Google Wallet can leave their physical wallet behind when they go shopping.",
     "file": "2023-10-27 - Five Reasons to Say Yes to QR Code Payments For Financial Institutions Me.json"
   },
@@ -175,7 +175,7 @@
     "slug": "qr-code-payments-how-they-work",
     "date": "2023-09-04",
     "author": "Sarah Hoisington",
-    "thumbnail": "https://d2lq74zxbg4jiz.cloudfront.net/qr_code_payments_how_they_work_7026ba9231.jpg",
+    "thumbnail": "/assets/qr-code-payments-how-they-work.jpg",
     "excerpt": "QR Codes are key to unlocking instant payments, but how do they work? To be clear, technology that powers QR Codes varies widely. The most common type of QR Code in the U.S. is the simple URL redirect.",
     "file": "2023-09-04 - QR Code Payments How They Work.json"
   },
@@ -184,7 +184,7 @@
     "slug": "hot-takes-on-todays-fednow-town-hall",
     "date": "2023-08-31",
     "author": "Matera",
-    "thumbnail": "https://d2lq74zxbg4jiz.cloudfront.net/hot_takes_on_todays_fednow_town_hall_042b08472d.jpg",
+    "thumbnail": "/assets/hot-takes-on-todays-fednow-town-hall.jpg",
     "excerpt": "Over 1700 people tuned in for today's FedNow Town Hall to hear the latest on America's newest instant payments rail. Here are the highlights.",
     "file": "2023-08-31 - Hot Takes On Todays FedNow Town Hall.json"
   },
@@ -193,7 +193,7 @@
     "slug": "what-the-us-can-learn-from-the-pix-roadmap-for-2023-and-2024",
     "date": "2023-08-28",
     "author": "Matera",
-    "thumbnail": "https://d2lq74zxbg4jiz.cloudfront.net/what_the_us_can_learn_from_the_pix_roadmap_for_2023_and_2024_f34609d00d.jpg",
+    "thumbnail": "/assets/what-the-us-can-learn-from-the-pix-roadmap-for-2023-and-2024.jpg",
     "excerpt": "As the U.S. prepares for continued growth in instant payment transactions with the launch of FedNow in July 2023, it's valuable to see how instant payments are evolving in other countries.",
     "file": "2023-08-28 - What The US Can Learn From The Pix Roadmap for 2023 and 2024.json"
   },
@@ -202,7 +202,7 @@
     "slug": "the-case-for-qr-code-payments",
     "date": "2023-06-04",
     "author": "",
-    "thumbnail": "https://d2lq74zxbg4jiz.cloudfront.net/the_case_for_qr_code_payments_edcb1ec578.jpg",
+    "thumbnail": "/assets/the-case-for-qr-code-payments.jpg",
     "excerpt": "When the FedNow instant payments service launches in July 2023, it will enable a credit push of FedNow instant payments in support of every use case. Financial Institutions will not only be able to send",
     "file": "2023-06-04 - The Case For QR Code Payments.json"
   },
@@ -211,7 +211,7 @@
     "slug": "qr-code-payment-use-cases",
     "date": "2023-06-04",
     "author": "",
-    "thumbnail": "https://d2lq74zxbg4jiz.cloudfront.net/qr_code_payment_use_cases_e1de963fe7.webp",
+    "thumbnail": "/assets/qr-code-payment-use-cases.webp",
     "excerpt": "QR codes can be used to pull up a menu at your favorite restaurant. But how are QR codes used for payments? They can be used by consumers to pay at POS, to pay billers and everybody in between.",
     "file": "2023-06-04 - QR Code Payment Use Cases.json"
   },
@@ -220,7 +220,7 @@
     "slug": "zelle-addressing-authorized-payment-fraud",
     "date": "2023-01-29",
     "author": "matera",
-    "thumbnail": "https://d2lq74zxbg4jiz.cloudfront.net/zelle_addressing_authorized_payment_fraud_1d2893c2c7.jpg",
+    "thumbnail": "/assets/zelle-addressing-authorized-payment-fraud.jpg",
     "excerpt": "As instant payments grow in the U.S., concerns remain about fraud related to transaction speed and irrevocability. Especially as authorized payment fraud appears to be on the rise, some con",
     "file": "2023-01-29 - Zelle Addressing Authorized Payment Fraud.json"
   },
@@ -229,7 +229,7 @@
     "slug": "pix-by-the-numbers-october-2022-update",
     "date": "2022-12-09",
     "author": "matera",
-    "thumbnail": "https://d2lq74zxbg4jiz.cloudfront.net/september_update_282a7b7849.jpg",
+    "thumbnail": "/assets/september-update.jpg",
     "excerpt": "Pix is the instant payments scheme developed, managed and operated by the Central Bank of Brazil. It launched in November 2020 to instant success.",
     "file": "2022-12-09 - Pix By The Numbers October 2022 Update.json"
   },
@@ -238,7 +238,7 @@
     "slug": "pix-by-the-numbers-september-2022-update",
     "date": "2022-11-21",
     "author": "matera",
-    "thumbnail": "https://d2lq74zxbg4jiz.cloudfront.net/september_update_282a7b7849.jpg",
+    "thumbnail": "/assets/september-update.jpg",
     "excerpt": "Pix is the instant payments scheme developed, managed and operated by the Central Bank of Brazil. It launched in November 2020 to instant success.",
     "file": "2022-11-21 - Pix By The Numbers September 2022 Update.json"
   },
@@ -247,7 +247,7 @@
     "slug": "pix-by-the-numbers-august-update",
     "date": "2022-10-07",
     "author": "matera",
-    "thumbnail": "https://d2lq74zxbg4jiz.cloudfront.net/matera_aug_22_pix_by_the_numbers_2504a9acca.jpg",
+    "thumbnail": "/assets/matera-aug-22-pix-by-the-numbers.jpg",
     "excerpt": "Pix is the instant payments scheme developed, managed and operated by the Central Bank of Brazil. It launched in November 2020 to instant success. The metrics tell the story.",
     "file": "2022-10-07 - Pix By The Numbers August Update.json"
   },
@@ -256,7 +256,7 @@
     "slug": "core-banking-conundrum-keeping-up-with-instant-payments-and-digital-transactions",
     "date": "2022-09-29",
     "author": "matera",
-    "thumbnail": "https://d2lq74zxbg4jiz.cloudfront.net/core_banking_conundrum_keeping_up_with_instant_payments_and_digital_transactions_895894c1f1.jpg",
+    "thumbnail": "/assets/core-banking-conundrum-keeping-up-with-instant-payments-and-digital-transactions.jpg",
     "excerpt": "With over 2B Pix instant payments being processed per month in Brazil, many banks supporting merchants with these high volumes are struggling to keep up.",
     "file": "2022-09-29 - Core Banking Conundrum - Keeping Up With Instant Payments and Digital Tran.json"
   },
@@ -265,7 +265,7 @@
     "slug": "us-treasury-joins-fednow-announces-launch-by-july-2023",
     "date": "2022-09-21",
     "author": "",
-    "thumbnail": "https://d2lq74zxbg4jiz.cloudfront.net/us_treasury_joins_fednow_announces_launch_by_july_2023_8446fff2bb.jpg",
+    "thumbnail": "/assets/us-treasury-joins-fednow-announces-launch-by-july-2023.jpg",
     "excerpt": "The U.S. Treasury's Bureau of Fiscal Service provides central payment services to the American public on behalf of government agencies. They operate the Federal Government's collection and dep",
     "file": "2022-09-21 - US Treasury joins FedNow announces launch by July 2023.json"
   },
@@ -274,7 +274,7 @@
     "slug": "the-growth-of-zelle-in-the-us",
     "date": "2022-09-21",
     "author": "matera",
-    "thumbnail": "https://d2lq74zxbg4jiz.cloudfront.net/the_growth_of_zelle_in_the_us_5a9efda895.jpg",
+    "thumbnail": "/assets/the-growth-of-zelle-in-the-us.jpg",
     "excerpt": "The adoption of instant payments has been slow in the U.S. relative to other markets, but the growth of Zelle's P2P service is a strong statement that consumers value quicker delivery of fund",
     "file": "2022-09-21 - The Growth of Zelle in the US.json"
   },
@@ -283,7 +283,7 @@
     "slug": "qr-codes-the-key-to-unlocking-instant-payments",
     "date": "2022-09-21",
     "author": "Sarah Hoisington",
-    "thumbnail": "https://d2lq74zxbg4jiz.cloudfront.net/qr_codes_the_key_to_unlocking_instant_payments_c187af9e3c.webp",
+    "thumbnail": "/assets/qr-codes-the-key-to-unlocking-instant-payments.webp",
     "excerpt": "With the launch of FedNow, the focus will shift towards adoption of instant payments through both FedNow and RTP. These rails that facilitate money movement instantly from one bank account to",
     "file": "2022-09-21 - QR Codes The Key to Unlocking Instant Payments.json"
   },
@@ -292,7 +292,7 @@
     "slug": "pix-instant-payments-lessons-learned-and-implications-for-the-us",
     "date": "2022-09-21",
     "author": "matera",
-    "thumbnail": "https://d2lq74zxbg4jiz.cloudfront.net/pix_instant_payments_lessons_learned_and_implications_for_the_us_0c4f4c90b1.jpg",
+    "thumbnail": "/assets/pix-instant-payments-lessons-learned-and-implications-for-the-us.jpg",
     "excerpt": "While Pix is a success story, there were many challenges in the beginning. Banks, payment institutions and solution providers supporting Pix had to adapt quickly. Below are four examples of l",
     "file": "2022-09-21 - Pix Instant Payments Lessons Learned and Implications for the US.json"
   },
@@ -301,7 +301,7 @@
     "slug": "pix-by-the-numbers",
     "date": "2022-09-21",
     "author": "matera",
-    "thumbnail": "https://d2lq74zxbg4jiz.cloudfront.net/pix_by_the_numbers_8f73b3b9fc.jpg",
+    "thumbnail": "/assets/pix-by-the-numbers.jpg",
     "excerpt": "Pix is an instant payment scheme developed, managed, operated and owned by the Central Bank of Brazil. In 2018, they mandated that all banks be able to offer instant payments.",
     "file": "2022-09-21 - Pix By The Numbers.json"
   },
@@ -310,7 +310,7 @@
     "slug": "optimizing-instant-payments-performance-batch-payments-and-message-compression-for-mq-based-queues",
     "date": "2022-09-21",
     "author": "matera",
-    "thumbnail": "https://d2lq74zxbg4jiz.cloudfront.net/optimizing_instant_payments_performance_batch_payments_and_message_compression_for_mq_based_queues_48ef713bbb.jpg",
+    "thumbnail": "/assets/optimizing-instant-payments-performance-batch-payments-and-message-compression-for-mq-based-queues.jpg",
     "excerpt": "The success of the Pix instant payments scheme in Brazil is well-documented. While this instant payments scheme leverages REST APIs to exchange ISO2022 messages, another payment scheme in Braz",
     "file": "2022-09-21 - Optimizing Instant Payments Performance Batch Payments and Message Compressio.json"
   }

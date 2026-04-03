@@ -12,7 +12,7 @@ export default function Esg() {
     <>
       <PageHero
         title="ESG"
-        image="https://d2lq74zxbg4jiz.cloudfront.net/hero_esg_1441cf4c8d.jpg"
+        image="/assets/hero-esg.jpg"
       />
 
       {/* Intro */}
@@ -56,7 +56,7 @@ export default function Esg() {
             </p>
           </div>
           <img
-            src="https://d2lq74zxbg4jiz.cloudfront.net/imagem_pacto_onu_e6408b4068.jpg"
+            src="/assets/imagem-pacto-onu.jpg"
             alt="Pacto Global da ONU"
             style={{ width: '100%', borderRadius: '12px' }}
           />

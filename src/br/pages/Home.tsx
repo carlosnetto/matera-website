@@ -126,17 +126,6 @@ export default function Home() {
         position: 'relative',
         overflow: 'hidden',
       }}>
-        {/* Announcement banner */}
-        <div style={{ backgroundColor: 'var(--matera-purple)', padding: '10px 0', marginBottom: '3rem', textAlign: 'center' }}>
-          <div className="container">
-            <p style={{ fontSize: '0.9rem', color: 'var(--matera-white)' }}>
-              Foque na sua operação enquanto cuidamos da complexidade regulatória.{' '}
-              <a href="https://www.matera.com/br/spsav-2/" target="_blank" rel="noopener noreferrer"
-                style={{ color: 'var(--matera-green)', fontWeight: 700 }}>Saiba mais →</a>
-            </p>
-          </div>
-        </div>
-
         <div className="container">
           <p style={{
             fontSize: '0.85rem',

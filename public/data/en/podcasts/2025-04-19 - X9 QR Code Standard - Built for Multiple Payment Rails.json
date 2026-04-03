@@ -2,7 +2,7 @@
   "title": "X9 QR Code Standard - Built for Multiple Payment Rails",
   "slug": "x9-qr-code-standard",
   "date": "2025-04-19",
-  "thumbnail": "https://d2lq74zxbg4jiz.cloudfront.net/X9_qr_code_standard_6672babb73.jpg",
+  "thumbnail": "/assets/x9-qr-code-standard.jpg",
   "excerpt": "In the latest episode of Real Time Payments Revolution, Matera VP of Strategy and Marketing Sarah Hoisington delves into the X9 QR Code payment standard and its transfo",
   "body": "In the latest episode of Real Time Payments Revolution, Matera VP of Strategy and Marketing Sarah Hoisington delves into the X9 QR Code payment standard and its transformative potential for digital transactions. This innovative standard enables a single QR code to initiate various push payments—such as FedNow, RTP, Push to Card, and ACH Credit Push—without users needing to select a specific payment rail. By being rail-agnostic, the X9 standard offers a flexible and future-ready solution for seamless, secure, and interoperable payments across diverse platforms. Tune in to this 4-minute episode to explore how this standard is shaping the future of real-time payments.",
   "spotifyUrl": "https://open.spotify.com/episode/7uYUc2itGPvw9DIu6E48Xq",

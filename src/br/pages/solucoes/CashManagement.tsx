@@ -6,7 +6,7 @@ export default function CashManagement() {
       hero={{
         title: 'Cash Management',
         subtitle: 'Atenda seus clientes corporativos por meio de uma oferta integrada de Pagamentos e Recebíveis, proporcionando uma melhor gestão de fluxo de caixa e serviços de alto valor agregado.',
-        image: 'https://d2lq74zxbg4jiz.cloudfront.net/imagem_cash_management_solution_9c5a2831d3.webp',
+        image: '/assets/imagem_cash_management_solution_9c5a2831d3.webp',
       }}
       sections={[
         {

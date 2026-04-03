@@ -2,7 +2,7 @@
   "title": "Moving from Stand-In to Digital Twin for 24X7 Processing",
   "slug": "digital-twin-processing",
   "date": "2025-05-04",
-  "thumbnail": "https://d2lq74zxbg4jiz.cloudfront.net/moving_from_stand_in_to_digital_twin_e9dcd19fa5.jpg",
+  "thumbnail": "/assets/moving-from-stand-in-to-digital-twin.jpg",
   "excerpt": "Core banking systems are remarkably capable. But they were built in a different era—one where banks operated during the day and closed at night, much like a physical",
   "body": "Core banking systems are remarkably capable. But they were built in a different era—one where banks operated during the day and closed at night, much like a physical branch. That's where \"stand-in\" systems come in. These systems temporarily take over transaction authorization while the Core is down.\n\nThe problem is, stand-in systems have real limits, as they open the door to a dangerous vulnerability.\n\nMany institutions are rethinking the idea of switching back and forth between the Core and a stand-in. Instead of toggling between systems, many are implementing a real-time, always-on ledger—a Digital Twin.\n\nListen to the latest episode of Real Time Payments Revolution here.",
   "spotifyUrl": "https://open.spotify.com/episode/0G4Uk2BEeurOcuQebYTSB5",

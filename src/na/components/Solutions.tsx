@@ -2,19 +2,19 @@ import React from 'react';
 
 const solutions = [
   {
-    icon: 'https://d2lq74zxbg4jiz.cloudfront.net/stablecoin_2abb4b6254.svg',
+    icon: '/assets/stablecoin_2abb4b6254.svg',
     title: 'Digital Twin for Stablecoins',
     text: 'Protect your deposits by offering stablecoins within the banking experience. Digital Twin supports off-chain stablecoin transactions that are high-performance, privacy-preserving, and embedded in digital banking apps. Avoid gas fees, maintain full control, and keep deposits inside the traditional financial system.',
     href: '#'
   },
   {
-    icon: 'https://d2lq74zxbg4jiz.cloudfront.net/real_time_payments_f333b57894.svg',
+    icon: '/assets/real_time_payments_f333b57894.svg',
     title: 'Digital Twin for Real-Time Payments',
     text: 'Enable your customers to pay and get paid instantly. Digital Twin is a lightweight, high-speed ledger that augments your core to enable 24x7 real-time payment processing with the resilience, scale, and performance modern banking demands.',
     href: '#'
   },
   {
-    icon: 'https://d2lq74zxbg4jiz.cloudfront.net/qr_code_e9a72b7bb1.svg',
+    icon: '/assets/qr_code_e9a72b7bb1.svg',
     title: 'QR Code Payments',
     text: 'Let your billers and merchants accept instant payments with one simple scan. Supports FedNow/RTP, ACH, push to card. Integrated with invoices, POS, e-commerce. Designed for flexibility, automation and scale.',
     href: '#'

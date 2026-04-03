@@ -6,7 +6,7 @@ export default function CoreBanking() {
       hero={{
         title: 'Core Banking',
         subtitle: 'Transforme a experiência do seu cliente, impulsione o desenvolvimento do seu Banco com uma solução de Core Banking abrangente e flexível, que utiliza tecnologia robusta e pronta para a nuvem.',
-        image: 'https://d2lq74zxbg4jiz.cloudfront.net/core_banking_6ece384e18.png',
+        image: '/assets/core_banking_6ece384e18.png',
       }}
       stats={[
         { value: '60 MI', label: 'de contas' },

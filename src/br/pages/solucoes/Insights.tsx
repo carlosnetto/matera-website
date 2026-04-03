@@ -6,7 +6,7 @@ export default function Insights() {
       hero={{
         title: 'Insights',
         subtitle: 'Transforme dados transacionais em decisões inteligentes. A Matera Insights é o seu hub de dados e inteligência artificial.',
-        image: 'https://d2lq74zxbg4jiz.cloudfront.net/Imagem_Solucoes_Matera_Insights_home_1280px_5bd7793518.png',
+        image: '/assets/Imagem_Solucoes_Matera_Insights_home_1280px_5bd7793518.png',
       }}
       sections={[
         {

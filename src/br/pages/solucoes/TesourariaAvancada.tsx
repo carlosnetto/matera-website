@@ -6,7 +6,7 @@ export default function TesourariaAvancada() {
       hero={{
         title: 'Tesouraria Avançada',
         subtitle: 'Para tomar decisões estratégicas com confiança, você precisa de clareza. A Matera Tesouraria Avançada oferece uma gestão completa do caixa e derivativos, fornecendo o controle e a segurança que sua instituição precisa.',
-        image: 'https://d2lq74zxbg4jiz.cloudfront.net/tesouraria_avancada_b4ea4dab40.webp',
+        image: '/assets/tesouraria_avancada_b4ea4dab40.webp',
       }}
       sections={[
         {

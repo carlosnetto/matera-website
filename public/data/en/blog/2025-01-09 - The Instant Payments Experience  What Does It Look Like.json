@@ -3,15 +3,15 @@
   "slug": "instant-payment-star-one-credit-union",
   "date": "2025-01-09",
   "author": "Matera",
-  "thumbnail": "https://d2lq74zxbg4jiz.cloudfront.net/instant_payments_experience_blog_graphic_d97fa862dc.png",
+  "thumbnail": "/assets/instant-payments-experience-blog-graphic.png",
   "excerpt": "Star One Credit Union is one of Silicon Valley's largest member-owned financial institutions. They have over 123,000 members worldwide and over $10 billion in assets.",
   "body": "## Star One Credit Union User Experience\n\nStar One Credit Union is one of Silicon Valley's largest member-owned financial institutions. They have over 123,000 members worldwide and over $10 billion in assets.\n\nThey offered FedNow instant payments when this instant payment service launched in July 2023. During an [August 2023 FedNow webinar](https://explore.fednow.org/explore-the-city?id=3&building=&postId=42&postTitle=fednow-service-early-adopters-share-excitement,-energy-at-town-hall), Minal Gupta, VP of Remote Services for Star One shared an example of what their user experience looks like for a member sending an instant payment.\n\nTo enhance the user experience Star One Credit Union added an \"Instant Pay\" option to the External Transfer section of the mobile app where members can initiate an instant payment.\n\nFor each consumer, they list external recipients who are eligible to receive instant payments.\n\nWhen setting up an instant payment, consumers are reminded that funds will be sent instantly and the impact on their daily instant payment limit.\n\nBefore confirming the instant payment, they are presented in bold with who the money is being transferred to, the amount and are reminded that it's irrevocable.\n\nA one-time passcode is requested before the funds can be sent.\n\nNotification is provided once funds are sent.\n\nWithin just several months after launching this instant payment service, Star One saw members move money to different financial institutions, to their families, and to small businesses. After just 3 months, Star One members transferred over $1.1 million and conducted over 900 FedNow transactions.",
   "images": [
-    "https://d2lq74zxbg4jiz.cloudfront.net/instant_payment_star_union_image1_fc8735776e.png",
-    "https://d2lq74zxbg4jiz.cloudfront.net/instant_payment_star_union_image2_578f2342f3.png",
-    "https://d2lq74zxbg4jiz.cloudfront.net/instant_payment_star_union_image3_95d3dc478c.png",
-    "https://d2lq74zxbg4jiz.cloudfront.net/Instant_Payments_Experience_Blog_image_4_8a3d3fbd6d.png",
-    "https://d2lq74zxbg4jiz.cloudfront.net/instant_payment_star_union_image5_a5d8a9997b.png",
-    "https://d2lq74zxbg4jiz.cloudfront.net/Instant_Payments_Experience_Blog_image_6_f578818382.png"
+    "/assets/instant-payment-star-union-image1.png",
+    "/assets/instant-payment-star-union-image2.png",
+    "/assets/instant-payment-star-union-image3.png",
+    "/assets/instant-payments-experience-blog-image-4.png",
+    "/assets/instant-payment-star-union-image5.png",
+    "/assets/instant-payments-experience-blog-image-6.png"
   ]
 }

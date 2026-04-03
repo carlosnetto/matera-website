@@ -115,7 +115,7 @@ const Footer: React.FC = () => {
             <h4 style={{ fontSize: '0.9rem', fontWeight: '700', marginBottom: '20px', color: 'var(--matera-white)' }}>Informações legais</h4>
             <ul style={{ display: 'flex', flexDirection: 'column', gap: '12px', listStyle: 'none' }}>
               <li>
-                <a href="https://d2lq74zxbg4jiz.cloudfront.net/PT_BR_Codigo_de_Etica_e_Conduta_Atualizado_24_10_2024_727d52bfb7.pdf" target="_blank" rel="noopener noreferrer"
+                <a href="/assets/codigo-de-etica-e-conduta.pdf" target="_blank" rel="noopener noreferrer"
                   style={{ opacity: 0.6, fontSize: '0.85rem', color: 'var(--matera-white)', transition: 'opacity 0.2s' }}
                   onMouseEnter={(e) => (e.currentTarget.style.opacity = '1')}
                   onMouseLeave={(e) => (e.currentTarget.style.opacity = '0.6')}

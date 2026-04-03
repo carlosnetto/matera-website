@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { ChevronDown, Menu, X } from 'lucide-react';
+import TerritorySelector from '../../shared/components/TerritorySelector';
 
 interface MenuItem {
   label: string;
@@ -235,24 +236,7 @@ const Header: React.FC = () => {
             </li>
           </ul>
 
-          <div style={{ display: 'flex', alignItems: 'center' }}>
-            <button style={{
-              background: 'none',
-              border: '1px solid rgba(255,255,255,0.3)',
-              cursor: 'pointer',
-              display: 'flex',
-              alignItems: 'center',
-              gap: '6px',
-              color: 'var(--matera-white)',
-              fontWeight: '500',
-              fontSize: '0.9rem',
-              padding: '8px 14px',
-              borderRadius: '6px',
-              transition: 'border-color 0.2s',
-            }}>
-              English <ChevronDown size={12} />
-            </button>
-          </div>
+          <TerritorySelector />
         </nav>
 
         {/* Mobile toggle */}

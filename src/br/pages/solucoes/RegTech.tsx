@@ -6,7 +6,7 @@ export default function RegTech() {
       hero={{
         title: 'RegTech',
         subtitle: 'Tenha suporte completo às exigências do Banco Central e da Receita Federal, conferindo segurança e credibilidade para sua operação.',
-        image: 'https://d2lq74zxbg4jiz.cloudfront.net/regtech_7b8efd5a0c.png',
+        image: '/assets/regtech_7b8efd5a0c.png',
       }}
       stats={[
         { value: '1.000+', label: 'APIs disponíveis' },

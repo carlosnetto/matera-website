@@ -1,0 +1,60 @@
+# Change History
+
+## 2026-04-03: SEO fixes for /en site
+
+**Problem:** SEO analysis flagged Portuguese content on English pages, particularly in image attributes.
+
+**What was found:**
+- All content images (blog, press, whitepapers, podcasts) had empty `alt=""` — search engines and screen readers saw no description (HIGH impact)
+- 14 Cloudfront image URLs contained Portuguese filenames like `Copia_de_shutterstock_...` (LOW impact, resolved by Cloudfront migration below)
+- 4 press articles linked to Portuguese-language external sources (acceptable — proper nouns)
+- BR homepage had a purple announcement banner that didn't exist on the real matera.com/br
+
+**What was fixed:**
+- Added descriptive `alt` text (article titles) to all content thumbnails across Blog, Press, Whitepapers, Podcasts, DigitalTwin, Stablecoin, and AboutUs pages
+- Removed the non-existent announcement banner from BR homepage
+
+**Files changed:** `src/na/pages/Blog.tsx`, `Press.tsx`, `Whitepapers.tsx`, `Podcasts.tsx`, `DigitalTwin.tsx`, `Stablecoin.tsx`, `AboutUs.tsx`, `src/br/pages/Home.tsx`
+
+**Full audit:** See `BADSEO.md`
+
+---
+
+## 2026-04-03: Migrate all assets from Cloudfront to local
+
+**Problem:** 377 images, videos, and PDFs were served from `d2lq74zxbg4jiz.cloudfront.net` (Matera's old Strapi CMS CDN). Since the site deploys to Cloudflare Pages, having a second CDN dependency was unnecessary and created risks: Cloudfront could go down, URLs could change, and Portuguese filenames in image URLs hurt SEO.
+
+**What was done:**
+- Downloaded 289 images + 5 small videos + 6 PDFs to `public/assets/` (18MB images + 6MB videos + 8MB PDFs)
+- Renamed all files with clean English names (stripped CMS hashes, translated Portuguese words)
+- Replaced 621 URL references across 247+ source files (`src/` and `public/data/`)
+- 1 large video (38MB `digital-twin-explainer.mp4`) downloaded locally but gitignored
+
+**What remains on Cloudfront:** Nothing. Zero references in source code. One legacy `/_next/image/` encoded URL in a BR case study body (StoneX) — inert, from old Next.js site.
+
+**Scripts:** `scripts/migrate-cloudfront.mjs` (images), `scripts/migrate-remaining.mjs` (videos + PDFs), `scripts/cloudfront-mapping.json` (full URL-to-filename mapping)
+
+---
+
+## 2026-04-03: Territory selector and geo-redirect
+
+**What was done:**
+- Replaced the "English"/"Portugues" language button in both NA and BR headers with a compact flag-based territory selector (US, Canada, Brazil)
+- Added `public/_worker.js` — Cloudflare Pages worker that redirects `/` to `/br` for visitors from Brazil, `/en` for everyone else (uses `request.cf.country`, no external API)
+- Worker also sets a `cf-country` cookie so the frontend shows the correct flag (US visitors see US flag, Canadians see Canadian flag, Brazilians see Brazilian flag)
+- Territory selector navigates to market root (`/en` or `/br`), not equivalent pages
+
+**Files changed:** `src/shared/components/TerritorySelector.tsx` (new), `src/na/components/Header.tsx`, `src/br/components/Header.tsx`, `public/_worker.js` (new)
+
+---
+
+## 2026-04-03: Multi-region architecture and BR market migration
+
+**What was done:**
+- Reorganized codebase from flat `src/components/` + `src/pages/` to market-based `src/na/`, `src/br/`, `src/shared/`
+- Moved EN content from `public/data/` to `public/data/en/`
+- Built complete BR market: 22 routes, 99 blog posts, 11 case studies, 9 solution pages, 7 static pages
+- Added `.mcp.json` for Chrome DevTools MCP auto-configuration
+- Added project docs: `ADR.md` (ADR-003), `CONTEXT.md`, `STRUCTURE.md`, `IMPLEMENTATION-PLAN.md`
+
+**See:** `ADR.md` (ADR-003), `IMPLEMENTATION-PLAN.md`

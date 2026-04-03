@@ -27,7 +27,7 @@ export default function Carreiras() {
     <>
       <PageHero
         title="Carreiras"
-        image="https://d2lq74zxbg4jiz.cloudfront.net/Capa_Pagina_Carreiras_1_d6e2663b5d.jpg"
+        image="/assets/capa-pagina-carreiras-1.jpg"
       />
 
       {/* Cultura */}
@@ -42,7 +42,7 @@ export default function Carreiras() {
             </p>
           </div>
           <img
-            src="https://d2lq74zxbg4jiz.cloudfront.net/cultura_matera_1_6e87a7ddf9.jpg"
+            src="/assets/cultura-matera-1.jpg"
             alt="Cultura Matera"
             style={{ width: '100%', borderRadius: '12px' }}
           />

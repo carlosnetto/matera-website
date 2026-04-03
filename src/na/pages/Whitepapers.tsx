@@ -57,7 +57,7 @@ function WhitepaperList() {
                 }}
               >
                 <div style={{ aspectRatio: '16/10', overflow: 'hidden' }}>
-                  <img src={wp.thumbnail} alt="" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                  <img src={wp.thumbnail} alt={wp.title} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                 </div>
                 <div style={{ padding: '24px', flex: 1, display: 'flex', flexDirection: 'column' }}>
                   <p style={{ fontSize: '0.8rem', color: '#999', marginBottom: '8px' }}>
@@ -219,7 +219,7 @@ function WhitepaperDetail() {
           }}>
             {/* Thumbnail */}
             <div>
-              <img src={wp.thumbnail} alt="" style={{ width: '100%', borderRadius: '12px', marginBottom: '24px' }} />
+              <img src={wp.thumbnail} alt={wp.title} style={{ width: '100%', borderRadius: '12px', marginBottom: '24px' }} />
             </div>
 
             {/* Form or direct link */}
