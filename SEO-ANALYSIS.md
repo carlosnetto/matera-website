@@ -113,9 +113,9 @@ The site is a pure React SPA. When a search engine crawler or social media bot r
 
 ---
 
-### 5. No Sitemap
+### ~~5. No Sitemap~~ FIXED 2026-04-03
 
-**Severity:** HIGH
+**Severity:** ~~HIGH~~ RESOLVED — Generated `sitemap.xml` with 256 URLs (static + dynamic content routes)
 
 No `sitemap.xml` exists. The site has 40+ routes across two markets — without a sitemap, search engines must discover all pages through link crawling alone.
 
@@ -125,9 +125,9 @@ No `sitemap.xml` exists. The site has 40+ routes across two markets — without 
 
 ---
 
-### 6. No robots.txt
+### ~~6. No robots.txt~~ FIXED 2026-04-03
 
-**Severity:** HIGH
+**Severity:** ~~HIGH~~ RESOLVED — Created `robots.txt` with sitemap reference
 
 No `robots.txt` file exists. While this doesn't block crawling (absence means "allow all"), it's a missed opportunity to:
 - Point crawlers to the sitemap
@@ -143,9 +143,9 @@ Sitemap: https://matera.com/sitemap.xml
 
 ---
 
-### 7. No 404 Page
+### ~~7. No 404 Page~~ FIXED 2026-04-03
 
-**Severity:** HIGH
+**Severity:** ~~HIGH~~ RESOLVED — Added 404 catch-all route with branded error page
 
 Invalid URLs (e.g., `/nonexistent-page`) render a blank page with HTTP 200 status. Confirmed live: empty body, title still "Matera", no error message.
 
@@ -160,9 +160,9 @@ Invalid URLs (e.g., `/nonexistent-page`) render a blank page with HTTP 200 statu
 
 ---
 
-### 8. Duplicate Content: `/` and `/en`
+### ~~8. Duplicate Content: `/` and `/en`~~ FIXED 2026-04-03
 
-**Severity:** HIGH
+**Severity:** ~~HIGH~~ RESOLVED — Removed `/` and `/en/solutions/digital-twin-stablecoins` duplicate routes
 
 Both `/` and `/en` render the identical `Home` component. Similarly, `/en/stablecoin` and `/en/solutions/digital-twin-stablecoins` render the same `Stablecoin` component.
 
@@ -300,10 +300,10 @@ No schema.org structured data. Missing opportunities for rich snippets:
 | ~~P0~~ | ~~Add `<meta name="description">` per page~~ | ~~Medium~~ | ~~Very High~~ | FIXED 2026-04-03 |
 | ~~P0~~ | ~~Add prerendering or SSG for key pages~~ | ~~High~~ | ~~Very High~~ | MITIGATED 2026-04-03 (worker meta injection) |
 | ~~P0~~ | ~~Add Open Graph tags~~ | ~~Medium~~ | ~~High~~ | FIXED 2026-04-03 |
-| P1 | Create `sitemap.xml` | Low | High | Open |
-| P1 | Create `robots.txt` | Low | High | Open |
-| P1 | Add 404 catch-all route | Low | High | Open |
-| P1 | Fix duplicate routes (`/` vs `/en`, stablecoin alias) | Low | High | Open |
+| ~~P1~~ | ~~Create `sitemap.xml`~~ | ~~Low~~ | ~~High~~ | FIXED 2026-04-03 |
+| ~~P1~~ | ~~Create `robots.txt`~~ | ~~Low~~ | ~~High~~ | FIXED 2026-04-03 |
+| ~~P1~~ | ~~Add 404 catch-all route~~ | ~~Low~~ | ~~High~~ | FIXED 2026-04-03 |
+| ~~P1~~ | ~~Fix duplicate routes (`/` vs `/en`, stablecoin alias)~~ | ~~Low~~ | ~~High~~ | FIXED 2026-04-03 |
 | P2 | Add `hreflang` tags | Low | Medium | Open |
 | P2 | Set `<html lang>` dynamically per market | Low | Medium | Open |
 | P2 | Add `loading="lazy"` to below-fold images | Low | Medium | Open |

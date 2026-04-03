@@ -36,6 +36,7 @@ import Esg from './br/pages/Esg'
 import BrPoliticaDePrivacidade from './br/pages/PoliticaDePrivacidade'
 import RelatorioTransparencia from './br/pages/RelatorioTransparencia'
 import Tendencias2026 from './br/pages/Tendencias2026'
+import NotFound from './shared/components/NotFound'
 
 function App() {
   return (
@@ -44,12 +45,10 @@ function App() {
       <Routes>
         {/* NA market — /en (English), future: /es, /fr */}
         <Route element={<NaLayout />}>
-          <Route path="/" element={<Home />} />
           <Route path="/en" element={<Home />} />
           <Route path="/en/contact-us" element={<ContactUs />} />
           <Route path="/en/stablecoin" element={<Stablecoin />} />
           <Route path="/en/solutions/digital-twin" element={<DigitalTwin />} />
-          <Route path="/en/solutions/digital-twin-stablecoins" element={<Stablecoin />} />
           <Route path="/en/solutions/qr-code-solutions" element={<QrCodeSolutions />} />
           <Route path="/en/solutions/wallet-as-a-service" element={<WalletAsAService />} />
           <Route path="/en/about-us" element={<AboutUs />} />
@@ -89,6 +88,9 @@ function App() {
           <Route path="/br/relatorio-de-transparencia-e-igualdade-salarial" element={<RelatorioTransparencia />} />
           <Route path="/br/tendencias-mercado-financeiro-2026" element={<Tendencias2026 />} />
         </Route>
+
+        {/* 404 catch-all */}
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
   )

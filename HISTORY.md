@@ -1,5 +1,19 @@
 # Change History
 
+## 2026-04-03: SEO P1 fixes — sitemap, robots.txt, 404 page, duplicate routes
+
+**What was done:**
+- Generated `public/sitemap.xml` with 256 URLs (all static routes + blog/press/whitepaper/podcast/case slugs from index.json)
+- Created `public/robots.txt` with sitemap reference
+- Added 404 catch-all route (`<Route path="*">`) with branded error page showing links to EN and BR sites
+- Removed duplicate route `/` (was identical to `/en` — `_worker.js` already handles root redirect)
+- Removed duplicate route `/en/solutions/digital-twin-stablecoins` (was identical to `/en/stablecoin`)
+- Added `scripts/generate-sitemap.mjs` for regenerating sitemap when content changes
+
+**Files changed:** `src/App.tsx`, `src/shared/components/NotFound.tsx` (new), `public/robots.txt` (new), `public/sitemap.xml` (new), `scripts/generate-sitemap.mjs` (new), `SEO-ANALYSIS.md`
+
+---
+
 ## 2026-04-03: SEO P0 fixes — dynamic titles, meta descriptions, OG tags, server-side meta injection
 
 **Problem:** Every page showed `<title>Matera</title>` with no meta descriptions, no OG tags, and no Twitter cards. Social media crawlers saw blank previews.

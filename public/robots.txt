@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /assets/*.mp4
+
+Sitemap: https://matera.com/sitemap.xml
