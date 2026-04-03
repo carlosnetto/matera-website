@@ -1,7 +1,21 @@
-# Matera NA Website — Project Context
+# Matera Website — Project Context
 
 ## Goal
-Static copy of **matera.com/en** — a React + Vite + TypeScript site that matches the real site visually, deployed via Wrangler to Cloudflare Pages. No CMS, no database, no server.
+Static copies of **matera.com** — React + Vite + TypeScript, deployed via Wrangler to Cloudflare Pages. No CMS, no database, no server.
+
+## Multi-Region Architecture (ADR-003)
+The site is organized by **market**, not language:
+- `src/na/` — North America market (different products from Brazil)
+- `src/br/` — Brazil market (future, different products from NA)
+- `src/shared/` — design system shared across all markets
+
+URL prefixes map to markets + languages:
+- `/en` → NA market, English
+- `/es` → NA market, Spanish (future)
+- `/fr` → NA market, French (future)
+- `/br` → BR market, Portuguese (future)
+
+NA and BR have different products and content. `/es` and `/fr` are translations of NA, not separate markets.
 
 ## Stack
 - React 19 + TypeScript + Vite 8
@@ -11,24 +25,40 @@ Static copy of **matera.com/en** — a React + Vite + TypeScript site that match
 - HubSpot Forms API (whitepaper lead capture, portal ID: 20392958)
 - No external font CDN dependency
 
+## Source Structure
+```
+src/
+├── shared/                  ← design system (all markets share this)
+│   ├── components/          ← PageHero, ScrollToTop
+│   └── utils/               ← markdownToHtml
+├── na/                      ← North America market
+│   ├── NaLayout.tsx         ← NA Header + Outlet + NA Footer
+│   ├── components/          ← Header, Footer, Hero, Solutions, etc.
+│   └── pages/               ← Home, Blog, Stablecoin, etc.
+├── App.tsx                  ← router (market-based layout nesting)
+├── main.tsx
+└── index.css                ← shared design tokens
+```
+
 ## Real Site Source Code
 The real matera.com source is at `$HOME/Git/site-matera-main` (Next.js + Strapi CMS + Tailwind). Use it to extract exact styles, assets, and structure. Navigation/content is CMS-driven so check the rendered HTML from matera.com/en for actual menu items. **The live site always wins** over the source code when there's a conflict.
 
 ## Content Architecture (ADR-001)
-Blog, Press, Podcasts, and Whitepapers use static JSON files — one JSON per article, one `index.json` per content type. See [ADR.md](./ADR.md) for full details.
+Blog, Press, Podcasts, and Whitepapers use static JSON files — one JSON per article, one `index.json` per content type. Content is organized by language under `public/data/`:
 
 ```
 public/data/
-├── blog/        35 posts    (index.json + individual JSONs)
-├── press/       56 articles (index.json + individual JSONs)
-├── podcasts/    11 episodes (index.json + individual JSONs, Spotify + Apple URLs)
-└── whitepapers/ 12 papers   (index.json + individual JSONs, HubSpot form IDs + PDF URLs)
+└── en/              ← English content
+    ├── blog/        35 posts    (index.json + individual JSONs)
+    ├── press/       56 articles (index.json + individual JSONs)
+    ├── podcasts/    11 episodes (index.json + individual JSONs, Spotify + Apple URLs)
+    └── whitepapers/ 12 papers   (index.json + individual JSONs, HubSpot form IDs + PDF URLs)
 ```
 
 ### Content sourcing process
 1. Find URLs via `matera.com/sitemap.xml`
 2. Fetch each page via WebFetch
-3. Write individual JSONs to `public/data/{type}/`
+3. Write individual JSONs to `public/data/en/{type}/`
 4. Regenerate index with Node one-liner (see ADR.md)
 
 ### Filename convention
@@ -61,7 +91,7 @@ Hero bg:         #000023   (near-black, from real site matera-black)
 - "Contact us" is a plain text link (no button)
 - "English" is an outline button with chevron
 
-## Pages (16 routes)
+## Pages (16 EN routes)
 1. `/` `/en` — Home (Hero, TrustBanner, Solutions, Features, Stats, WhyMatera, CTA)
 2. `/en/contact-us` — Contact form + offices
 3. `/en/stablecoin` — Stablecoin product page (9 sections)
@@ -102,3 +132,4 @@ npm run deploy   # build + wrangler deploy to Cloudflare Pages
 - Do not use `font-family` inline overrides on components — Poppins is set globally on body
 - Do not use fontWeight: 800 for headings — real site only uses 400/600/700
 - Do not link content pages to external insight.matera.com — use local `/en/whitepapers/:slug` routes
+- Do not put NA-specific components in `src/shared/` — only truly locale-agnostic code goes there

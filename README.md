@@ -1,27 +1,50 @@
-# Matera NA Website
+# Matera Website
 
-Static copy of **matera.com/en** — no CMS, no database, no server. Built with React + Vite + TypeScript, deployed to Cloudflare Pages.
+Static copies of **matera.com** — no CMS, no database, no server. Built with React + Vite + TypeScript, deployed to Cloudflare Pages.
 
 ## Architecture
 
 ```
-matera-na-website/          <-- repo root (source code, docs, configs)
-├── src/                    <-- React components, pages, CSS
-│   ├── components/         <-- shared components (Header, Footer, PageHero, etc.)
-│   └── pages/              <-- page components (Home, Blog, Press, Podcasts, etc.)
-├── public/                 <-- static assets (fonts, logos, JSON data, favicon)
-│   └── data/               <-- blog, press, podcasts, whitepapers as static JSON
-├── dist/                   <-- build output (ONLY this goes to Cloudflare)
-├── CLAUDE.md               <-- project context for Claude Code
-├── ADR.md                  <-- architecture decision records
-├── README.md               <-- this file
-├── package.json
-└── vite.config.ts
+matera-na-website/
+├── src/
+│   ├── shared/             ← design system, brand assets, layout primitives
+│   │   ├── components/     ← PageHero, ScrollToTop (locale-agnostic)
+│   │   └── utils/          ← markdownToHtml (shared utility)
+│   ├── na/                 ← North America market (serves /en, future /es, /fr)
+│   │   ├── NaLayout.tsx    ← NA Header + <Outlet /> + NA Footer
+│   │   ├── components/     ← NA-specific: Header, Footer, Hero, CTA, etc.
+│   │   └── pages/          ← NA pages (Home, Blog, Stablecoin, etc.)
+│   ├── App.tsx             ← router with market-based layout nesting
+│   ├── main.tsx
+│   └── index.css           ← shared design tokens, typography, buttons
+├── public/
+│   ├── data/
+│   │   └── en/             ← English content JSON (blog, press, podcasts, whitepapers)
+│   ├── fonts/              ← Poppins woff2 (400, 600, 700)
+│   ├── logos/              ← client logos
+│   └── (brand assets)      ← logo SVGs, favicon, images
+├── dist/                   ← build output (ONLY this goes to Cloudflare)
+├── CLAUDE.md               ← project context
+├── ADR.md                  ← architecture decision records
+└── README.md               ← this file
 ```
 
-**Only `dist/` is deployed.** Everything else (source code, docs, ADRs, READMEs) stays in the repo and never reaches Cloudflare.
+**Only `dist/` is deployed.** Everything else stays in the repo.
 
-## Pages
+## Multi-Region Strategy
+
+The site is organized by **market**, not language:
+
+| Market | URL prefix | Source code | Content data |
+|--------|-----------|-------------|--------------|
+| North America | `/en` (English) | `src/na/` | `public/data/en/` |
+| North America | `/es` (Spanish, future) | `src/na/` | `public/data/es/` |
+| North America | `/fr` (French, future) | `src/na/` | `public/data/fr/` |
+| Brazil | `/br` (Portuguese, future) | `src/br/` | `public/data/br/` |
+
+NA and BR are different markets with different products and content. `/es` and `/fr` are translations of the NA market, not separate markets.
+
+## Pages (EN)
 
 | Route | Description |
 |-------|-------------|
@@ -60,16 +83,35 @@ npm run deploy    # build + wrangler pages deploy dist/
 
 ## Content management
 
-All content is stored as static JSON files in `public/data/`:
+All content is stored as static JSON files in `public/data/en/`:
 
 | Content type | Count | Directory | HubSpot integration |
 |-------------|-------|-----------|---------------------|
-| Blog | 35 posts | `public/data/blog/` | No |
-| Press | 56 articles | `public/data/press/` | No |
-| Podcasts | 11 episodes | `public/data/podcasts/` | No |
-| Whitepapers | 12 papers | `public/data/whitepapers/` | Yes (gated form → HubSpot API) |
+| Blog | 35 posts | `public/data/en/blog/` | No |
+| Press | 56 articles | `public/data/en/press/` | No |
+| Podcasts | 11 episodes | `public/data/en/podcasts/` | No |
+| Whitepapers | 12 papers | `public/data/en/whitepapers/` | Yes (gated form → HubSpot API) |
 
 No CMS — content is managed through Claude Code. See [ADR.md](./ADR.md) for the full architecture.
+
+## Development tools
+
+### Chrome DevTools MCP (Antigravity)
+
+Claude Code uses the [chrome-devtools-mcp](https://www.npmjs.com/package/chrome-devtools-mcp) server by Antigravity to inspect the running site in Chrome — taking screenshots, reading console logs, and inspecting DOM elements directly from the conversation.
+
+The MCP server configuration is checked into the repo at `.mcp.json`, so Claude Code picks it up automatically when you open the project — no manual setup needed.
+
+**To use it:**
+
+1. Launch Chrome with remote debugging enabled:
+   ```bash
+   /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --remote-debugging-port=9222
+   ```
+
+2. Run the dev server (`npm run dev`) and open `http://localhost:5173` in the debugging-enabled Chrome instance.
+
+3. Start a Claude Code session in this project — the MCP server connects automatically.
 
 ## Stack
 

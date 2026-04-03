@@ -106,10 +106,10 @@ When content needs to be added or refreshed:
 
 1. **Find all URLs** via `matera.com/sitemap.xml` (search for `/en/blog/`, `/en/press/`, etc.)
 2. **Fetch each article** via WebFetch, extracting title, date, author, thumbnail, body (markdown), images
-3. **Write individual JSONs** to `public/data/{type}/`
+3. **Write individual JSONs** to `public/data/en/{type}/`
 4. **Regenerate index** with Node one-liner:
    ```bash
-   cd public/data/{type} && node -e "
+   cd public/data/en/{type} && node -e "
    const fs = require('fs');
    const files = fs.readdirSync('.').filter(f => f.endsWith('.json') && f !== 'index.json').sort().reverse();
    const index = files.map(f => {
@@ -168,3 +168,106 @@ The site needs to be publicly accessible, fast globally, and trivial to deploy �
 - Global CDN edge delivery for all assets
 - Deploy is a single command from the terminal
 - The repo root (source code, docs, ADRs) never reaches Cloudflare — only `dist/` is uploaded
+
+---
+
+## ADR-003: Multi-Region Market-Based Architecture
+
+**Date:** 2026-04-03
+**Status:** Accepted
+
+### Context
+
+Matera operates in two distinct markets — North America (NA) and Brazil (BR) — with different products, different content, and different target audiences. The matera.com website serves both markets under the same domain: `/en/*` for NA (English), `/br/*` for BR (Portuguese).
+
+Additionally, the NA market content may be offered in multiple languages (`/es` for Spanish, `/fr` for French) in the future. These are translations of the same NA products and content, not separate markets.
+
+The challenge: organize the codebase so that NA and BR are truly independent (different pages, different navigation, different content), while sharing the brand's design system (colors, typography, fonts, layout primitives) and avoiding duplication.
+
+### Decision
+
+#### Organize by market, not by language
+
+The source code is structured by **market** (the business division), not by **language** (the locale):
+
+```
+src/
+├── shared/              ← design system shared across ALL markets
+│   ├── components/      ← PageHero, ScrollToTop (locale-agnostic primitives)
+│   └── utils/           ← markdownToHtml (shared utility)
+├── na/                  ← North America market
+│   ├── NaLayout.tsx     ← NA-specific shell (Header + Footer)
+│   ├── components/      ← NA Header, Footer, Hero, Solutions, etc.
+│   └── pages/           ← NA pages (completely independent from BR)
+├── br/                  ← Brazil market (future)
+│   ├── BrLayout.tsx     ← BR-specific shell
+│   ├── components/      ← BR Header, Footer, etc.
+│   └── pages/           ← BR pages (different products entirely)
+```
+
+#### Content data is per-language
+
+Content JSON files live under `public/data/{lang}/` since the actual text varies per language, even within the same market:
+
+```
+public/data/
+├── en/              ← English content (NA market)
+│   ├── blog/
+│   ├── press/
+│   ├── podcasts/
+│   └── whitepapers/
+├── es/              ← Spanish content (NA market, future)
+├── fr/              ← French content (NA market, future)
+└── br/              ← Portuguese content (BR market, future)
+```
+
+#### Router uses market-based layout nesting
+
+Each market has its own layout component (Header + Footer), and routes are nested under it:
+
+```tsx
+<Routes>
+  <Route element={<NaLayout />}>
+    <Route path="/en/*" ... />
+    <Route path="/es/*" ... />   {/* future: same NA pages, different language */}
+    <Route path="/fr/*" ... />   {/* future: same NA pages, different language */}
+  </Route>
+  <Route element={<BrLayout />}>
+    <Route path="/br/*" ... />   {/* future: completely different pages */}
+  </Route>
+</Routes>
+```
+
+#### What goes in `shared/` vs market-specific
+
+| Layer | `shared/` | Market-specific |
+|-------|-----------|----------------|
+| Design tokens (CSS variables) | ✅ | |
+| Typography, buttons, containers | ✅ | |
+| Fonts (Poppins woff2) | ✅ | |
+| Brand assets (logo, favicon) | ✅ | |
+| Layout primitives (PageHero shell) | ✅ | |
+| Utility functions (markdownToHtml) | ✅ | |
+| Header (nav items, labels, links) | | ✅ per market |
+| Footer (columns, links) | | ✅ per market |
+| Page components | | ✅ per market |
+| Content JSON | | ✅ per language |
+
+### Consequences
+
+**Benefits:**
+- NA and BR are fully independent — different products, different nav, different content
+- Shared design system ensures brand consistency across markets
+- One app, one build, one deploy — no need for separate projects or reverse proxies
+- Adding `/es` or `/fr` for the NA market reuses the same NA page components with different content
+- All existing `/en/*` URLs remain stable (Google-indexed)
+
+**Trade-offs:**
+- A bug in `shared/` code affects all markets
+- The `na/` directory name doesn't match the URL prefix (`/en`), which requires understanding the market-vs-language distinction
+- Adding a new language to the NA market requires creating translated content JSON and possibly parameterizing hardcoded English text in NA page components
+
+**Future considerations:**
+- When `/es` and `/fr` are added, NA page components may need to accept a `lang` parameter to switch hardcoded English labels
+- The "English" button in the NA Header should become a working language switcher
+- The root `/` route may need a language/market picker or browser locale detection
