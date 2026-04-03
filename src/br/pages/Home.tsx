@@ -128,49 +128,54 @@ export default function Home() {
         position: 'relative',
         overflow: 'hidden',
       }}>
-        <div className="container">
-          <p style={{
-            fontSize: '0.85rem',
-            fontWeight: '600',
-            color: 'rgba(255,255,255,0.5)',
-            letterSpacing: '0.1em',
-            textTransform: 'uppercase',
-            marginBottom: '24px',
-          }}>
-            TECNOLOGIA PARA INSTITUIÇÕES FINANCEIRAS
-          </p>
-          <h1 style={{
-            fontSize: 'clamp(2.5rem, 6vw, 4.5rem)',
-            fontWeight: 700,
-            lineHeight: 1.1,
-            marginBottom: '32px',
-            maxWidth: '700px',
-          }}>
-            Transforme seu banco com tecnologia de ponta
-          </h1>
-          <p style={{
-            fontSize: '1.125rem',
-            color: 'rgba(255,255,255,0.75)',
-            maxWidth: '520px',
-            lineHeight: 1.7,
-            marginBottom: '40px',
-          }}>
-            Desenvolvemos e conectamos produtos e soluções seguras para bancos tradicionais e digitais, fintechs, varejo, consumo, telecom e outros mercados.
-          </p>
-          <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
-            <Link to="/br/fale-conosco" className="btn-matera btn-green">
-              Fale com a gente →
+        <div className="container" style={{
+          display: 'flex',
+          alignItems: 'center',
+          gap: '4rem',
+          paddingTop: '40px',
+          paddingBottom: '40px',
+        }}>
+          {/* Left: Text */}
+          <div style={{ flex: 1 }}>
+            <h1 style={{
+              fontSize: 'clamp(2.5rem, 6vw, 4.5rem)',
+              fontWeight: 700,
+              lineHeight: 1.1,
+              marginBottom: '32px',
+            }}>
+              Opere Ativos Virtuais em Conformidade com o Bacen
+            </h1>
+            <p style={{
+              fontSize: '1.125rem',
+              color: 'rgba(255,255,255,0.75)',
+              maxWidth: '520px',
+              lineHeight: 1.7,
+              marginBottom: '40px',
+            }}>
+              Foque na sua operação enquanto cuidamos da complexidade regulatória.
+            </p>
+            <Link to="/br/solucoes" className="btn-matera btn-green">
+              Saiba mais →
             </Link>
-            <Link to="/br/solucoes" style={{
-              display: 'inline-flex', alignItems: 'center', gap: '8px',
-              padding: '12px 28px', borderRadius: '8px', border: '1px solid rgba(255,255,255,0.3)',
-              color: 'var(--matera-white)', fontWeight: 600, fontSize: '1rem', transition: 'border-color 0.2s',
-            }}
-              onMouseEnter={e => (e.currentTarget.style.borderColor = 'rgba(255,255,255,0.8)')}
-              onMouseLeave={e => (e.currentTarget.style.borderColor = 'rgba(255,255,255,0.3)')}
-            >
-              Ver soluções
-            </Link>
+          </div>
+
+          {/* Right: Purple card with photo */}
+          <div className="hero-video" style={{
+            width: '100%',
+            maxWidth: '480px',
+            flexShrink: 0,
+            borderRadius: '24px',
+            overflow: 'hidden',
+            backgroundColor: 'var(--matera-purple)',
+            padding: '0',
+          }}>
+            <div style={{ height: '180px' }} />
+            <img
+              src="/assets/hero-about-us.jpg"
+              alt="Profissionais analisando dados financeiros"
+              style={{ width: '100%', display: 'block', objectFit: 'cover', height: '280px' }}
+            />
+            <div style={{ height: '80px' }} />
           </div>
         </div>
       </section>

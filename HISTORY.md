@@ -4,6 +4,15 @@ Reverse-chronological log of improvements to the Matera website.
 
 ---
 
+## 2026-04-03: Update BR homepage hero to match real matera.com/br
+
+- Replaced generic "Transforme seu banco com tecnologia de ponta" hero with current real site content: "Opere Ativos Virtuais em Conformidade com o Bacen"
+- Added two-column layout with purple card + photo on the right (matching real site design)
+- Updated subtitle and CTA to match: "Saiba mais →"
+- Purple card hidden on mobile via existing `.hero-video` CSS class
+
+---
+
 ## 2026-04-03: Hide hero video on mobile
 
 - Hero video was overflowing/clipping on small screens
