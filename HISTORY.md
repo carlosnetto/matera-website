@@ -4,6 +4,15 @@ Reverse-chronological log of improvements to the Matera website.
 
 ---
 
+## 2026-04-03: Hide hero video on mobile
+
+- Hero video was overflowing/clipping on small screens
+- Hidden below 768px via `.hero-video { display: none }` CSS class
+- Reduced hero padding on mobile for tighter layout
+- Text fills full width on mobile without the video competing for space
+
+---
+
 ## 2026-04-03: Mobile responsive layout + BR nav order fix
 
 - Built fully functional **mobile hamburger menu** for both NA and BR headers with accordion-style dropdowns, body scroll lock, and close-on-navigate
