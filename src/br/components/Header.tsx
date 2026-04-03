@@ -33,16 +33,6 @@ const dropdowns: NavDropdown[] = [
     ],
   },
   {
-    label: 'Empresa',
-    sectionTitle: 'Sobre a Matera',
-    image: '/header-menu-image.jpg',
-    items: [
-      { label: 'Sobre nós', href: '/br/sobre-nos' },
-      { label: 'Carreiras', href: '/br/carreiras' },
-      { label: 'ESG', href: '/br/esg' },
-    ],
-  },
-  {
     label: 'News & Insights',
     sectionTitle: 'Conteúdo e novidades',
     image: '/news-menu-image.jpg',
@@ -50,6 +40,16 @@ const dropdowns: NavDropdown[] = [
       { label: 'Blog', href: '/br/blog' },
       { label: 'Cases', href: '/br/cases' },
       { label: 'Tendências para 2026', href: '/br/tendencias-mercado-financeiro-2026' },
+    ],
+  },
+  {
+    label: 'Empresa',
+    sectionTitle: 'Sobre a Matera',
+    image: '/header-menu-image.jpg',
+    items: [
+      { label: 'Sobre nós', href: '/br/sobre-nos' },
+      { label: 'Carreiras', href: '/br/carreiras' },
+      { label: 'ESG', href: '/br/esg' },
     ],
   },
 ];
@@ -64,6 +64,7 @@ const Header: React.FC = () => {
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [mobileExpanded, setMobileExpanded] = useState<string | null>(null);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20);
@@ -71,7 +72,15 @@ const Header: React.FC = () => {
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
-  const headerBg = scrolled ? 'rgba(1, 0, 37, 0.97)' : 'transparent';
+  // Lock body scroll when mobile menu is open
+  useEffect(() => {
+    document.body.style.overflow = mobileOpen ? 'hidden' : '';
+    return () => { document.body.style.overflow = ''; };
+  }, [mobileOpen]);
+
+  const headerBg = scrolled || mobileOpen
+    ? 'rgba(1, 0, 37, 0.97)'
+    : 'transparent';
 
   const navLinkStyle: React.CSSProperties = {
     display: 'flex',
@@ -99,12 +108,12 @@ const Header: React.FC = () => {
       borderBottom: scrolled ? '1px solid rgba(255,255,255,0.08)' : 'none',
     }}>
       <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', width: '100%' }}>
-        <Link to="/br" style={{ display: 'flex', alignItems: 'center' }}>
-          <img src="/matera-logo.svg" alt="Matera" style={{ height: '1.75rem', width: 'auto' }} />
+        <Link to="/br" style={{ display: 'flex', alignItems: 'center', flexShrink: 0 }}>
+          <img src="/matera-logo.svg" alt="Matera" className="header-logo" style={{ height: '1.75rem', width: 'auto' }} />
         </Link>
 
         {/* Desktop Nav */}
-        <nav style={{ display: 'flex', alignItems: 'center' }}>
+        <nav className="desktop-nav" style={{ display: 'flex', alignItems: 'center' }}>
           <ul style={{ display: 'flex', gap: '4px', listStyle: 'none', alignItems: 'center', marginRight: '24px' }}>
             {dropdowns.map((dd) => (
               <li
@@ -207,15 +216,82 @@ const Header: React.FC = () => {
           <TerritorySelector />
         </nav>
 
-        {/* Mobile toggle */}
-        <button
-          onClick={() => setMobileOpen(!mobileOpen)}
-          style={{ display: 'none', background: 'none', border: 'none', cursor: 'pointer', color: 'var(--matera-white)' }}
-          className="mobile-menu-btn"
-        >
-          {mobileOpen ? <X size={24} /> : <Menu size={24} />}
-        </button>
+        {/* Mobile: flag + hamburger */}
+        <div className="mobile-menu-btn" style={{ display: 'none', alignItems: 'center', gap: '12px' }}>
+          <TerritorySelector />
+          <button
+            onClick={() => setMobileOpen(!mobileOpen)}
+            style={{ background: 'none', border: 'none', cursor: 'pointer', color: 'var(--matera-white)', padding: '4px' }}
+            aria-label="Toggle menu"
+          >
+            {mobileOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
+        </div>
       </div>
+
+      {/* Mobile drawer */}
+      {mobileOpen && (
+        <div style={{
+          position: 'fixed',
+          top: '4rem',
+          left: 0,
+          right: 0,
+          bottom: 0,
+          backgroundColor: '#010025',
+          overflowY: 'auto',
+          zIndex: 999,
+          padding: '24px',
+        }}>
+          <nav style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
+            {dropdowns.map((dd) => (
+              <div key={dd.label}>
+                <button
+                  onClick={() => setMobileExpanded(mobileExpanded === dd.label ? null : dd.label)}
+                  style={{
+                    display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+                    width: '100%', padding: '14px 0', background: 'none', border: 'none',
+                    color: 'var(--matera-white)', fontSize: '1.1rem', fontWeight: 600, cursor: 'pointer',
+                    borderBottom: '1px solid rgba(255,255,255,0.08)',
+                  }}
+                >
+                  {dd.label}
+                  <ChevronDown size={16} style={{
+                    transition: 'transform 0.2s',
+                    transform: mobileExpanded === dd.label ? 'rotate(180deg)' : 'none',
+                  }} />
+                </button>
+                {mobileExpanded === dd.label && (
+                  <div style={{ paddingLeft: '16px', paddingBottom: '8px' }}>
+                    {dd.items.map((item) => (
+                      <Link
+                        key={item.label}
+                        to={item.href}
+                        onClick={() => setMobileOpen(false)}
+                        style={{
+                          display: 'block', padding: '12px 0', color: 'rgba(255,255,255,0.7)',
+                          fontSize: '1rem', borderBottom: '1px solid rgba(255,255,255,0.04)',
+                        }}
+                      >
+                        {item.label}
+                      </Link>
+                    ))}
+                  </div>
+                )}
+              </div>
+            ))}
+            <Link
+              to="/br/fale-conosco"
+              onClick={() => setMobileOpen(false)}
+              style={{
+                display: 'block', padding: '14px 0', color: 'var(--matera-white)',
+                fontSize: '1.1rem', fontWeight: 600, borderBottom: '1px solid rgba(255,255,255,0.08)',
+              }}
+            >
+              Fale conosco
+            </Link>
+          </nav>
+        </div>
+      )}
     </header>
   );
 };

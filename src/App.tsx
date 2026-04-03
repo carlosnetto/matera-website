@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import ScrollToTop from './shared/components/ScrollToTop'
 import NaLayout from './na/NaLayout'
 import Home from './na/pages/Home'
@@ -43,6 +43,9 @@ function App() {
     <BrowserRouter>
       <ScrollToTop />
       <Routes>
+        {/* Root redirect — in production, _worker.js handles geo-redirect */}
+        <Route path="/" element={<Navigate to="/en" replace />} />
+
         {/* NA market — /en (English), future: /es, /fr */}
         <Route element={<NaLayout />}>
           <Route path="/en" element={<Home />} />

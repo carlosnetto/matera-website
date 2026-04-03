@@ -49,16 +49,11 @@ const dropdowns: NavDropdown[] = [
   },
 ];
 
-const ArrowIcon = () => (
-  <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path fillRule="evenodd" clipRule="evenodd" d="M1.33329 6.66657H8.77996L5.52663 9.9199C5.26663 10.1799 5.26663 10.6066 5.52663 10.8666C5.78663 11.1266 6.20663 11.1266 6.46663 10.8666L10.86 6.47323C11.12 6.21323 11.12 5.79323 10.86 5.53323L6.47329 1.13323C6.21329 0.873232 5.79329 0.873232 5.53329 1.13323C5.27329 1.39323 5.27329 1.81323 5.53329 2.07323L8.77996 5.33323H1.33329C0.966626 5.33323 0.666626 5.63323 0.666626 5.9999C0.666626 6.36657 0.966626 6.66657 1.33329 6.66657Z" fill="currentColor"/>
-  </svg>
-);
-
 const Header: React.FC = () => {
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [mobileExpanded, setMobileExpanded] = useState<string | null>(null);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20);
@@ -66,7 +61,13 @@ const Header: React.FC = () => {
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
-  const headerBg = scrolled
+  // Lock body scroll when mobile menu is open
+  useEffect(() => {
+    document.body.style.overflow = mobileOpen ? 'hidden' : '';
+    return () => { document.body.style.overflow = ''; };
+  }, [mobileOpen]);
+
+  const headerBg = scrolled || mobileOpen
     ? 'rgba(1, 0, 37, 0.97)'
     : 'transparent';
 
@@ -101,12 +102,12 @@ const Header: React.FC = () => {
         alignItems: 'center',
         width: '100%'
       }}>
-        <Link to="/" style={{ display: 'flex', alignItems: 'center' }}>
-          <img src="/matera-logo.svg" alt="Matera" style={{ height: '1.75rem', width: 'auto' }} />
+        <Link to="/" style={{ display: 'flex', alignItems: 'center', flexShrink: 0 }}>
+          <img src="/matera-logo.svg" alt="Matera" className="header-logo" style={{ height: '1.75rem', width: 'auto' }} />
         </Link>
 
         {/* Desktop Nav */}
-        <nav style={{ display: 'flex', alignItems: 'center' }}>
+        <nav className="desktop-nav" style={{ display: 'flex', alignItems: 'center' }}>
           <ul style={{
             display: 'flex',
             gap: '4px',
@@ -162,33 +163,13 @@ const Header: React.FC = () => {
                     maxWidth: '1200px',
                     margin: '0 auto',
                   }}>
-                    {/* Image side */}
-                    <div style={{
-                      borderRadius: '12px',
-                      overflow: 'hidden',
-                      maxHeight: '280px',
-                    }}>
-                      <img
-                        src={dd.image}
-                        alt=""
-                        loading="lazy"
-                        style={{
-                          width: '100%',
-                          height: '100%',
-                          objectFit: 'cover',
-                        }}
-                      />
+                    <div style={{ borderRadius: '12px', overflow: 'hidden', maxHeight: '280px' }}>
+                      <img src={dd.image} alt="" loading="lazy" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                     </div>
-
-                    {/* Links side */}
                     <div>
                       <p style={{
-                        fontSize: '0.85rem',
-                        fontWeight: '600',
-                        color: 'rgba(255,255,255,0.5)',
-                        marginBottom: '20px',
-                        textTransform: 'uppercase',
-                        letterSpacing: '0.05em',
+                        fontSize: '0.85rem', fontWeight: '600', color: 'rgba(255,255,255,0.5)',
+                        marginBottom: '20px', textTransform: 'uppercase', letterSpacing: '0.05em',
                       }}>
                         {dd.sectionTitle}
                       </p>
@@ -199,27 +180,14 @@ const Header: React.FC = () => {
                             to={item.href}
                             onClick={() => setActiveDropdown(null)}
                             style={{
-                              display: 'flex',
-                              alignItems: 'center',
-                              justifyContent: 'space-between',
-                              padding: '12px 16px',
-                              color: 'var(--matera-white)',
-                              fontSize: '1rem',
-                              fontWeight: '500',
-                              borderRadius: '8px',
-                              transition: 'background 0.2s, color 0.2s',
+                              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+                              padding: '12px 16px', color: 'var(--matera-white)', fontSize: '1rem',
+                              fontWeight: '500', borderRadius: '8px', transition: 'background 0.2s, color 0.2s',
                             }}
-                            onMouseEnter={(e) => {
-                              e.currentTarget.style.background = 'rgba(255,255,255,0.05)';
-                              e.currentTarget.style.color = 'var(--matera-green)';
-                            }}
-                            onMouseLeave={(e) => {
-                              e.currentTarget.style.background = 'transparent';
-                              e.currentTarget.style.color = 'var(--matera-white)';
-                            }}
+                            onMouseEnter={(e) => { e.currentTarget.style.background = 'rgba(255,255,255,0.05)'; e.currentTarget.style.color = 'var(--matera-green)'; }}
+                            onMouseLeave={(e) => { e.currentTarget.style.background = 'transparent'; e.currentTarget.style.color = 'var(--matera-white)'; }}
                           >
                             <span>{item.label}</span>
-                            <ArrowIcon />
                           </Link>
                         ))}
                       </div>
@@ -228,31 +196,89 @@ const Header: React.FC = () => {
                 </div>
               </li>
             ))}
-
-            {/* Contact us — direct link, no dropdown */}
             <li>
-              <Link to="/en/contact-us" style={navLinkStyle}>
-                Contact us
-              </Link>
+              <Link to="/en/contact-us" style={navLinkStyle}>Contact us</Link>
             </li>
           </ul>
-
           <TerritorySelector />
         </nav>
 
-        {/* Mobile toggle */}
-        <button
-          onClick={() => setMobileOpen(!mobileOpen)}
-          style={{
-            display: 'none',
-            background: 'none', border: 'none',
-            cursor: 'pointer', color: 'var(--matera-white)',
-          }}
-          className="mobile-menu-btn"
-        >
-          {mobileOpen ? <X size={24} /> : <Menu size={24} />}
-        </button>
+        {/* Mobile: flag + hamburger */}
+        <div className="mobile-menu-btn" style={{ display: 'none', alignItems: 'center', gap: '12px' }}>
+          <TerritorySelector />
+          <button
+            onClick={() => setMobileOpen(!mobileOpen)}
+            style={{ background: 'none', border: 'none', cursor: 'pointer', color: 'var(--matera-white)', padding: '4px' }}
+            aria-label="Toggle menu"
+          >
+            {mobileOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
+        </div>
       </div>
+
+      {/* Mobile drawer */}
+      {mobileOpen && (
+        <div style={{
+          position: 'fixed',
+          top: '4rem',
+          left: 0,
+          right: 0,
+          bottom: 0,
+          backgroundColor: '#010025',
+          overflowY: 'auto',
+          zIndex: 999,
+          padding: '24px',
+        }}>
+          <nav style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
+            {dropdowns.map((dd) => (
+              <div key={dd.label}>
+                <button
+                  onClick={() => setMobileExpanded(mobileExpanded === dd.label ? null : dd.label)}
+                  style={{
+                    display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+                    width: '100%', padding: '14px 0', background: 'none', border: 'none',
+                    color: 'var(--matera-white)', fontSize: '1.1rem', fontWeight: 600, cursor: 'pointer',
+                    borderBottom: '1px solid rgba(255,255,255,0.08)',
+                  }}
+                >
+                  {dd.label}
+                  <ChevronDown size={16} style={{
+                    transition: 'transform 0.2s',
+                    transform: mobileExpanded === dd.label ? 'rotate(180deg)' : 'none',
+                  }} />
+                </button>
+                {mobileExpanded === dd.label && (
+                  <div style={{ paddingLeft: '16px', paddingBottom: '8px' }}>
+                    {dd.items.map((item) => (
+                      <Link
+                        key={item.label}
+                        to={item.href}
+                        onClick={() => setMobileOpen(false)}
+                        style={{
+                          display: 'block', padding: '12px 0', color: 'rgba(255,255,255,0.7)',
+                          fontSize: '1rem', borderBottom: '1px solid rgba(255,255,255,0.04)',
+                        }}
+                      >
+                        {item.label}
+                      </Link>
+                    ))}
+                  </div>
+                )}
+              </div>
+            ))}
+            <Link
+              to="/en/contact-us"
+              onClick={() => setMobileOpen(false)}
+              style={{
+                display: 'block', padding: '14px 0', color: 'var(--matera-white)',
+                fontSize: '1.1rem', fontWeight: 600, borderBottom: '1px solid rgba(255,255,255,0.08)',
+              }}
+            >
+              Contact us
+            </Link>
+          </nav>
+        </div>
+      )}
     </header>
   );
 };

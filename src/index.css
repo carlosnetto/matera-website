@@ -182,13 +182,85 @@ b, strong {
   transform: translateY(-2px);
 }
 
-/* Mobile: hide desktop nav */
+/* Mobile: hide desktop nav, show hamburger */
 @media (max-width: 1023px) {
   .desktop-nav {
     display: none !important;
   }
   .mobile-menu-btn {
     display: flex !important;
+  }
+  .header-logo {
+    height: 1.4rem !important;
+  }
+}
+
+/* Small mobile: compact flag */
+@media (max-width: 480px) {
+  .mobile-menu-btn [aria-label="Select territory"] {
+    font-size: 0.9rem !important;
+    padding: 3px 6px !important;
+  }
+}
+
+/* Prevent horizontal overflow */
+html, body {
+  overflow-x: hidden;
+}
+header .container {
+  overflow: visible;
+}
+
+/* Responsive: mobile layout overrides (inline styles can't be overridden without !important) */
+@media (max-width: 767px) {
+  /* Stack all CSS grid layouts to single column */
+  [style*="grid-template-columns"],
+  [style*="gridTemplateColumns"] {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Stack flex rows that act as 2-col layouts */
+  [style*="gap: '60px'"],
+  [style*="gap: 60px"] {
+    flex-direction: column !important;
+  }
+
+  /* Reduce section padding */
+  section {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+  }
+
+  /* Fix hero padding (needs room for fixed header) */
+  section:first-child {
+    padding-top: 6rem !important;
+  }
+
+  /* Blog/content images */
+  .blog-content img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Footer columns stack */
+  footer [style*="grid-template-columns"],
+  footer [style*="gridTemplateColumns"] {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 24px !important;
+  }
+
+  /* Stats row — keep horizontal but compact */
+  [style*="gap: '48px'"] {
+    gap: 24px !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+  }
+}
+
+/* Tablet: 2-col grids stay, 3-col becomes 2 */
+@media (min-width: 768px) and (max-width: 1023px) {
+  [style*="repeat(3, 1fr)"] {
+    grid-template-columns: 1fr 1fr !important;
   }
 }
 

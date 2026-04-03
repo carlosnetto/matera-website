@@ -4,6 +4,18 @@ Reverse-chronological log of improvements to the Matera website.
 
 ---
 
+## 2026-04-03: Mobile responsive layout + BR nav order fix
+
+- Built fully functional **mobile hamburger menu** for both NA and BR headers with accordion-style dropdowns, body scroll lock, and close-on-navigate
+- Added global **responsive CSS** — all grid layouts stack to single column on mobile (< 768px), 3-col becomes 2-col on tablet (768-1023px)
+- Prevented horizontal overflow on mobile
+- Shrunk logo and flag selector on small screens for proper spacing
+- Fixed **BR header nav order** to match EN: Soluções → News & Insights → Empresa → Fale conosco (was: Soluções → Empresa → News & Insights)
+- Added root `/` redirect to `/en` via `<Navigate>` for local dev (production uses `_worker.js` geo-redirect)
+- Allowed `*.trycloudflare.com` hosts in Vite config for tunnel testing
+
+---
+
 ## 2026-04-03: SEO technical enhancements — Canonical links, Video schema, Social expansion
 
 - Added `<link rel="canonical" />` to `PageMeta` component to consolidate link equity and prevent duplicate content
