@@ -1,5 +1,26 @@
 # Change History
 
+## 2026-04-03: Update QR Code payment count to 3.6 billion/year
+
+**Files fixed:**
+- `src/na/components/WhyMatera.tsx` — 300M+ QR Code payments/month → 3.6B+ QR Code payments/year
+
+---
+
+## 2026-04-03: Update Pix transaction count to 7.2 billion/year
+
+**Problem:** All pages showed "6 BI" (6 billion) Pix transactions per year. Updated to 7.2 billion. RegTech showed "4,5 BI+ transações processadas" — also updated to 7.2 BI. EN WhyMatera showed "600M+ instant payments per month" — updated to "7.2B+ Pix transactions per year".
+
+**Files fixed:**
+- `src/br/pages/Home.tsx` — 6BI+ → 7,2BI+ (two occurrences)
+- `src/br/pages/SobreNos.tsx` — 6 BI+ → 7,2 BI+
+- `src/br/pages/solucoes/CoreBanking.tsx` — 6 BI → 7,2 BI
+- `src/br/pages/solucoes/Pagamentos.tsx` — 6 BI → 7,2 BI
+- `src/br/pages/solucoes/RegTech.tsx` — 4,5 BI+ → 7,2 BI+
+- `src/na/components/WhyMatera.tsx` — 600M+ instant payments/month → 7.2B+ Pix transactions/year
+
+---
+
 ## 2026-04-03: Fix inconsistent account count (60M → 90M)
 
 **Problem:** Some pages showed "60 MI de contas" while others showed "90+ Million accounts". The correct figure is 90M.

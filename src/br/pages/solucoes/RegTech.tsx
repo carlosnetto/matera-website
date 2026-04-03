@@ -11,7 +11,7 @@ export default function RegTech() {
       stats={[
         { value: '1.000+', label: 'APIs disponíveis' },
         { value: '~11%', label: 'market share no Pix' },
-        { value: '4,5 BI+', label: 'transações processadas' },
+        { value: '7,2 BI+', label: 'transações processadas' },
       ]}
       sections={[
         {

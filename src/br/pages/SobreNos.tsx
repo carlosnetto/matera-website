@@ -18,7 +18,7 @@ const timeline = [
 ];
 
 const stats = [
-  { value: '6 BI+', label: 'transações Pix por ano' },
+  { value: '7,2 BI+', label: 'transações Pix por ano' },
   { value: '+90 MM', label: 'contas digitais ativas' },
   { value: '+280', label: 'clientes' },
 ];

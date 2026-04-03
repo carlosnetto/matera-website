@@ -10,7 +10,7 @@ export default function CoreBanking() {
       }}
       stats={[
         { value: '90 MI', label: 'de contas' },
-        { value: '6 BI', label: 'transações Pix/ano' },
+        { value: '7,2 BI', label: 'transações Pix/ano' },
         { value: '1.000+', label: 'APIs disponíveis' },
       ]}
       sections={[

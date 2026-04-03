@@ -90,7 +90,7 @@ const featuredCases = [
 ];
 
 const stats = [
-  { value: '6BI+', label: 'transações Pix por ano' },
+  { value: '7,2BI+', label: 'transações Pix por ano' },
   { value: '+90MM', label: 'contas digitais ativas' },
   { value: '+280', label: 'clientes' },
 ];
@@ -430,7 +430,7 @@ export default function Home() {
                 { label: '+30 anos', sublabel: 'de experiência no mercado' },
                 { label: '+1.000', sublabel: 'profissionais no Brasil, EUA e Canadá' },
                 { label: '+280', sublabel: 'clientes ativos' },
-                { label: '6BI+', sublabel: 'transações Pix por ano' },
+                { label: '7,2BI+', sublabel: 'transações Pix por ano' },
               ].map((item) => (
                 <div key={item.label} style={{
                   backgroundColor: 'var(--matera-blue)', borderRadius: '12px', padding: '24px',

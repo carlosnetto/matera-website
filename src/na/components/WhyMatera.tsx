@@ -3,7 +3,7 @@ import React from 'react';
 const proofPoints = [
   {
     title: 'Proven',
-    items: ['600M+ instant payments per month', '300M+ QR Code payments per month'],
+    items: ['7.2B+ Pix transactions per year', '3.6B+ QR Code payments per year'],
   },
   {
     title: 'Deep Expertise',

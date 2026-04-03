@@ -10,7 +10,7 @@ export default function Pagamentos() {
       }}
       stats={[
         { value: '90 MI', label: 'de contas' },
-        { value: '6 BI', label: 'transações Pix por ano' },
+        { value: '7,2 BI', label: 'transações Pix por ano' },
         { value: '70 M', label: 'CPFs/mês em regulatórios BACEN' },
       ]}
       sections={[
