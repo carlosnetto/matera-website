@@ -1,5 +1,19 @@
 # Change History
 
+## 2026-04-03: SEO P3 fixes — JSON-LD structured data, expanded Wallet page
+
+**What was done:**
+- Added JSON-LD structured data via PageMeta component:
+  - **Organization schema** on every page (name, logo, social profiles, founding date, employee count)
+  - **BreadcrumbList schema** auto-generated from URL path on every page
+  - **Article schema** on blog, press, podcast, and case study detail pages (headline, date, author, publisher, image)
+- Added `article` prop to PageMeta for content pages (Blog, Press, Podcasts articles + BR Blog, Cases)
+- Expanded WalletAsAService from ~150 words to ~500 words with 6 capability cards, 4 value props, 3 use case segments
+
+**Files changed:** `src/shared/components/PageMeta.tsx`, `src/na/pages/Blog.tsx`, `src/na/pages/Press.tsx`, `src/na/pages/Podcasts.tsx`, `src/na/pages/WalletAsAService.tsx`, `src/br/pages/Blog.tsx`, `src/br/pages/Cases.tsx`
+
+---
+
 ## 2026-04-03: SEO P2 fixes — hreflang, html lang, lazy loading, form labels, CTA link
 
 **What was done:**

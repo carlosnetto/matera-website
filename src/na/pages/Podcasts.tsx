@@ -227,7 +227,7 @@ function PodcastEpisode() {
 
   return (
     <>
-      <PageMeta title={post.title} description={post.excerpt || ''} image={post.thumbnail} url={'/en/podcasts/' + post.slug} />
+      <PageMeta title={post.title} description={post.excerpt || ''} image={post.thumbnail} url={'/en/podcasts/' + post.slug} article={{ date: post.date }} />
       {/* Hero */}
       <section style={{
         backgroundColor: 'var(--matera-black)',

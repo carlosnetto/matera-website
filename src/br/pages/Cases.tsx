@@ -116,7 +116,7 @@ function BrCaseDetail() {
 
   return (
     <>
-      <PageMeta title={caseStudy.title} description={caseStudy.excerpt || ''} image={caseStudy.thumbnail} url={'/br/cases/' + caseStudy.slug} />
+      <PageMeta title={caseStudy.title} description={caseStudy.excerpt || ''} image={caseStudy.thumbnail} url={'/br/cases/' + caseStudy.slug} article={{ date: caseStudy.date }} />
       {/* Hero */}
       <section style={{
         backgroundColor: 'var(--matera-blue)',

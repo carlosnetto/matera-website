@@ -134,7 +134,7 @@ function BrBlogArticle() {
 
   return (
     <>
-      <PageMeta title={post.title} description={post.excerpt || ''} image={post.thumbnail} url={'/br/blog/' + post.slug} />
+      <PageMeta title={post.title} description={post.excerpt || ''} image={post.thumbnail} url={'/br/blog/' + post.slug} article={{ date: post.date, author: post.author }} />
       {/* Hero */}
       <section style={{
         backgroundColor: 'var(--matera-blue)',

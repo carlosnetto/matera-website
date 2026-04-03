@@ -252,9 +252,9 @@ Contact form (`ContactUs.tsx`) and whitepaper form (`Whitepapers.tsx`) use `<lab
 
 ---
 
-### 15. No Structured Data (JSON-LD)
+### ~~15. No Structured Data (JSON-LD)~~ FIXED 2026-04-03
 
-**Severity:** MEDIUM
+**Severity:** ~~MEDIUM~~ RESOLVED — Added Organization, BreadcrumbList, and Article schemas via PageMeta
 
 No schema.org structured data. Missing opportunities for rich snippets:
 - **Organization schema** — company name, logo, social profiles
@@ -266,9 +266,9 @@ No schema.org structured data. Missing opportunities for rich snippets:
 
 ---
 
-### 16. Thin Content Pages
+### ~~16. Thin Content Pages~~ FIXED 2026-04-03
 
-**Severity:** LOW
+**Severity:** ~~LOW~~ RESOLVED — WalletAsAService expanded from ~150 words to ~500 words with capabilities, use cases, and value props
 
 `WalletAsAService.tsx` has ~150 words of content — very thin for a product page targeting competitive keywords.
 
@@ -309,8 +309,8 @@ No schema.org structured data. Missing opportunities for rich snippets:
 | ~~P2~~ | ~~Add `loading="lazy"` to below-fold images~~ | ~~Low~~ | ~~Medium~~ | FIXED 2026-04-03 |
 | ~~P2~~ | ~~Fix form label associations~~ | ~~Low~~ | ~~Medium~~ | FIXED 2026-04-03 |
 | ~~P2~~ | ~~Fix CTA broken link~~ | ~~Low~~ | ~~Medium~~ | FIXED 2026-04-03 |
-| P3 | Add JSON-LD structured data | Medium | Medium | Open |
-| P3 | Expand thin content (WalletAsAService) | Medium | Low | Open |
+| ~~P3~~ | ~~Add JSON-LD structured data~~ | ~~Medium~~ | ~~Medium~~ | FIXED 2026-04-03 |
+| ~~P3~~ | ~~Expand thin content (WalletAsAService)~~ | ~~Medium~~ | ~~Low~~ | FIXED 2026-04-03 |
 
 ---
 
