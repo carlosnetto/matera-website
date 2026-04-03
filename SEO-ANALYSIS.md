@@ -254,7 +254,7 @@ Contact form (`ContactUs.tsx`) and whitepaper form (`Whitepapers.tsx`) use `<lab
 
 ### ~~15. No Structured Data (JSON-LD)~~ FIXED 2026-04-03
 
-**Severity:** ~~MEDIUM~~ RESOLVED — Added Organization, BreadcrumbList, and Article schemas via PageMeta
+**Severity:** ~~MEDIUM~~ RESOLVED — Added Organization (with addresses + contact points), WebSite, BreadcrumbList, and Article schemas via PageMeta
 
 No schema.org structured data. Missing opportunities for rich snippets:
 - **Organization schema** — company name, logo, social profiles

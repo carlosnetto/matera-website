@@ -25,6 +25,22 @@ const ORG_SCHEMA = JSON.stringify({
   description: 'Banking technology for stablecoins, instant payments, QR codes, and core modernization.',
   foundingDate: '1987',
   numberOfEmployees: { '@type': 'QuantitativeValue', value: 1100 },
+  contactPoint: [
+    { '@type': 'ContactPoint', telephone: '+1-646-833-0106', contactType: 'sales', areaServed: 'US', availableLanguage: 'English' },
+    { '@type': 'ContactPoint', telephone: '+55-19-3794-7700', contactType: 'sales', areaServed: 'BR', availableLanguage: 'Portuguese' },
+  ],
+  address: [
+    { '@type': 'PostalAddress', streetAddress: '19 W 24th Street, 4th Floor', addressLocality: 'New York', addressRegion: 'NY', postalCode: '10010', addressCountry: 'US' },
+    { '@type': 'PostalAddress', streetAddress: 'Av. Selma Parada, 505 - 7º Andar', addressLocality: 'Campinas', addressRegion: 'SP', postalCode: '13091-605', addressCountry: 'BR' },
+  ],
+});
+
+const WEBSITE_SCHEMA = JSON.stringify({
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: 'Matera',
+  url: 'https://matera.com',
+  inLanguage: ['en', 'pt-BR'],
 });
 
 export default function PageMeta({ title, description, image, url, article }: PageMetaProps) {
@@ -69,6 +85,7 @@ export default function PageMeta({ title, description, image, url, article }: Pa
       <link rel="alternate" hrefLang="pt-BR" href={`${baseUrl}/br`} />
       <link rel="alternate" hrefLang="x-default" href={`${baseUrl}/en`} />
       <script type="application/ld+json">{ORG_SCHEMA}</script>
+      <script type="application/ld+json">{WEBSITE_SCHEMA}</script>
       {breadcrumbs && <script type="application/ld+json">{breadcrumbs}</script>}
       {articleSchema && <script type="application/ld+json">{articleSchema}</script>}
     </Helmet>

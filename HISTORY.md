@@ -1,5 +1,18 @@
 # Change History
 
+## 2026-04-03: SEO cross-check — WebSite schema, office addresses, StoneX alt text
+
+**Context:** Cross-referenced against SEO report from the old Next.js + Strapi site.
+
+**What was done:**
+- Added `WebSite` JSON-LD schema (name, url, inLanguage)
+- Added office addresses (NY + Campinas) and contact points to Organization schema
+- Fixed 7 "Image without alt" instances in StoneX BR case study body markdown
+
+**Files changed:** `src/shared/components/PageMeta.tsx`, `public/data/br/cases/2025-08-19 - StoneX.json`
+
+---
+
 ## 2026-04-03: SEO P3 fixes — JSON-LD structured data, expanded Wallet page
 
 **What was done:**
