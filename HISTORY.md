@@ -4,6 +4,22 @@ Reverse-chronological log of improvements to the Matera website.
 
 ---
 
+## 2026-04-03: Rebuild QR Code Solutions page from Sarah Hoisington's brief
+
+Complete rewrite of `/en/solutions/qr-code-solutions` based on GM North America's product brief:
+
+- **Hero**: "QR Codes: Modern Tech for Faster Payments" with 4 key attributes
+- **Smarter Payments section**: value prop with 3 bullet points + demo image
+- **Why QR Codes**: 3-column layout — Financial Institutions, Businesses & Billers, Consumers
+- **Real-World Applications**: 9 use cases (Bill Pay, E-Commerce, In-Store, Bank as Biller, Events, Cash-Intensive, Fuel, Freight, Donations)
+- **Finovate Demo**: showcase section linking to blog post
+- **The Matera Solution**: "How It Works" (5 features) + "Advanced Tools" (5 features)
+- **X9 Standard**: section with webinar link
+- **Resources**: 3 cards (whitepaper, blog, podcast)
+- **CTA**: "Get Started with Matera's QR Code Payments Solution"
+
+---
+
 ## 2026-04-03: BR hero video + Digital Twin ledger icon
 
 - Replaced static image in BR homepage hero with autoplay video from matera.com/br (`br-hero-video.mp4`, 28MB, gitignored)
