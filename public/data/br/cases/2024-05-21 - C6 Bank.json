@@ -3,8 +3,68 @@
   "slug": "c6-bank",
   "date": "2024-05-21",
   "client": "C6 Bank",
-  "thumbnail": "/assets/logo-matera.png",
-  "excerpt": "C6 Bank é um banco completo, totalmente digital, com agilidade e capacidade de oferecer produtos e serviços inovadores. Conheça o case!",
-  "body": "## **Do 0 aos 20 milhões de clientes com a solução Matera.**\n\n## **Desafios** \n\nMontar uma operação de banco digital completa em tempo recorde e com altíssimo padrão de tecnologia, com ferramentas personalizadas que atendessem a todos os produtos e serviços de um Banco Completo e Inovador como o C6.\n\n**Time to market acelerado e plataforma flexível!**\n\nA implementação do Core Banking completo da Matera, permitiu ao cliente ter o seu MVP em 3 meses, com deployment em cloud. O go live do banco se deu em 9 meses após o início do projeto. A solução escolhida foi muito além do que uma conta corrente, passando por regulatórios, Pix, SPB, gestão de riscos, crédito, renda fixa, boleto, ou seja, um banco completo, de verdade.\n\nTendo como base a arquitetura 100% em Cloud e micro serviços, foi possível enriquecer o portfólio com produtos únicos e inovadores como o C6 Tag. Além disso, o banco estabeleceu parcerias importantes para diferenciar a jornada do cliente.\n\n A Matera implementou sua plataforma completa de core bancário, que integra todas as funcionalidades necessárias para a operação do Banco C6 e, ainda, conta com atualização constante de acordo com as principais questões regulatórias e de tecnologia.\n\n**Em 6 meses, o C6 Bank conquistou 1 milhão de clientes.**\n\n**Em um ano, 10 milhões.**\n\n## **E, em três anos, 20.000.000.**\n\n## **Nelson Novaes, Partner & CTO do C6 Bank comenta sobre a escolha da Matera:**\n\n“Conduzimos um processo de seleção bastante criterioso, o qual envolveu a análise de fornecedores de Core Banking de todo mundo. A solução da Matera se mostrou a mais adequada para atender os requisitos funcionais, de tecnologia, performance e segurança. Além disso, o prazo para entregar o MVP era de 3 meses, eles se comprometeram e cumpriram o combinado.”\n\n## **Ganhos do cliente**\n\n- **Time to market acelerado: **O processo de implementação de um banco desde sua concepção (greenfield) necessita um planejamento assertivo para garantir o alinhamento entre a tecnologia e o modelo de negócio no qual o cliente está imerso. Este case trouxe uma nova realidade ao mercado, colocando o banco digital no ar, pronto para funcionamento em tempo recorde!\n- **Estabilidade para alta volumetria de transações:** Mesmo com pouco tempo de mercado frente à concorrência, o C6 Bank já conquistou altos volumes de clientes. Desde o começo, mesmo com o grande volume de transações, os clientes da instituição contaram com estabilidade e segurança.\n- **Criação de produtos únicos e inovadores: **Desenhado para ser amigável e simplificar a interação com o cliente, o banco reuniu uma série de produtos disruptivos que foram possíveis a partir de uma solução flexível com APIs abertas.\n\n## Em 2022, o C6 Bank foi considerado como o melhor banco digital do país na 6a edição do Prêmio Canal Tech.",
-  "images": []
+  "thumbnail": "/assets/hero_c6_146a5aab6a.png",
+  "excerpt": "Um banco completo para pessoas físicas e jurídicas, formado por uma arquitetura aberta e totalmente digital, com agilidade e capacidade de oferecer produtos e serviços inovadores.",
+  "headline": "Do 0 aos 20 milhões de clientes com a solução Matera.",
+  "intro": [
+    "Um banco completo para pessoas físicas e jurídicas, formado por uma arquitetura aberta e totalmente digital, com agilidade e capacidade de oferecer produtos e serviços inovadores."
+  ],
+  "challenges": {
+    "intro": "Montar uma operação de banco digital completa em tempo recorde e com altíssimo padrão de tecnologia, com ferramentas personalizadas que atendessem a todos os produtos e serviços de um Banco Completo e Inovador como o C6.",
+    "items": []
+  },
+  "quotes": [
+    {
+      "text": "Conduzimos um processo de seleção bastante criterioso, o qual envolveu a análise de fornecedores de Core Banking de todo mundo. A solução da Matera se mostrou a mais adequada para atender os requisitos funcionais, de tecnologia, performance e segurança. Além disso, o prazo para entregar o MVP era de 3 meses, eles se comprometeram e cumpriram o combinado.",
+      "person": "Nelson Novaes",
+      "role": "Partner & CTO do C6 Bank"
+    }
+  ],
+  "solution": {
+    "intro": "Time to market acelerado e plataforma flexível!",
+    "items": [
+      {
+        "title": "Core Banking completo",
+        "text": "A implementação do Core Banking completo da Matera, permitiu ao cliente ter o seu MVP em 3 meses, com deployment em cloud. O go live do banco se deu em 9 meses após o início do projeto. A solução escolhida foi muito além do que uma conta corrente, passando por regulatórios, Pix, SPB, gestão de riscos, crédito, renda fixa, boleto, ou seja, um banco completo, de verdade."
+      },
+      {
+        "title": "Arquitetura cloud e micro serviços",
+        "text": "Tendo como base a arquitetura 100% em Cloud e micro serviços, foi possível enriquecer o portfólio com produtos únicos e inovadores como o C6 Tag. Além disso, o banco estabeleceu parcerias importantes para diferenciar a jornada do cliente."
+      },
+      {
+        "title": "Plataforma integrada",
+        "text": "A Matera implementou sua plataforma completa de core bancário, que integra todas as funcionalidades necessárias para a operação do Banco C6 e, ainda, conta com atualização constante de acordo com as principais questões regulatórias e de tecnologia."
+      }
+    ]
+  },
+  "milestones": [
+    "Em 6 meses, o C6 Bank conquistou 1 milhão de clientes.",
+    "Em um ano, 10 milhões.",
+    "E, em três anos, 20.000.000."
+  ],
+  "partnership": {
+    "title": "C6 Bank + Matera",
+    "quotes": [
+      {
+        "text": "Conduzimos um processo de seleção bastante criterioso, o qual envolveu a análise de fornecedores de Core Banking de todo mundo. A solução da Matera se mostrou a mais adequada para atender os requisitos funcionais, de tecnologia, performance e segurança. Além disso, o prazo para entregar o MVP era de 3 meses, eles se comprometeram e cumpriram o combinado.",
+        "person": "Nelson Novaes",
+        "role": "Partner & CTO do C6 Bank"
+      }
+    ],
+    "closing": "Em 2022, o C6 Bank foi considerado como o melhor banco digital do país na 6a edição do Prêmio Canal Tech.",
+    "gains": [
+      {
+        "title": "Time to market acelerado",
+        "text": "O processo de implementação de um banco desde sua concepção (greenfield) necessita um planejamento assertivo para garantir o alinhamento entre a tecnologia e o modelo de negócio no qual o cliente está imerso. Este case trouxe uma nova realidade ao mercado, colocando o banco digital no ar, pronto para funcionamento em tempo recorde!"
+      },
+      {
+        "title": "Estabilidade para alta volumetria de transações",
+        "text": "Mesmo com pouco tempo de mercado frente à concorrência, o C6 Bank já conquistou altos volumes de clientes. Desde o começo, mesmo com o grande volume de transações, os clientes da instituição contaram com estabilidade e segurança."
+      },
+      {
+        "title": "Criação de produtos únicos e inovadores",
+        "text": "Desenhado para ser amigável e simplificar a interação com o cliente, o banco reuniu uma série de produtos disruptivos que foram possíveis a partir de uma solução flexível com APIs abertas."
+      }
+    ]
+  }
 }

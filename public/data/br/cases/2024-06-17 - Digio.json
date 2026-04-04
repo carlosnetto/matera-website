@@ -3,8 +3,46 @@
   "slug": "digio",
   "date": "2024-06-17",
   "client": "Digio",
-  "thumbnail": "/assets/logo-matera.png",
-  "excerpt": "Com foco em criar soluções digitais para descomplicar a forma como os brasileiros cuidam do dinheiro, o Digio, banco digital do Bradesco, nasceu em 2016.",
-  "body": "## Digio | Conta Digital, Core Banking e Pix\n\nExpansão\n\nMesmo com uma base de clientes expressiva, em 2019 o Digio viu a possibilidade de expandir sua atuação e oferecer serviços para além do crédito.\n\nPara alcançar esse objetivo, contrataram novas soluções Matera, que supriria as diversas necessidades de operação da bantech com a escalabilidade necessária para suportar o crescimento previsto do projeto.\n\nAlém do Core Banking Matera\n\nDesde o início, a Matera esteve presente nos processos regulatórios junto ao Banco Central para viabilizar os serviços de core banking. Além da operação da conta corrente digital, seguros, empréstimos e cartão white label, o Pix foi mais uma das funcionalidades habilitadas para que o Digio se tornasse um banco múltiplo.\n\n \n\nEvolução para atração\n\nE não parou por aí! A definição e implementação das novas funcionalidades possibilitou que a empresa atuasse junto a uma multinacional americana, responsável pelo transporte privado urbano.\n\nGanhos do cliente\n\n**Tecnologia de Ponta:** Desenvolvemos soluções seguras, robustas e inovadoras para atender às necessidades específicas de cada cliente, com alta escalabilidade e flexibilidade para se adaptar ao seu ritmo de crescimento.\n\n**Expansão e Crescimento:** A implementação de novos produtos em seu portfólio resultou em crescimento robusto, além da Digio ter se consolidado como banco múltiplo, conforme seus planejamentos iniciais.\n\n**Aumento da competitividade: **A solução da Matera contribuiu para a competitividade da Digio no mercado de crédito, resultando em crescimento significativo após a implementação de novos produtos em seu portfólio.",
-  "images": []
+  "thumbnail": "/assets/hero_digio_dafe0ac5f7.png",
+  "excerpt": "Com foco em criar soluções digitais para descomplicar a forma como os brasileiros cuidam do dinheiro, o Digio, banco digital do Bradesco, nasceu em 2016. Iniciou ofertando um cartão de crédito sem anuidade, mas gradualmente foi evoluindo seu portfólio para entregar mais vantagens aos clientes.",
+  "headline": "Digio | Conta Digital, Core Banking e Pix",
+  "intro": [
+    "Com foco em criar soluções digitais para descomplicar a forma como os brasileiros cuidam do dinheiro, o Digio, banco digital do Bradesco, nasceu em 2016. Iniciou ofertando um cartão de crédito sem anuidade, mas gradualmente foi evoluindo seu portfólio para entregar mais vantagens aos clientes.",
+    "Mesmo com uma base de clientes expressiva, em 2019 o Digio viu a possibilidade de expandir sua atuação e oferecer serviços para além do crédito.",
+    "Para alcançar esse objetivo, contrataram novas soluções Matera, que supriria as diversas necessidades de operação da bantech com a escalabilidade necessária para suportar o crescimento previsto do projeto."
+  ],
+  "challenges": null,
+  "quotes": [],
+  "solution": {
+    "intro": "Desde o início, a Matera esteve presente nos processos regulatórios junto ao Banco Central para viabilizar os serviços de core banking.",
+    "items": [
+      {
+        "title": "Além do Core Banking Matera",
+        "text": "Além da operação da conta corrente digital, seguros, empréstimos e cartão white label, o Pix foi mais uma das funcionalidades habilitadas para que o Digio se tornasse um banco múltiplo."
+      },
+      {
+        "title": "Evolução para atração",
+        "text": "E não parou por aí! A definição e implementação das novas funcionalidades possibilitou que a empresa atuasse junto a uma multinacional americana, responsável pelo transporte privado urbano."
+      }
+    ]
+  },
+  "partnership": {
+    "title": "Digio + Matera",
+    "quotes": [],
+    "closing": null,
+    "gains": [
+      {
+        "title": "Tecnologia de Ponta",
+        "text": "Desenvolvemos soluções seguras, robustas e inovadoras para atender às necessidades específicas de cada cliente, com alta escalabilidade e flexibilidade para se adaptar ao seu ritmo de crescimento."
+      },
+      {
+        "title": "Expansão e Crescimento",
+        "text": "A implementação de novos produtos em seu portfólio resultou em crescimento robusto, além da Digio ter se consolidado como banco múltiplo, conforme seus planejamentos iniciais."
+      },
+      {
+        "title": "Aumento da competitividade",
+        "text": "A solução da Matera contribuiu para a competitividade da Digio no mercado de crédito, resultando em crescimento significativo após a implementação de novos produtos em seu portfólio."
+      }
+    ]
+  }
 }

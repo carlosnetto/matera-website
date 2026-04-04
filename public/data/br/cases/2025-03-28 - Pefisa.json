@@ -3,8 +3,70 @@
   "slug": "pefisa",
   "date": "2025-03-28",
   "client": "Pefisa",
-  "thumbnail": "/assets/logo-pefisa.webp",
-  "excerpt": "A Pefisa se destacou como a primeira varejista a disponibilizar Pix e investiu em um processo de concessão de Crédito Pessoal facilitado para seus clientes.",
-  "body": "## **Solução de Pix + Crédito**\n\nDesde a década de 1970, a Pefisa foi uma das pioneiras na concessão de crédito no varejo e há alguns anos vem se consolidando para trazer maior acessibilidade financeira à população, com o objetivo de democratizar os serviços financeiros.\n\nCom o trabalho com a Matera, a Pefisa se tornou a primeira fintech de uma varejista a operar o Pix e revolucionou seu processo de concessão de crédito pessoal.\n\n## **Pefisa + Matera: o varejo como agente transformador financeiro e social!**\n\nA Pernambucanas foi uma das primeiras varejistas a aproveitar as oportunidades do conceito de [embedded finance](https://www.matera.com/br/blog/embedded-finance/). Estrategicamente, ofertou para toda a sua base de clientes serviços financeiros. \n\nEsse processo, além de promover o acesso de desbancarizados a esse tipo de serviço, permitiu que a varejista explorasse mais uma fonte de renda: as transações advindas do [Pix](https://www.matera.com/br/blog/tudo-sobre-o-pix/).\n\nA parceria Pefisa e Matera iniciou com a frente regulatória e com o desafio de emitir um alto volume de boletos. O projeto seguiu com a implementação do Pix nas lojas Pernambucanas e, depois, foi feito o trabalho na [plataforma de crédito](https://www.matera.com/br/solucoes/credito/), para inovar e facilitar a [concessão de crédito](https://www.matera.com/br/blog/modelos-de-concessao-de-credito/) aos clientes.\n\n### **Oferta de Pix**\n\nComo participante direta do Sistema de Pagamentos Instantâneos do Banco Central, a varejista substituiu os boletos pelo Pix Cobrança e também passou a disponibilizar o Pix como meio de pagamento nos caixas de suas lojas físicas e online.\n\nAlém disso, a Pefisa está oferecendo o serviço de Pix para indiretos, apoiando assim [instituições de pagamento](https://www.matera.com/br/blog/banco-ou-instituicao-de-pagamento-conheca-diferenca/) e fintechs no acesso ao mercado financeiro. **Essa funcionalidade é nativa da plataforma Matera e está ajudando a empresa na disseminação da sua oferta para pessoas jurídicas.**\n\n### **Solução para concessão de crédito**\n\nEm outro momento da parceria estratégica, a Matera apoiou a Pefisa em seus desafios referentes à concessão de crédito pessoal.\n\nA fintech, no momento, enfrentava longos tempos de espera para a concessão, limitações na oferta de produtos nas lojas e necessidade de modernização e integração de sistemas. Para atender a essas necessidades, nossa solução de crédito disponibilizou:\n\n- Plataforma em nuvem, que é escalável e segura para a gestão da operação.\n- Desenvolvimento ágil para garantir um *time to market* rápido e eficiente.\n- Arquitetura em APIs, que facilitou a integração com sistemas e internos e aplicativo da Pefisa para tablets.\n- Tecnologia de ponta para uma experiência inovadora ao cliente.\n- Integração com Caixa Econômica para agilizar o processo de crédito com garantia de FGTS.\n\nCom isso, a Matera conseguiu proporcionar à Pefisa aumento da agilidade, crescimento do negócio, expansão da oferta, inovação e aumento da competitividade.\n\n[**Baixe o case Novas Soluções em Crédito: Pefisa e Matera e saiba mais sobre este trabalho!**](https://insight.matera.com/case-pefisa-matera-solucoes-em-credito)\n\n \n\n## **Como foi possível?**\n\nPor meio de plataformas completas e flexíveis, a fintech da Pernambucanas, a Pefisa, trouxe para dentro do próprio negócio a possibilidade de ofertar o Pix para todo o seu ecossistema e otimizar todo o processo de oferta de crédito. As soluções Matera dispõem das tecnologias mais atuais:\n\n- APIs\n- SaaS\n- Cloud first\n- Pix Cobrança\n- Desenvolvimento ágil\n- Containers e Kubernete\n- Pix com QR Code Dinâmico\n- Suporta participantes indiretos\n- Estabilidade e Escalabilidade para grandes volumes\n\n## **Pefisa + Matera: um case de sucesso!**\n\nAlém de oferecer a possibilidade de pagamento via Pix nas lojas físicas e reduzir os custos com adquirência no débito, a Pernambucanas está emitindo suas faturas com o QR Code do Pix, tendo como benefício a redução do seu custo com relação à emissão de boletos. Dessa forma, é possível antecipar seu fluxo de caixa e, ao mesmo tempo, reduzir drasticamente seus custos operacionais.\n\n*“A Matera trouxe segurança nas regras e nos aspectos de funcionamento do Pix, além de garantir a aderência e conformidade com as regulamentações e requisitos desse inovador modelo de pagamento eletrônico no Brasil. Contamos com seu apoio, sugestões nos desenhos operacionais e novos modelos de negócio, atuando inclusive como parceira na busca de oportunidades no mercado para a Pefisa.” *\n\n**Fabiano Rustice, CIO da Pefisa**",
-  "images": []
+  "thumbnail": "/assets/Logo_PEFISA_fdd859861c.webp",
+  "excerpt": "A Pernambucanas, uma das maiores varejistas do país, com a Pefisa, sua fintech, saiu na frente da concorrência e se destacou como a primeira varejista a disponibilizar Pix, além disso, investiu em um processo de concessão de Crédito Pessoal facilitado para seus clientes.",
+  "headline": "Pefisa + Matera: Solução de Pix + Crédito",
+  "intro": [
+    "A Pernambucanas, uma das maiores varejistas do país, com a Pefisa, sua fintech, saiu na frente da concorrência e se destacou como a primeira varejista a disponibilizar Pix, além disso, investiu em um processo de concessão de Crédito Pessoal facilitado para seus clientes.",
+    "Desde a década de 1970, a Pefisa foi uma das pioneiras na concessão de crédito no varejo e há alguns anos vem se consolidando para trazer maior acessibilidade financeira à população, com o objetivo de democratizar os serviços financeiros.",
+    "Com o trabalho com a Matera, a Pefisa se tornou a primeira fintech de uma varejista a operar o Pix e revolucionou seu processo de concessão de crédito pessoal."
+  ],
+  "challenges": null,
+  "quotes": [
+    {
+      "text": "A Matera trouxe segurança nas regras e nos aspectos de funcionamento do Pix, além de garantir a aderência e conformidade com as regulamentações e requisitos desse inovador modelo de pagamento eletrônico no Brasil. Contamos com seu apoio, sugestões nos desenhos operacionais e novos modelos de negócio, atuando inclusive como parceira na busca de oportunidades no mercado para a Pefisa.",
+      "person": "Fabiano Rustice",
+      "role": "CIO da Pefisa"
+    }
+  ],
+  "solution": {
+    "intro": "Pefisa + Matera: o varejo como agente transformador financeiro e social!",
+    "items": [
+      {
+        "title": "Embedded finance no varejo",
+        "text": "A Pernambucanas foi uma das primeiras varejistas a aproveitar as oportunidades do conceito de embedded finance. Estrategicamente, ofertou para toda a sua base de clientes serviços financeiros. Esse processo, além de promover o acesso de desbancarizados a esse tipo de serviço, permitiu que a varejista explorasse mais uma fonte de renda: as transações advindas do Pix."
+      },
+      {
+        "title": "Oferta de Pix",
+        "text": "Como participante direta do Sistema de Pagamentos Instantâneos do Banco Central, a varejista substituiu os boletos pelo Pix Cobrança e também passou a disponibilizar o Pix como meio de pagamento nos caixas de suas lojas físicas e online. Além disso, a Pefisa está oferecendo o serviço de Pix para indiretos, apoiando assim instituições de pagamento e fintechs no acesso ao mercado financeiro. Essa funcionalidade é nativa da plataforma Matera e está ajudando a empresa na disseminação da sua oferta para pessoas jurídicas."
+      },
+      {
+        "title": "Solução para concessão de crédito",
+        "text": "A Matera apoiou a Pefisa em seus desafios referentes à concessão de crédito pessoal. A fintech enfrentava longos tempos de espera para a concessão, limitações na oferta de produtos nas lojas e necessidade de modernização e integração de sistemas."
+      }
+    ],
+    "creditoFeatures": [
+      "Plataforma em nuvem, que é escalável e segura para a gestão da operação.",
+      "Desenvolvimento ágil para garantir um time to market rápido e eficiente.",
+      "Arquitetura em APIs, que facilitou a integração com sistemas e internos e aplicativo da Pefisa para tablets.",
+      "Tecnologia de ponta para uma experiência inovadora ao cliente.",
+      "Integração com Caixa Econômica para agilizar o processo de crédito com garantia de FGTS."
+    ],
+    "results": "Com isso, a Matera conseguiu proporcionar à Pefisa aumento da agilidade, crescimento do negócio, expansão da oferta, inovação e aumento da competitividade."
+  },
+  "technology": {
+    "intro": "Por meio de plataformas completas e flexíveis, a fintech da Pernambucanas, a Pefisa, trouxe para dentro do próprio negócio a possibilidade de ofertar o Pix para todo o seu ecossistema e otimizar todo o processo de oferta de crédito. As soluções Matera dispõem das tecnologias mais atuais:",
+    "items": [
+      "APIs",
+      "SaaS",
+      "Cloud first",
+      "Pix Cobrança",
+      "Desenvolvimento ágil",
+      "Containers e Kubernetes",
+      "Pix com QR Code Dinâmico",
+      "Suporta participantes indiretos",
+      "Estabilidade e Escalabilidade para grandes volumes"
+    ]
+  },
+  "partnership": {
+    "title": "Pefisa + Matera",
+    "quotes": [
+      {
+        "text": "A Matera trouxe segurança nas regras e nos aspectos de funcionamento do Pix, além de garantir a aderência e conformidade com as regulamentações e requisitos desse inovador modelo de pagamento eletrônico no Brasil. Contamos com seu apoio, sugestões nos desenhos operacionais e novos modelos de negócio, atuando inclusive como parceira na busca de oportunidades no mercado para a Pefisa.",
+        "person": "Fabiano Rustice",
+        "role": "CIO da Pefisa"
+      }
+    ],
+    "closing": "Além de oferecer a possibilidade de pagamento via Pix nas lojas físicas e reduzir os custos com adquirência no débito, a Pernambucanas está emitindo suas faturas com o QR Code do Pix, tendo como benefício a redução do seu custo com relação à emissão de boletos. Dessa forma, é possível antecipar seu fluxo de caixa e, ao mesmo tempo, reduzir drasticamente seus custos operacionais."
+  }
 }

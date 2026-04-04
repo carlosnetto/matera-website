@@ -1,11 +1,20 @@
 [
   {
+    "title": "CHG MERIDIAN",
+    "slug": "chg-meridian",
+    "date": "2025-08-19",
+    "client": "CHG-MERIDIAN",
+    "thumbnail": "/assets/08-2025-imagem-chg-site.png",
+    "excerpt": "Classificada como uma instituição S4, a CHG-MERIDIAN tinha o desafio de garantir a conformidade regulatória do Banco Central e, com a ajuda da Matera, garantiu o atendimento às demandas e otimizou seus processos de gestão de riscos.",
+    "file": "2025-08-19 - CHG MERIDIAN.json"
+  },
+  {
     "title": "StoneX",
     "slug": "stonex",
     "date": "2025-08-19",
-    "client": "Stonex",
+    "client": "StoneX",
     "thumbnail": "/assets/stonex-pagina-site-matera-download.webp",
-    "excerpt": "A StoneX, rede global de serviços financeiros customizados e especialista em consultoria e gestão de riscos, encontrou na Matera uma parceira estratégica para l",
+    "excerpt": "A StoneX, rede global de serviços financeiros customizados e especialista em consultoria e gestão de riscos, encontrou na Matera uma parceira estratégica para lidar com seus desafios de risco, fortalecendo sua governança e capacidade de gestão.",
     "file": "2025-08-19 - StoneX.json"
   },
   {
@@ -14,7 +23,7 @@
     "date": "2025-04-01",
     "client": "Travelex",
     "thumbnail": "/assets/travelex.webp",
-    "excerpt": "Entenda como a solução de Core Banking da Matera apoiou os objetivos e desafios da Travelex.",
+    "excerpt": "A Travelex, uma das maiores empresas de câmbio do mundo, buscava uma solução tecnológica robusta e escalável que permitisse a oferta de uma ampla gama de serviços financeiros, desde câmbio até contas e transferências.",
     "file": "2025-04-01 - Travelex.json"
   },
   {
@@ -22,15 +31,15 @@
     "slug": "pefisa",
     "date": "2025-03-28",
     "client": "Pefisa",
-    "thumbnail": "/assets/logo-pefisa.webp",
-    "excerpt": "A Pefisa se destacou como a primeira varejista a disponibilizar Pix e investiu em um processo de concessão de Crédito Pessoal facilitado para seus clientes.",
+    "thumbnail": "/assets/Logo_PEFISA_fdd859861c.webp",
+    "excerpt": "A Pernambucanas, uma das maiores varejistas do país, com a Pefisa, sua fintech, saiu na frente da concorrência e se destacou como a primeira varejista a disponibilizar Pix, além disso, investiu em um processo de concessão de Crédito Pessoal facilitado para seus clientes.",
     "file": "2025-03-28 - Pefisa.json"
   },
   {
     "title": "XP",
     "slug": "banco-xp",
     "date": "2025-02-26",
-    "client": "Banco Xp",
+    "client": "Banco XP",
     "thumbnail": "/assets/xp.webp",
     "excerpt": "Core Banking para uma das maiores plataformas de investimento do mundo: entenda como a Matera atendeu as necessidades do Banco XP.",
     "file": "2025-02-26 - XP.json"
@@ -40,7 +49,7 @@
     "slug": "cielo",
     "date": "2025-01-15",
     "client": "Cielo",
-    "thumbnail": "/assets/15012025-cielo-premiacao-inewcao-blog.webp",
+    "thumbnail": "/assets/cielo-cases-site.webp",
     "excerpt": "A Matera foi premiada pela Cielo, uma das maiores empresas de pagamentos eletrônicos da América Latina, como Melhor Fornecedor na categoria Inovação!",
     "file": "2025-01-15 - Cielo.json"
   },
@@ -49,8 +58,8 @@
     "slug": "digio",
     "date": "2024-06-17",
     "client": "Digio",
-    "thumbnail": "/assets/logo-matera.png",
-    "excerpt": "Com foco em criar soluções digitais para descomplicar a forma como os brasileiros cuidam do dinheiro, o Digio, banco digital do Bradesco, nasceu em 2016.",
+    "thumbnail": "/assets/hero_digio_dafe0ac5f7.png",
+    "excerpt": "Com foco em criar soluções digitais para descomplicar a forma como os brasileiros cuidam do dinheiro, o Digio, banco digital do Bradesco, nasceu em 2016. Iniciou ofertando um cartão de crédito sem anuidade, mas gradualmente foi evoluindo seu portfólio para entregar mais vantagens aos clientes.",
     "file": "2024-06-17 - Digio.json"
   },
   {
@@ -58,8 +67,8 @@
     "slug": "valia",
     "date": "2024-05-22",
     "client": "Valia",
-    "thumbnail": "/assets/logo-valia.png",
-    "excerpt": "A Valia é uma Entidade Fechada de Previdência Complementar, com 50 anos de história. Conheça o case com a Matera!",
+    "thumbnail": "/assets/logo-valia-case.png",
+    "excerpt": "A Valia é uma Entidade Fechada de Previdência Complementar, sem fins lucrativos com 50 anos de história e 50 empresas patrocinadoras, dentre elas a Vale como uma das principais, com o propósito de construir juntos o presente e um futuro melhores.",
     "file": "2024-05-22 - Valia.json"
   },
   {
@@ -67,8 +76,8 @@
     "slug": "c6-bank",
     "date": "2024-05-21",
     "client": "C6 Bank",
-    "thumbnail": "/assets/logo-matera.png",
-    "excerpt": "C6 Bank é um banco completo, totalmente digital, com agilidade e capacidade de oferecer produtos e serviços inovadores. Conheça o case!",
+    "thumbnail": "/assets/hero_c6_146a5aab6a.png",
+    "excerpt": "Um banco completo para pessoas físicas e jurídicas, formado por uma arquitetura aberta e totalmente digital, com agilidade e capacidade de oferecer produtos e serviços inovadores.",
     "file": "2024-05-21 - C6 Bank.json"
   },
   {
@@ -76,26 +85,26 @@
     "slug": "alesta",
     "date": "2024-05-19",
     "client": "Alesta",
-    "thumbnail": "/assets/logo-matera.png",
-    "excerpt": "Como a CPFL expandiu seu braço financeiro, a Alesta, com a Matera.",
+    "thumbnail": "/assets/hero-alesta.png",
+    "excerpt": "A Alesta, braço financeiro da CPFL, embarcou no mercado financeiro para ampliar os serviços de financiamento aos seus clientes.",
     "file": "2024-05-19 - Alesta.json"
   },
   {
     "title": "OLX",
     "slug": "olx",
     "date": "2024-05-18",
-    "client": "Olx",
-    "thumbnail": "/assets/logo-matera.png",
-    "excerpt": "Um marketplace que também é fintech!",
+    "client": "OLX",
+    "thumbnail": "/assets/hero-olx.png",
+    "excerpt": "Com meio milhão de anúncios diários e uma média de 50 vendas por minuto, a OLX se destaca no mercado como a maior representante da economia compartilhada do país.",
     "file": "2024-05-18 - OLX.json"
   },
   {
     "title": "PaGol",
     "slug": "pagol",
     "date": "2024-05-17",
-    "client": "Pagol",
-    "thumbnail": "/assets/logo-matera.png",
-    "excerpt": "Os gigantes do mercado de viagens, a Gol e a Smiles se juntaram para oferecer uma nova oportunidade para seus clientes. Conheça o case com a Matera.",
+    "client": "PaGol",
+    "thumbnail": "/assets/hero-pagol.png",
+    "excerpt": "Os acionistas de dois gigantes do mercado de viagens, a Gol e a Smiles, se juntaram para oferecer uma nova oportunidade para seus clientes: uma maneira mais rápida e eficiente de juntar milhas sem a necessidade de uso de um cartão de crédito.",
     "file": "2024-05-17 - PaGol.json"
   }
 ]

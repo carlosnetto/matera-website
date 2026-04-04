@@ -4,6 +4,30 @@ Reverse-chronological log of improvements to the Matera website.
 
 ---
 
+## 2026-04-04: Redesign BR Cases — structured data, listing cards, detail pages
+
+Complete rebuild of `/br/cases` to match the live matera.com/br/cases/ design.
+
+**Data restructure:**
+- Converted all 11 existing case JSONs from flat markdown `body` to structured fields: `headline`, `intro`, `challenges`, `quotes`, `solution`, `partnership`
+- Added CHG MERIDIAN as 12th case (was missing from the site)
+- Downloaded 7 missing hero images from Cloudfront CDN
+
+**Listing page (`/br/cases`):**
+- Dark unified cards with client logo as semi-transparent background
+- Company name and excerpt overlaid at bottom
+- Arrow button (→) at bottom-right
+- "Excelência que o mercado já conhece" subtitle
+
+**Detail page (`/br/cases/:slug`):**
+- Dark navy hero with back link, title, date, excerpt
+- Full-width logo card (image fills the card)
+- Structured sections: "Desafios do cliente" (purple cards with alert icons), testimonial quotes, "Solução da Matera" (green-bordered cards with check icons), partnership closing section on dark bg
+- "Quer resultados como esses?" CTA at bottom
+- Graceful degradation — simpler cases (Cielo, Digio) render only the sections they have
+
+---
+
 ## 2026-04-03: Fix mobile hero spacing + trust banner logos
 
 - Mobile hero `padding-top` CSS selector changed from `section:first-child` to `section:first-of-type` — the old selector never matched because Helmet injects `<script>` tags as the actual first child of `<main>`

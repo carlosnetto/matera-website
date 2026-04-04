@@ -100,7 +100,7 @@ All content is stored as static JSON files under `public/data/`:
 | Content type | Count | Directory |
 |-------------|-------|-----------|
 | Blog | 99 posts | `public/data/br/blog/` |
-| Cases | 11 studies | `public/data/br/cases/` |
+| Cases | 12 studies | `public/data/br/cases/` |
 
 All content entries include a `tags` array for filtering (e.g. `qr-code`, `pix`, `stablecoin`, `credito`). Listing pages show tag filter pills and use infinite scroll.
 

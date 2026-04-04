@@ -59,7 +59,7 @@ public/data/
 │   └── whitepapers/ 12 papers   (index.json + individual JSONs, HubSpot form IDs + PDF URLs)
 └── br/              ← Portuguese content (BR market)
     ├── blog/        99 posts    (index.json + individual JSONs)
-    └── cases/       11 studies  (index.json + individual JSONs)
+    └── cases/       12 studies  (index.json + structured JSONs: challenges, quotes, solution, partnership)
 ```
 
 ### Content sourcing process
