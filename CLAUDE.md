@@ -5,17 +5,16 @@ Static copies of **matera.com** — React + Vite + TypeScript, deployed via Wran
 
 ## Multi-Region Architecture (ADR-003)
 The site is organized by **market**, not language:
-- `src/na/` — North America market (different products from Brazil)
-- `src/br/` — Brazil market (future, different products from NA)
+- `src/na/` — US & Canada market
+- `src/br/` — Brazil market
 - `src/shared/` — design system shared across all markets
 
-URL prefixes map to markets + languages:
-- `/en` → NA market, English
-- `/es` → NA market, Spanish (future)
-- `/fr` → NA market, French (future)
-- `/br` → BR market, Portuguese (future)
+| Market | URL | Language | Source | Content |
+|--------|-----|----------|--------|---------|
+| US & Canada | `/en` | English | `src/na/` | `public/data/en/` |
+| Brazil | `/br` | Brazilian Portuguese | `src/br/` | `public/data/br/` |
 
-NA and BR have different products and content. `/es` and `/fr` are translations of NA, not separate markets.
+NA and BR are separate markets with different products and content — not translations of each other.
 
 ## Stack
 - React 19 + TypeScript + Vite 8
@@ -71,6 +70,13 @@ public/data/
 
 ### Filename convention
 `YYYY-MM-DD - Title.json` — special chars removed, truncated to 80 chars max.
+
+### Content tagging
+All index entries include a `tags` array for filtering. Listing pages show tag filter pills (AND logic) and use infinite scroll (IntersectionObserver, 12-item batches).
+
+**EN tags:** `qr-code`, `pix`, `instant-payments`, `stablecoin`, `fednow`, `rtp`, `digital-twin`, `core-banking`, `x9`, `baas`, `fraud`, `cross-border`
+
+**BR tags:** `pix`, `credito`, `regtech`, `dados-ia`, `core-banking`, `stablecoin`, `digital-twin`, `pagamentos`
 
 ## Key Design Tokens (from real site Tailwind config)
 ```

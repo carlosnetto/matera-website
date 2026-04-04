@@ -7,7 +7,8 @@
     "thumbnail": "/assets/bridging-the-gap-resource-image.jpg",
     "hubspotFormId": "d324549f-fe56-40d2-9f88-58f4ada459fe",
     "pdfUrl": "https://20392958.fs1.hubspotusercontent-na1.net/hubfs/20392958/Whitepaper%20-%20US/matera-cornerstone-bridging-the-gap-dtw.pdf",
-    "file": "2026-02-19 - Bridging the Real-Time Gap Modernizing Legacy Banking Cores Without Replacement.json"
+    "file": "2026-02-19 - Bridging the Real-Time Gap Modernizing Legacy Banking Cores Without Replacement.json",
+    "tags": ["digital-twin", "core-banking", "instant-payments"]
   },
   {
     "title": "Pix by the Numbers Q4 2025",
@@ -17,7 +18,8 @@
     "thumbnail": "/assets/by-the-numbers-d.jpg",
     "hubspotFormId": "dcd586b8-6022-42c5-88de-b65d0e0a4e05",
     "pdfUrl": "https://20392958.fs1.hubspotusercontent-na1.net/hubfs/20392958/Whitepaper%20-%20US/Pix%20by%20the%20numbers%20Q4%202025.pdf",
-    "file": "2026-02-03 - Pix by the Numbers Q4 2025.json"
+    "file": "2026-02-03 - Pix by the Numbers Q4 2025.json",
+    "tags": ["pix", "instant-payments"]
   },
   {
     "title": "QR Codes: Unlocking Instant Payments",
@@ -27,7 +29,8 @@
     "thumbnail": "/assets/qr-codes-unlocking-instant-payments-resource.png",
     "hubspotFormId": "276975ac-64ad-48a8-a2f7-a5a4c348ae51",
     "pdfUrl": "https://20392958.fs1.hubspotusercontent-na1.net/hubfs/20392958/Whitepaper%20-%20US/matera-cornerstone-qrcodes-unlocking-instant-payments.pdf",
-    "file": "2025-11-14 - QR Codes Unlocking Instant Payments.json"
+    "file": "2025-11-14 - QR Codes Unlocking Instant Payments.json",
+    "tags": ["qr-code", "instant-payments", "fednow", "rtp"]
   },
   {
     "title": "Unlocking Growth in the Stablecoin Era",
@@ -37,7 +40,8 @@
     "thumbnail": "/assets/stablecoin-a.jpg",
     "hubspotFormId": "c7d3c669-b8fe-4190-9249-b6d270d3bbeb",
     "pdfUrl": "https://20392958.fs1.hubspotusercontent-na1.net/hubfs/20392958/AA%20US%20White%20Papers/unlocking-growth-stablecoins-matera.pdf",
-    "file": "2025-10-20 - Unlocking Growth in the Stablecoin Era.json"
+    "file": "2025-10-20 - Unlocking Growth in the Stablecoin Era.json",
+    "tags": ["stablecoin"]
   },
   {
     "title": "Monetizing Faster Payments",
@@ -47,7 +51,8 @@
     "thumbnail": "/assets/monetizing-faster-payments-resource-graphic.jpg",
     "hubspotFormId": "ecd96bc4-2ed4-46a3-9f64-ed04e7c2ce2a",
     "pdfUrl": "https://20392958.fs1.hubspotusercontent-na1.net/hubfs/20392958/Whitepaper%20-%20US/matera-cornerstone-monetizing-faster-payments-whitepaper.pdf",
-    "file": "2025-09-09 - Monetizing Faster Payments.json"
+    "file": "2025-09-09 - Monetizing Faster Payments.json",
+    "tags": ["instant-payments", "fednow", "rtp"]
   },
   {
     "title": "Pix by the Numbers Q2 2025",
@@ -57,7 +62,8 @@
     "thumbnail": "/assets/matera-resource-users-tn.jpg",
     "hubspotFormId": "b7d2b401-c698-4722-b542-a2e6663fb92b",
     "pdfUrl": "https://20392958.fs1.hubspotusercontent-na1.net/hubfs/20392958/AA%20US%20White%20Papers/matera-pix-by-numbers-q2-2025.pdf",
-    "file": "2025-08-14 - Pix by the Numbers Q2 2025.json"
+    "file": "2025-08-14 - Pix by the Numbers Q2 2025.json",
+    "tags": ["pix", "instant-payments"]
   },
   {
     "title": "Instant Payments Pulse May 2025",
@@ -67,7 +73,8 @@
     "thumbnail": "/assets/instant-payments-pulse-may-25-resource-tn.png",
     "hubspotFormId": "91baabe5-697b-4649-a563-57e687a008dd",
     "pdfUrl": "https://20392958.fs1.hubspotusercontent-na1.net/hubfs/20392958/Whitepaper%20-%20US/matera-instant-payments-pulse.pdf",
-    "file": "2025-05-20 - Instant Payments Pulse May 2025.json"
+    "file": "2025-05-20 - Instant Payments Pulse May 2025.json",
+    "tags": ["instant-payments", "fednow", "rtp"]
   },
   {
     "title": "Solving the BaaS Ledger Challenges",
@@ -77,7 +84,8 @@
     "thumbnail": "/assets/cornerstone-baa-s-reconciliation-white-paper-tn.png",
     "hubspotFormId": "712a7a78-252b-48b3-a0b4-bb19b5bc6909",
     "pdfUrl": "https://20392958.fs1.hubspotusercontent-na1.net/hubfs/20392958/Whitepaper%20-%20US/matera-cornerstone-baas-reconciliation-challenges-whitepaper.pdf",
-    "file": "2025-05-15 - Solving the BaaS Ledger Challenges.json"
+    "file": "2025-05-15 - Solving the BaaS Ledger Challenges.json",
+    "tags": ["digital-twin", "baas"]
   },
   {
     "title": "Pix by the Numbers Q1 2025",
@@ -87,7 +95,8 @@
     "thumbnail": "/assets/pix-by-the-numbers-q1-2025.jpg",
     "hubspotFormId": "",
     "pdfUrl": "",
-    "file": "2025-04-10 - Pix by the Numbers Q1 2025.json"
+    "file": "2025-04-10 - Pix by the Numbers Q1 2025.json",
+    "tags": ["pix", "instant-payments"]
   },
   {
     "title": "Unlocking Innovation in Financial Services",
@@ -97,7 +106,8 @@
     "thumbnail": "/assets/dtw-whitepaper.jpg",
     "hubspotFormId": "37e99417-d7a4-4c42-98a0-4108e3ea10f8",
     "pdfUrl": "https://20392958.fs1.hubspotusercontent-na1.net/hubfs/20392958/Whitepaper%20-%20US/matera-unlocking-innovation-whitepaper.pdf",
-    "file": "2025-01-30 - Unlocking Innovation in Financial Services.json"
+    "file": "2025-01-30 - Unlocking Innovation in Financial Services.json",
+    "tags": ["digital-twin", "core-banking"]
   },
   {
     "title": "The Pix Story: A Glimpse Into The Future of Instant Payments in the U.S.",
@@ -107,7 +117,8 @@
     "thumbnail": "/assets/shutterstock-379989589-1.jpg",
     "hubspotFormId": "79c3d054-2fe6-4a4b-99b3-9f3ebd6337db",
     "pdfUrl": "https://20392958.fs1.hubspotusercontent-na1.net/hubfs/20392958/Whitepaper%20-%20US/Pix-White-Paper-By-Matera.pdf",
-    "file": "2025-01-30 - The Pix Story A Glimpse Into The Future of Instant Payments in the US.json"
+    "file": "2025-01-30 - The Pix Story A Glimpse Into The Future of Instant Payments in the US.json",
+    "tags": ["pix", "instant-payments"]
   },
   {
     "title": "Pix by the Numbers Q4 2024",
@@ -117,6 +128,7 @@
     "thumbnail": "/assets/pix-by-the-numbers-q4-2024-tn.jpg",
     "hubspotFormId": "",
     "pdfUrl": "",
-    "file": "2025-01-20 - Pix by the Numbers Q4 2024.json"
+    "file": "2025-01-20 - Pix by the Numbers Q4 2024.json",
+    "tags": ["pix", "instant-payments"]
   }
 ]

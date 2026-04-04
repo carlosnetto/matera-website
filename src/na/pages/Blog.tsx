@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef, useCallback } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import PageHero from '../../shared/components/PageHero';
 import PageMeta from '../../shared/components/PageMeta';
@@ -12,6 +12,7 @@ interface BlogEntry {
   thumbnail: string;
   excerpt: string;
   file: string;
+  tags?: string[];
 }
 
 interface BlogPost extends BlogEntry {
@@ -19,9 +20,28 @@ interface BlogPost extends BlogEntry {
   images: string[];
 }
 
+const BATCH = 12;
+
+const TAG_LABELS: Record<string, string> = {
+  'qr-code': 'QR Code',
+  'pix': 'Pix',
+  'instant-payments': 'Instant Payments',
+  'stablecoin': 'Stablecoin',
+  'fednow': 'FedNow',
+  'rtp': 'RTP',
+  'digital-twin': 'Digital Twin',
+  'core-banking': 'Core Banking',
+  'x9': 'X9 Standard',
+  'baas': 'BaaS',
+  'fraud': 'Fraud',
+  'cross-border': 'Cross-Border',
+};
+
 function BlogList() {
   const [posts, setPosts] = useState<BlogEntry[]>([]);
-  const [visible, setVisible] = useState(12);
+  const [visible, setVisible] = useState(BATCH);
+  const [selectedTags, setSelectedTags] = useState<string[]>([]);
+  const sentinelRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     fetch('/data/en/blog/index.json')
@@ -29,18 +49,69 @@ function BlogList() {
       .then(setPosts);
   }, []);
 
+  const allTags = Array.from(new Set(posts.flatMap(p => p.tags || [])));
+
+  const filtered = selectedTags.length === 0
+    ? posts
+    : posts.filter(p => selectedTags.every(t => p.tags?.includes(t)));
+
+  const toggleTag = (tag: string) => {
+    setSelectedTags(prev => prev.includes(tag) ? prev.filter(t => t !== tag) : [...prev, tag]);
+    setVisible(BATCH);
+  };
+
+  const loadMore = useCallback(() => {
+    setVisible(v => Math.min(v + BATCH, filtered.length));
+  }, [filtered.length]);
+
+  useEffect(() => {
+    const el = sentinelRef.current;
+    if (!el) return;
+    const observer = new IntersectionObserver(([entry]) => {
+      if (entry.isIntersecting) loadMore();
+    }, { rootMargin: '200px' });
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, [loadMore]);
+
   return (
     <>
       <PageMeta title="Blog" description="Insights on instant payments, stablecoins, QR codes, and banking technology from Matera." url="/en/blog" />
       <PageHero title="Blog" />
       <section style={{ padding: '80px 0' }}>
         <div className="container">
+          {allTags.length > 0 && (
+            <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap', marginBottom: '32px' }}>
+              {allTags.map(tag => {
+                const active = selectedTags.includes(tag);
+                return (
+                  <button key={tag} onClick={() => toggleTag(tag)} style={{
+                    padding: '6px 16px', borderRadius: '20px', fontSize: '0.8rem', fontWeight: 600, cursor: 'pointer',
+                    border: active ? '2px solid var(--matera-green)' : '2px solid var(--matera-blue)',
+                    backgroundColor: active ? 'var(--matera-green)' : '#fff',
+                    color: active ? '#000' : 'var(--matera-blue)',
+                    transition: 'all 0.2s',
+                  }}>
+                    {TAG_LABELS[tag] || tag}
+                  </button>
+                );
+              })}
+              {selectedTags.length > 0 && (
+                <button onClick={() => { setSelectedTags([]); setVisible(BATCH); }} style={{
+                  padding: '6px 16px', borderRadius: '20px', fontSize: '0.8rem', fontWeight: 600, cursor: 'pointer',
+                  border: '2px solid #ccc', backgroundColor: '#fff', color: '#999',
+                }}>
+                  Clear
+                </button>
+              )}
+            </div>
+          )}
           <div style={{
             display: 'grid',
             gridTemplateColumns: 'repeat(3, 1fr)',
             gap: '32px',
           }}>
-            {posts.slice(0, visible).map((p) => (
+            {filtered.slice(0, visible).map((p) => (
               <Link
                 key={p.slug}
                 to={`/en/blog/${p.slug}`}
@@ -81,20 +152,7 @@ function BlogList() {
               </Link>
             ))}
           </div>
-          {visible < posts.length && (
-            <div style={{ textAlign: 'center', marginTop: '48px' }}>
-              <button
-                onClick={() => setVisible(v => v + 12)}
-                className="btn-matera"
-                style={{
-                  backgroundColor: 'var(--matera-blue)',
-                  color: 'var(--matera-white)',
-                }}
-              >
-                Load more
-              </button>
-            </div>
-          )}
+          {visible < filtered.length && <div ref={sentinelRef} style={{ height: '1px' }} />}
         </div>
       </section>
     </>

@@ -4,6 +4,44 @@ Reverse-chronological log of improvements to the Matera website.
 
 ---
 
+## 2026-04-03: Fix trust banner logos — remove white backgrounds
+
+- 8 of 15 client logos had solid white backgrounds (no alpha channel)
+- The CSS `brightness(0) invert(1)` filter turned the white backgrounds into visible gray rectangles
+- Used ImageMagick to make white pixels transparent on: Bank of America, Bradesco, C6 Bank, Cielo, Fiserv, Mizuho, Nupay, Western Union
+- All 15 logos now have proper alpha transparency and render correctly on the dark navy background
+
+---
+
+## 2026-04-03: Content tagging, infinite scroll, tag filters across all listing pages
+
+Tagged all content across EN and BR markets with topic-based tags for filtering and cross-referencing.
+
+**EN tags** (12): `qr-code`, `pix`, `instant-payments`, `stablecoin`, `fednow`, `rtp`, `digital-twin`, `core-banking`, `x9`, `baas`, `fraud`, `cross-border`
+- Blog: 35 posts tagged
+- Whitepapers: 12 papers tagged
+- Podcasts: 11 episodes tagged
+- Press: 56 articles tagged
+
+**BR tags** (8): `pix`, `credito`, `regtech`, `dados-ia`, `core-banking`, `stablecoin`, `digital-twin`, `pagamentos`
+- Blog: 99 posts tagged
+
+**Listing page improvements** (Blog, Press, Whitepapers, Podcasts — EN and BR):
+- Replaced "Load More" buttons with **infinite scroll** (IntersectionObserver, 12 items per batch, 200px lookahead)
+- Added **tag filter pills** — single row above content, pill-shaped buttons, AND logic when multiple selected, white/blue/green color scheme
+- Portuguese "Limpar" (clear) button for BR pages
+
+**QR Code Solutions page** (`/en/solutions/qr-code-solutions`):
+- "Relevant Resources" section now dynamically fetches from blog, whitepapers, and podcasts indexes
+- Filters by `qr-code` tag, sorted newest-first — shows all matching content, not just 3 hardcoded items
+- Podcast cards show Spotify and Apple Podcasts icons with direct links
+
+**Other fixes:**
+- Fixed pre-existing TypeScript error in `Cases.tsx` (`c.name` → `c.title`)
+- Updated README.md to reflect current two-market architecture (US & Canada + Brazil)
+
+---
+
 ## 2026-04-03: Fix mobile hero spacing + replace card image in QR Code page
 
 - Added global CSS rule: first section in `<main>` gets `padding-top: 7rem` on mobile to clear fixed header

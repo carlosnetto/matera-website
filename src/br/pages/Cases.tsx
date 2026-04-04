@@ -63,7 +63,7 @@ function BrCasesList() {
               >
                 {c.thumbnail && (
                   <div style={{ aspectRatio: '16/10', overflow: 'hidden' }}>
-                    <img src={c.thumbnail} alt={c.name} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                    <img src={c.thumbnail} alt={c.title} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                   </div>
                 )}
                 <div style={{ padding: '24px', flex: 1, display: 'flex', flexDirection: 'column' }}>

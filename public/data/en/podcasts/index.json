@@ -7,7 +7,8 @@
     "excerpt": "In this episode of the Payments Perspective podcast, Carmen Murphy speaks with Sarah Hoisington from Matera about the evolution and future of QR codes in payments.",
     "spotifyUrl": "https://open.spotify.com/episode/5TQtiZ86IjkoJDXJQ3kEK1",
     "applePodcastsUrl": "https://podcasts.apple.com/us/podcast/qr-codes-and-payments-with-sarah-hoisington-from-matera/id1701000962?i=1000724052279",
-    "file": "2025-08-29 - Matera Featured on The Payments Perspective Podcast.json"
+    "file": "2025-08-29 - Matera Featured on The Payments Perspective Podcast.json",
+    "tags": ["qr-code", "instant-payments"]
   },
   {
     "title": "How Banks and Credit Unions Can Power the Next Generation of Business Payments with Stablecoins",
@@ -17,7 +18,8 @@
     "excerpt": "Stablecoins are evolving from speculative assets into practical digital dollars for everyday business use. In this episode, we explore how companies are leveraging USDC",
     "spotifyUrl": "https://open.spotify.com/episode/3NS6h6pw58vP4PEJh90Q5A",
     "applePodcastsUrl": "https://podcasts.apple.com/br/podcast/how-banks-and-credit-unions-can-power-the-next/id1807223492?i=1000714444234&l=en-GB",
-    "file": "2025-06-25 - How Banks and Credit Unions Can Power the Next Generation of Business Pa.json"
+    "file": "2025-06-25 - How Banks and Credit Unions Can Power the Next Generation of Business Pa.json",
+    "tags": ["stablecoin"]
   },
   {
     "title": "Who Should Offer Stablecoins? Why Banks and Credit Unions Have A Key Role Even If They Don't Custody These Digital Assets",
@@ -27,7 +29,8 @@
     "excerpt": "As stablecoins like USDC gain traction, banks and credit unions have a unique opportunity to offer them directly within their existing digital channels--without taking",
     "spotifyUrl": "https://open.spotify.com/episode/206qOoRsRxPtaEI6D2LyxP",
     "applePodcastsUrl": "https://podcasts.apple.com/br/podcast/who-should-offer-stablecoins-why-banks-and-credit/id1807223492?i=1000714076700&l=en-GB",
-    "file": "2025-06-22 - Who Should Offer Stablecoins Why Banks and Credit Unions Have A Key Role.json"
+    "file": "2025-06-22 - Who Should Offer Stablecoins Why Banks and Credit Unions Have A Key Role.json",
+    "tags": ["stablecoin"]
   },
   {
     "title": "Practical Guide to Embedding Stablecoins into Mobile Banking Apps",
@@ -37,7 +40,8 @@
     "excerpt": "Stablecoins are entering the financial mainstream, with projections that U.S. dollar stablecoins could surpass $2 trillion by 2028. In this episode, we explore how ban",
     "spotifyUrl": "https://open.spotify.com/episode/5NCyaZNvSH2vfmGI6qHC6G",
     "applePodcastsUrl": "https://podcasts.apple.com/br/podcast/practical-guide-to-embedding-stablecoins-into-mobile/id1807223492?i=1000713001235&l=en-GB",
-    "file": "2025-06-16 - Practical Guide to Embedding Stablecoins into Mobile Banking Apps.json"
+    "file": "2025-06-16 - Practical Guide to Embedding Stablecoins into Mobile Banking Apps.json",
+    "tags": ["stablecoin"]
   },
   {
     "title": "Protecting Deposits in the Stablecoin Era: A Strategy Playbook for Financial Institutions",
@@ -47,7 +51,8 @@
     "excerpt": "Stablecoins are entering the mainstream--and banks need a strategy. In this episode, we explore how legislation like the GENIUS Act and growing customer demand are acce",
     "spotifyUrl": "https://open.spotify.com/episode/7ircQTvQfiuPCg8bxlymso",
     "applePodcastsUrl": "https://podcasts.apple.com/br/podcast/protecting-deposits-in-the-stablecoin-era-a/id1807223492?i=1000712963598&l=en-GB",
-    "file": "2025-06-13 - Protecting Deposits in the Stablecoin Era A Strategy Playbook for Financi.json"
+    "file": "2025-06-13 - Protecting Deposits in the Stablecoin Era A Strategy Playbook for Financi.json",
+    "tags": ["stablecoin"]
   },
   {
     "title": "The Truth About QR Code Payments - What's Secure, What's Not, What's Next",
@@ -57,7 +62,8 @@
     "excerpt": "Not all QR codes work the same way. This episode explores the difference between easily spoofed static QR codes and the new generation of secure Payment QR Codes.",
     "spotifyUrl": "https://open.spotify.com/episode/7cIn3UkyfwNlQVk98p2rFo",
     "applePodcastsUrl": "https://podcasts.apple.com/br/podcast/the-truth-about-qr-code-payments-whats-secure-whats/id1807223492?i=1000711201574&l=en-GB",
-    "file": "2025-06-05 - The Truth About QR Code Payments - Whats Secure Whats Not Whats Next.json"
+    "file": "2025-06-05 - The Truth About QR Code Payments - Whats Secure Whats Not Whats Next.json",
+    "tags": ["qr-code", "instant-payments"]
   },
   {
     "title": "QR Codes: Connecting Global Real Time Payment Networks",
@@ -67,7 +73,8 @@
     "excerpt": "Discover how a simple, well-designed Payment QR Code can unlock faster, more efficient cross-border payments. This episode dives into the X9 Payment QR Code standard.",
     "spotifyUrl": "https://open.spotify.com/episode/7GeTH0afriNYAyjKm83PeX",
     "applePodcastsUrl": "https://podcasts.apple.com/br/podcast/qr-codes-connecting-global-real-time-payment-networks/id1807223492?i=1000709788475&l=en-GB",
-    "file": "2025-06-01 - QR Codes Connecting Global Real Time Payment Networks.json"
+    "file": "2025-06-01 - QR Codes Connecting Global Real Time Payment Networks.json",
+    "tags": ["qr-code", "x9", "cross-border", "instant-payments"]
   },
   {
     "title": "Behind the Scan: How PKI Secures QR Code Payments",
@@ -77,7 +84,8 @@
     "excerpt": "In this 6-minute episode of Real Time Payments Revolution, discover the hidden security mechanisms that protect your QR code payments. Learn how Public Key Infrastructure",
     "spotifyUrl": "https://open.spotify.com/episode/65vwhRvXhFBHVXMoO3wQ3d",
     "applePodcastsUrl": "https://podcasts.apple.com/br/podcast/behind-the-scan-how-pki-secures-qr-code-payments/id1807223492?i=1000709622370&l=en-GB",
-    "file": "2025-05-27 - Behind the Scan How PKI Secures QR Code Payments.json"
+    "file": "2025-05-27 - Behind the Scan How PKI Secures QR Code Payments.json",
+    "tags": ["qr-code", "instant-payments"]
   },
   {
     "title": "Moving from Stand-In to Digital Twin for 24X7 Processing",
@@ -87,7 +95,8 @@
     "excerpt": "Core banking systems are remarkably capable. But they were built in a different era—one where banks operated during the day and closed at night, much like a physical",
     "spotifyUrl": "https://open.spotify.com/episode/0G4Uk2BEeurOcuQebYTSB5",
     "applePodcastsUrl": "https://podcasts.apple.com/br/podcast/moving-from-stand-in-to-digital-twin-for-24x7-processing/id1807223492?i=1000706187624&l=en-GB",
-    "file": "2025-05-04 - Moving from Stand-In to Digital Twin for 24X7 Processing.json"
+    "file": "2025-05-04 - Moving from Stand-In to Digital Twin for 24X7 Processing.json",
+    "tags": ["digital-twin", "core-banking"]
   },
   {
     "title": "X9 QR Code Standard - Built for Multiple Payment Rails",
@@ -97,7 +106,8 @@
     "excerpt": "In the latest episode of Real Time Payments Revolution, Matera VP of Strategy and Marketing Sarah Hoisington delves into the X9 QR Code payment standard and its transfo",
     "spotifyUrl": "https://open.spotify.com/episode/7uYUc2itGPvw9DIu6E48Xq",
     "applePodcastsUrl": "https://podcasts.apple.com/br/podcast/x9-qr-code-standard-built-for-multiple-payment-rails/id1807223492?i=1000704138425&l=en-GB",
-    "file": "2025-04-19 - X9 QR Code Standard - Built for Multiple Payment Rails.json"
+    "file": "2025-04-19 - X9 QR Code Standard - Built for Multiple Payment Rails.json",
+    "tags": ["qr-code", "x9", "instant-payments"]
   },
   {
     "title": "How a QR Code Payments Standard Can Revolutionize The Way We Pay",
@@ -107,6 +117,7 @@
     "excerpt": "Real Time Payments Revolution is a podcast hosted by Sarah Hoisington, Matera VP of Strategy and Marketing, that delves into how instant payment technologies are transf",
     "spotifyUrl": "https://open.spotify.com/episode/4j0KEqJ6zKPJS38UYukvJC",
     "applePodcastsUrl": "https://podcasts.apple.com/br/podcast/how-a-qr-code-payments-standard-can-revolutionize/id1807223492?i=1000702636049&l=en-GB",
-    "file": "2025-04-07 - How a QR Code Payments Standard Can Revolutionize The Way We Pay.json"
+    "file": "2025-04-07 - How a QR Code Payments Standard Can Revolutionize The Way We Pay.json",
+    "tags": ["qr-code", "instant-payments", "fednow", "rtp"]
   }
 ]

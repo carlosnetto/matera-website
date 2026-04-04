@@ -7,7 +7,8 @@
     "thumbnail": "/assets/qr-code-resource-tn-m.jpg",
     "excerpt": "At Finovate Fall, Matera and Payfinia demonstrated how QR codes can be used to initiate account-to-account payments over instant payment rails.",
     "externalUrl": "https://www.americanbanker.com/news/the-promise-and-perils-of-qr-codes-in-banking",
-    "file": "2025-09-10 - Matera and Payfinia Featured in American Banker for Finovate QR Code Demo.json"
+    "file": "2025-09-10 - Matera and Payfinia Featured in American Banker for Finovate QR Code Demo.json",
+    "tags": ["qr-code", "instant-payments"]
   },
   {
     "title": "American Banker Article: X9 QR Code Standard To Accelerate Pay-By-Bank",
@@ -17,7 +18,8 @@
     "thumbnail": "/assets/resource-tn-qr-code.jpg",
     "excerpt": "QR Codes have transformed payments at scale in places like India, China, and Brazil. American Banker recently spotlighted the new X9 Payment QR Code standard.",
     "externalUrl": "https://www.americanbanker.com/payments/news/how-qr-codes-can-boost-instant-payment",
-    "file": "2025-08-21 - American Banker Article X9 QR Code Standard To Accelerate Pay-By-Bank.json"
+    "file": "2025-08-21 - American Banker Article X9 QR Code Standard To Accelerate Pay-By-Bank.json",
+    "tags": ["qr-code", "x9", "instant-payments"]
   },
   {
     "title": "Banks can offer stablecoins without touching custody, Circle partner explains how",
@@ -27,7 +29,8 @@
     "thumbnail": "/assets/instant-payment-resource-tn.jpg",
     "excerpt": "Matera, in partnership with Circle, offers a solution that lets banks offer stablecoins without custody risks, overcoming major operational and adoption barriers.",
     "externalUrl": "https://www.ledgerinsights.com/banks-can-offer-stablecoins-without-touching-custody-circle-partner-explains-how/",
-    "file": "2025-08-07 - Banks can offer stablecoins without touching custody Circle partner explains how.json"
+    "file": "2025-08-07 - Banks can offer stablecoins without touching custody Circle partner explains how.json",
+    "tags": ["stablecoin"]
   },
   {
     "title": "Matera Helps Power First Live QR Code Payment Over FedNow",
@@ -37,7 +40,8 @@
     "thumbnail": "/assets/qr-code-h-resource-tn.jpg",
     "excerpt": "In this CU Daily feature, Matera is recognized for its key role in the first live QR code payment sent over the FedNow network alongside Star One Credit Union",
     "externalUrl": "https://thecudaily.com/credit-union-is-part-of-first-ever-qr-code-payment/",
-    "file": "2025-07-09 - Matera Helps Power First Live QR Code Payment Over FedNow.json"
+    "file": "2025-07-09 - Matera Helps Power First Live QR Code Payment Over FedNow.json",
+    "tags": ["qr-code", "fednow", "instant-payments"]
   },
   {
     "title": "Digital Transactions Highlights Matera's Role in FedNow QR Code Test",
@@ -47,7 +51,8 @@
     "thumbnail": "/assets/qr-code-c-resource-tn.jpg",
     "excerpt": "This article covers a successful demonstration of QR code-initiated payments over the FedNow network and how it opens the door to fast, secure, and seamless tr",
     "externalUrl": "https://www.digitaltransactions.net/qr-codes-make-a-splash-in-the-real-time-payments-pool/",
-    "file": "2025-07-09 - Digital Transactions Highlights Materas Role in FedNow QR Code Test.json"
+    "file": "2025-07-09 - Digital Transactions Highlights Materas Role in FedNow QR Code Test.json",
+    "tags": ["qr-code", "fednow", "instant-payments"]
   },
   {
     "title": "Matera and Circle Join Forces to Turn Stablecoins into a Payment Method Integrated with Core Banking Systems",
@@ -57,7 +62,8 @@
     "thumbnail": "/assets/businesswire-circle-matera-press.jpg",
     "excerpt": "In a move to accelerate stablecoin adoption as mainstream payment infrastructure, Matera announced a commercial partnership with Circle, the global USDC issuer.",
     "externalUrl": "https://www.businesswire.com/news/home/20250611518074/en/Matera-and-Circle-Join-Forces-to-Turn-Stablecoins-into-a-Payment-Method-Integrated-with-Core-Banking-Systems",
-    "file": "2025-06-11 - Matera and Circle Join Forces to Turn Stablecoins into a Payment Method Integr.json"
+    "file": "2025-06-11 - Matera and Circle Join Forces to Turn Stablecoins into a Payment Method Integr.json",
+    "tags": ["stablecoin"]
   },
   {
     "title": "Bloomberg Features Matera<>Circle Partnership",
@@ -67,7 +73,8 @@
     "thumbnail": "/assets/bloomberg-circle-matera-press.jpg",
     "excerpt": "Brazilian fintech Matera is partnering with leading stablecoin issuer Circle Internet Group Inc. to allow traditional banks in Brazil to support multi-currency",
     "externalUrl": "https://www.bloomberg.com/news/articles/2025-06-11/circle-partners-with-brazil-s-matera-on-multi-currency-payments",
-    "file": "2025-06-11 - Bloomberg Features MateraCircle Partnership.json"
+    "file": "2025-06-11 - Bloomberg Features MateraCircle Partnership.json",
+    "tags": ["stablecoin", "cross-border"]
   },
   {
     "title": "Matera CEO Ranked #7 in The Top 50 Financial Entrepreneurs of 2025",
@@ -77,7 +84,8 @@
     "thumbnail": "/assets/top-50-fin-tech-press.jpg",
     "excerpt": "In The Top 50 Financial Technology Entrepreneurs of 2025, Matera Co-founder and CEO, Carlos Netto, has been ranked #7 alongside other leading fintech innovators.",
     "externalUrl": "https://thegreatentrepreneurs.com/the-top-50-financial-technology-entrepreneurs-of-2025/",
-    "file": "2025-05-12 - Matera CEO Ranked 7 in The Top 50 Financial Entrepreneurs of 2025.json"
+    "file": "2025-05-12 - Matera CEO Ranked 7 in The Top 50 Financial Entrepreneurs of 2025.json",
+    "tags": []
   },
   {
     "title": "How a QR Code Standard Could Revolutionize How We Pay",
@@ -87,7 +95,8 @@
     "thumbnail": "/assets/instant-payment-i-resource-tn.jpg",
     "excerpt": "In this Bank Business News article, Matera Co-Founder and CEO Carlos Netto explores how implementing a standardized QR code payment system could transform both",
     "externalUrl": "https://www.bankbusiness.us/details/697/How-a-QR-Code-Standard-Could-Revolutionize-How-We-Pay",
-    "file": "2025-04-16 - How a QR Code Standard Could Revolutionize How We Pay.json"
+    "file": "2025-04-16 - How a QR Code Standard Could Revolutionize How We Pay.json",
+    "tags": ["qr-code", "instant-payments"]
   },
   {
     "title": "Matera Expands U.S. Presence with Key Leadership Hires",
@@ -97,7 +106,8 @@
     "thumbnail": "/assets/north-america-expansion-c.jpg",
     "excerpt": "Matera, a global leader in payment modernization solutions, announced the appointment of John Wilson as Head of Solutions Engineering and Mark Scarmozzino as SVP",
     "externalUrl": "",
-    "file": "2025-04-08 - Matera Expands US Presence with Key Leadership Hires.json"
+    "file": "2025-04-08 - Matera Expands US Presence with Key Leadership Hires.json",
+    "tags": []
   },
   {
     "title": "The Secret to Making Instant Payments Mainstream",
@@ -107,7 +117,8 @@
     "thumbnail": "/assets/finextech-pres-article.jpg",
     "excerpt": "The U.S. payments landscape is at a pivotal crossroads. Over the last decade, significant strides have been made with instant payment systems like The Clearing House's Real-Time Payments",
     "externalUrl": "https://finxtech.com/the-secret-to-making-instant-payments-mainstream/",
-    "file": "2025-03-13 - The Secret to Making Instant Payments Mainstream.json"
+    "file": "2025-03-13 - The Secret to Making Instant Payments Mainstream.json",
+    "tags": ["instant-payments", "fednow", "rtp"]
   },
   {
     "title": "Matera Pix Report Featured in Fintech Times",
@@ -117,7 +128,8 @@
     "thumbnail": "/assets/fintech-times-article.jpg",
     "excerpt": "The Latin American payments sector has been dominated by the success of Pix. In fact, according to a report by Matera, an instant payments, QR code, and digital ledger technology firm,",
     "externalUrl": "https://thefintechtimes.com/em-conversa-dock-supporting-the-growth-of-real-time-payments-in-colombia-and-beyond/",
-    "file": "2025-03-07 - Matera Pix Report Featured in Fintech Times.json"
+    "file": "2025-03-07 - Matera Pix Report Featured in Fintech Times.json",
+    "tags": ["pix", "instant-payments"]
   },
   {
     "title": "Brazil's Pix Sets Records",
@@ -127,7 +139,8 @@
     "thumbnail": "/assets/brazil-pix-killing-cash.jpg",
     "excerpt": "In its continued success story, Brazil's instant payment system Pix processed over six billion transactions per month in 2024. A report from Matera, Pix by the Numbers, detailed the",
     "externalUrl": "https://www.paymentsjournal.com/brazils-pix-set-records-surpassing-credit-card-transactions-last-year/",
-    "file": "2025-03-04 - Brazils Pix Sets Records.json"
+    "file": "2025-03-04 - Brazils Pix Sets Records.json",
+    "tags": ["pix", "instant-payments"]
   },
   {
     "title": "Pix Automático: A Blueprint for the Future of Recurring Payments",
@@ -137,7 +150,8 @@
     "thumbnail": "/assets/bank-beat-tn.png",
     "excerpt": "Brazil's Latest Payment Innovation Sets the Stage for Global Adoption. The evolution of digital payments continues as Brazil prepares to launch Pix Automático, an innovation set to",
     "externalUrl": "",
-    "file": "2025-02-26 - Pix Automatico A Blueprint for the Future of Recurring Payments.json"
+    "file": "2025-02-26 - Pix Automatico A Blueprint for the Future of Recurring Payments.json",
+    "tags": ["pix", "instant-payments"]
   },
   {
     "title": "From Legacy to Legendary: Transforming Banking for the Real-Time Era",
@@ -147,7 +161,8 @@
     "thumbnail": "/assets/state-of-fintech-article.png",
     "excerpt": "In an age when movies stream instantly and dinner arrives at your doorstep within minutes, why should banking lag behind? The meteoric rise of real-time payment systems like Brazil's Pix",
     "externalUrl": "https://insight.matera.com/hubfs/AA%20US%20Misc/matera-transforming-banking-real-time-era.pdf",
-    "file": "2025-02-21 - From Legacy to Legendary Transforming Banking for the Real-Time Era.json"
+    "file": "2025-02-21 - From Legacy to Legendary Transforming Banking for the Real-Time Era.json",
+    "tags": ["instant-payments", "pix", "core-banking"]
   },
   {
     "title": "New Whitepaper Highlights the Role of QR Codes in Driving Instant Payments Adoption",
@@ -157,7 +172,8 @@
     "thumbnail": "/assets/qr-codes-and-the-instant-payments-imperative-pr.png",
     "excerpt": "Matera, partnering with Amazon Web Services (AWS), unveiled its newest whitepaper titled \"QR Codes & The Instant Payments Imperative.\" This complimentary report examines how QR codes",
     "externalUrl": "https://insight.matera.com/aws-qr-codes-pr",
-    "file": "2025-01-14 - New Whitepaper Highlights the Role of QR Codes in Driving Instant Payments Ado.json"
+    "file": "2025-01-14 - New Whitepaper Highlights the Role of QR Codes in Driving Instant Payments Ado.json",
+    "tags": ["qr-code", "instant-payments"]
   },
   {
     "title": "A Digital Twin for the Win: Solving the Core Modernization Conundrum",
@@ -167,7 +183,8 @@
     "thumbnail": "/assets/bank-business-news.png",
     "excerpt": "Financial institutions today find themselves at a crossroads. On one side stands the dependable but inflexible architecture of legacy banking systems. On the other, a dynamic ecosystem",
     "externalUrl": "https://www.bankbusiness.us/details/670/A-Digital-Twin-for-the-Win-Solving-the-Core-Modernization-Conundrum",
-    "file": "2024-12-04 - A Digital Twin for the Win Solving the Core Modernization Conundrum.json"
+    "file": "2024-12-04 - A Digital Twin for the Win Solving the Core Modernization Conundrum.json",
+    "tags": ["digital-twin", "core-banking"]
   },
   {
     "title": "100+ Payment Experts to Follow on LinkedIn",
@@ -177,7 +194,8 @@
     "thumbnail": "/assets/100-payments-experts.png",
     "excerpt": "Matera CEO, Carlos Netto, was recognized as the 10th most influential professional in the payments industry in the world, according to the \"100+ Payment Experts to Follow on LinkedIn\"",
     "externalUrl": "https://norbr.notion.site/36b1e100ef6d4613851d45a1c84e69dd?v=112db7fb49e4805a8e86000c70569eac",
-    "file": "2024-12-03 - 100 Payment Experts to Follow on LinkedIn.json"
+    "file": "2024-12-03 - 100 Payment Experts to Follow on LinkedIn.json",
+    "tags": []
   },
   {
     "title": "Matera CEO Thinks US Banks Should Take a Page From Brazil's Success With Pix and QR Code Payments",
@@ -187,7 +205,8 @@
     "thumbnail": "/assets/pymnts.png",
     "excerpt": "Digital transformation for banks and credit unions in the U.S. is ripe with opportunities, some of which can strengthen customer relationships in ways that only a few years ago would",
     "externalUrl": "https://www.pymnts.com/news/payments-innovation/2024/matera-ceo-thinks-us-banks-should-take-a-page-from-brazils-success-with-pix-and-qr-code-payments/",
-    "file": "2024-11-08 - Matera CEO Thinks US Banks Should Take a Page From Brazils Success With Pix an.json"
+    "file": "2024-11-08 - Matera CEO Thinks US Banks Should Take a Page From Brazils Success With Pix an.json",
+    "tags": ["pix", "qr-code", "instant-payments"]
   },
   {
     "title": "Matera Featured in Wharton Fintech Podcast",
@@ -197,7 +216,8 @@
     "thumbnail": "/assets/wharton-fintech.png",
     "excerpt": "Tune in to the latest Wharton Fintech Podcast episode to hear about Carlos Netto's, Matera CEO, journey from co-founding Matera in the 1980s to the company's pioneering role in enabling",
     "externalUrl": "https://podcasts.apple.com/us/podcast/materas-next-chapter-warburg-pincus-u-s-expansion-and/id1042827113?i=1000674851400",
-    "file": "2024-11-01 - Matera Featured in Wharton Fintech Podcast.json"
+    "file": "2024-11-01 - Matera Featured in Wharton Fintech Podcast.json",
+    "tags": ["instant-payments", "pix"]
   },
   {
     "title": "A Unified Standard for QR Codes is the Next Step in Real-time Payments",
@@ -207,7 +227,8 @@
     "thumbnail": "/assets/american-banker.png",
     "excerpt": "Today, the high cost of accepting credit card fees is a burden, especially for small businesses. Instant payments can reduce costs while allowing banks to keep interchange",
     "externalUrl": "https://www.americanbanker.com/opinion/a-unified-standard-for-qr-codes-is-the-next-step-in-real-time-payments",
-    "file": "2024-10-24 - A Unified Standard for QR Codes is the Next Step in Real-time Payments.json"
+    "file": "2024-10-24 - A Unified Standard for QR Codes is the Next Step in Real-time Payments.json",
+    "tags": ["qr-code", "instant-payments", "rtp"]
   },
   {
     "title": "Matera Featured in Off the Rails Podcast",
@@ -217,7 +238,8 @@
     "thumbnail": "/assets/off-the-rails-podcast-tn.png",
     "excerpt": "Join FPC Executive Director Reed Luhtanen as he goes off the rails with Sarah Hoisington, Head of Marketing and Strategy for Matera US. Reed and Sarah talk about the ways QR codes",
     "externalUrl": "https://podcasts.apple.com/gb/podcast/12-sept-2024-sarah-hoisington-from-matera-on-qr-codes/id1553535872?i=1000669234265",
-    "file": "2024-09-12 - Matera Featured in Off the Rails Podcast.json"
+    "file": "2024-09-12 - Matera Featured in Off the Rails Podcast.json",
+    "tags": ["qr-code", "instant-payments"]
   },
   {
     "title": "My Beer Run Of The Future: QR Codes And Real-Time Payments",
@@ -227,7 +249,8 @@
     "thumbnail": "/assets/forbes-article-tn.png",
     "excerpt": "How can QR Codes and instant payments make beer taste better? Matera Co-founder and CEO, Carlos Netto, highlights his experience in Brazil and how QR code payments can streamline",
     "externalUrl": "https://www.forbes.com/councils/forbestechcouncil/2024/09/09/my-beer-run-of-the-future-qr-codes-and-real-time-payments/",
-    "file": "2024-09-09 - My Beer Run Of The Future QR Codes And Real-Time Payments.json"
+    "file": "2024-09-09 - My Beer Run Of The Future QR Codes And Real-Time Payments.json",
+    "tags": ["qr-code", "instant-payments"]
   },
   {
     "title": "Today's Core Banking Conundrum: Is your System Ready for Instant Payments?",
@@ -237,7 +260,8 @@
     "thumbnail": "/assets/bai-article-tn.png",
     "excerpt": "The adoption of instant payments is on the rise among U.S. businesses and consumers. Want to offer instant payments, but are being held back by your legacy Core? Matera CEO and",
     "externalUrl": "https://www.bai.org/banking-strategies/todays-core-banking-conundrum-is-your-system-ready-for-instant-payments/",
-    "file": "2024-08-26 - Todays Core Banking Conundrum Is your System Ready for Instant Payments.json"
+    "file": "2024-08-26 - Todays Core Banking Conundrum Is your System Ready for Instant Payments.json",
+    "tags": ["core-banking", "instant-payments"]
   },
   {
     "title": "X9 Launches Effort to Create Payment QR Code Standard",
@@ -247,7 +271,8 @@
     "thumbnail": "/assets/accredited-standards-tn.png",
     "excerpt": "The Accredited Standards Committee X9 Inc. (X9) today announced that it will develop a new QR code payments standard. The new standard will establish the content of a QR code for",
     "externalUrl": "https://x9.org/x9-launches-effort-to-create-payment-qr-code-standard/",
-    "file": "2024-08-13 - X9 Launches Effort to Create Payment QR Code Standard.json"
+    "file": "2024-08-13 - X9 Launches Effort to Create Payment QR Code Standard.json",
+    "tags": ["qr-code", "x9"]
   },
   {
     "title": "How to Navigate the New BaaS Landscape",
@@ -257,7 +282,8 @@
     "thumbnail": "/assets/bank-beat-tn.png",
     "excerpt": "Banking-as-a-Service is finding itself under some significant pressure. Carlos Netto, CEO of Matera, a core banking and digital payments platform, talked to BankBeat about this",
     "externalUrl": "https://bankbeat.biz/how-to-navigate-the-new-baas-landscape/",
-    "file": "2024-08-12 - How to Navigate the New BaaS Landscape.json"
+    "file": "2024-08-12 - How to Navigate the New BaaS Landscape.json",
+    "tags": ["baas"]
   },
   {
     "title": "How A Directory Could Speed Up Payments In The U.S.",
@@ -267,7 +293,8 @@
     "thumbnail": "/assets/forbes-article-directory-tn.png",
     "excerpt": "The U.S. instant payment volume is estimated at 30 million transactions per month, while that volume is 5 billion in Brazil. How can a directory close the gap? Matera Co-founder",
     "externalUrl": "https://www.forbes.com/councils/forbestechcouncil/2024/07/30/how-a-directory-could-speed-up-payments-in-the-us/",
-    "file": "2024-07-30 - How A Directory Could Speed Up Payments In The US.json"
+    "file": "2024-07-30 - How A Directory Could Speed Up Payments In The US.json",
+    "tags": ["instant-payments", "pix"]
   },
   {
     "title": "Matera Builds on Pix Success With Digital Twins and QR Codes in US Expansion",
@@ -277,7 +304,8 @@
     "thumbnail": "/assets/pymts-press-coverage.png",
     "excerpt": "The eternal debate in financial services technology boils down to build vs. buy, and whether to rip and replace core banking operations. Banks have invested a lot of time and money",
     "externalUrl": "https://www.pymnts.com/real-time-payments/2024/exclusive-matera-builds-on-pix-success-with-digital-twins-and-qr-codes-in-us-expansion/",
-    "file": "2024-07-24 - Matera Builds on Pix Success With Digital Twins and QR Codes in US Expansion.json"
+    "file": "2024-07-24 - Matera Builds on Pix Success With Digital Twins and QR Codes in US Expansion.json",
+    "tags": ["digital-twin", "qr-code", "pix"]
   },
   {
     "title": "eNor Taps Matera To Provide Seamless Cross-Border Payments",
@@ -287,7 +315,8 @@
     "thumbnail": "/assets/e-nor-press.png",
     "excerpt": "Matera, a leading banking software provider, announced a partnership with eNor Securities, a fintech offering an investment exchange for digital assets and a marketplace for",
     "externalUrl": "",
-    "file": "2024-07-23 - eNor Taps Matera To Provide Seamless Cross-Border Payments.json"
+    "file": "2024-07-23 - eNor Taps Matera To Provide Seamless Cross-Border Payments.json",
+    "tags": ["cross-border", "stablecoin"]
   },
   {
     "title": "Matera Announces $100M Investment from Warburg Pincus",
@@ -297,7 +326,8 @@
     "thumbnail": "/assets/carlos-matera-news.jpg",
     "excerpt": "Matera, a leading banking software provider, today announced a $100 million investment from Warburg Pincus, a leading global growth investor. The investment will be used to fund",
     "externalUrl": "https://techcrunch.com/2024/07/17/matera-raises-100m-from-warburn-pincus-to-help-the-u-s-catch-up-to-brazil-in-instant-payments/",
-    "file": "2024-07-17 - Matera Announces 100M Investment from Warburg Pincus.json"
+    "file": "2024-07-17 - Matera Announces 100M Investment from Warburg Pincus.json",
+    "tags": []
   },
   {
     "title": "Matera CEO Featured in Credit Union Business News",
@@ -307,7 +337,8 @@
     "thumbnail": "/assets/credit-union-business-news.jpg",
     "excerpt": "Credit unions are increasingly pressured to meet member demands for faster, more efficient payment solutions. Matera Co-founder and CEO, Carlos Netto, dives in",
     "externalUrl": "https://creditunionbusiness.com/details/1437/Faster-Payments-Are-Here:-How-to-Ensure-Your-Current-Core-Keeps-Up",
-    "file": "2024-06-07 - Matera CEO Featured in Credit Union Business News.json"
+    "file": "2024-06-07 - Matera CEO Featured in Credit Union Business News.json",
+    "tags": ["instant-payments", "core-banking"]
   },
   {
     "title": "How A QR Code Payment Standard Can Fuel Instant Payment Adoption",
@@ -317,7 +348,8 @@
     "thumbnail": "/assets/forbes-article-qr-payment-standard.jpg",
     "excerpt": "How will a QR Code payments standard fuel adoption of instant payments in the U.S.? Matera CEO and Co-Founder, Carlos Netto explains how in his latest Forbes a",
     "externalUrl": "https://www.forbes.com/sites/forbestechcouncil/2024/05/20/how-a-qr-code-payment-standard-can-fuel-instant-payment-adoption/?sh=4de638536f44",
-    "file": "2024-05-20 - How A QR Code Payment Standard Can Fuel Instant Payment Adoption.json"
+    "file": "2024-05-20 - How A QR Code Payment Standard Can Fuel Instant Payment Adoption.json",
+    "tags": ["qr-code", "instant-payments"]
   },
   {
     "title": "Matera Featured In The Nilson Report",
@@ -327,7 +359,8 @@
     "thumbnail": "/assets/shutterstock-742212568-1-1.jpg",
     "excerpt": "The Nilson Report's April issue featured Matera's focus on driving instant payment adoption in the U.S. Matera's high-performance ledger, Digital Twin can auth",
     "externalUrl": "https://20392958.fs1.hubspotusercontent-na1.net/hubfs/20392958/AA%20US%20Misc/Matera%20Article%20Reprint%20in%20Nilson.pdf",
-    "file": "2024-05-02 - Matera Featured In The Nilson Report.json"
+    "file": "2024-05-02 - Matera Featured In The Nilson Report.json",
+    "tags": ["digital-twin", "instant-payments"]
   },
   {
     "title": "Matera CRO Featured In Fintech Futures Video",
@@ -337,7 +370,8 @@
     "thumbnail": "/assets/matera-at-fintech.jpg",
     "excerpt": "At Fintech Meetup 2024, FinTech Futures sat down with Brad Goad, Chief Revenue Officer at Matera, to discuss how banks need to modernize their core infrastruct",
     "externalUrl": "https://www.fintechfutures.com/2024/04/video-matera-at-fintech-meetup-2024-core-banking-modernisation-and-instant-payments/",
-    "file": "2024-04-16 - Matera CRO Featured In Fintech Futures Video.json"
+    "file": "2024-04-16 - Matera CRO Featured In Fintech Futures Video.json",
+    "tags": ["core-banking", "instant-payments"]
   },
   {
     "title": "Matera CEO Weighs in on the Growth of Pix and Impact on Credit Cards",
@@ -347,7 +381,8 @@
     "thumbnail": "/assets/brazil-pix-killing-cash.jpg",
     "excerpt": "In just three years, Brazil's hugely popular Pix payment system has become the country's favorite way to pay, replacing cash and wire transfers in many cases a",
     "externalUrl": "https://finance.yahoo.com/news/brazils-pix-payments-killing-cash-080523593.html",
-    "file": "2024-04-16 - Matera CEO Weighs in on the Growth of Pix and Impact on Credit Cards.json"
+    "file": "2024-04-16 - Matera CEO Weighs in on the Growth of Pix and Impact on Credit Cards.json",
+    "tags": ["pix"]
   },
   {
     "title": "Forbes Article by Matera CEO",
@@ -357,7 +392,8 @@
     "thumbnail": "/assets/how-banks-can-rethink.jpg",
     "excerpt": "Core banking systems are sturdy, reliable, and able to handle complexity. But, they weren't designed to support transactions initiated 24X7. Matera Co-Founder",
     "externalUrl": "https://www.forbes.com/sites/forbestechcouncil/2024/03/20/how-banks-can-rethink-their-core-for-todays-environments/?sh=3fa16e854f86",
-    "file": "2024-04-16 - Forbes Article by Matera CEO.json"
+    "file": "2024-04-16 - Forbes Article by Matera CEO.json",
+    "tags": ["core-banking"]
   },
   {
     "title": "Matera CEO Featured in Leaders in Payments Podcast",
@@ -367,7 +403,8 @@
     "thumbnail": "/assets/leaders-in-payments.png",
     "excerpt": "Matera Co-Founder and CEO, Carlos Netto, joins Leaders in Payments Podcast for their latest episode to discuss Brazil's financial sector and the revolution cen",
     "externalUrl": "https://leadersinpayments.com/2024/03/04/carlos-netto-co-founder-ceo-of-matera-episode-303/",
-    "file": "2024-04-03 - Matera CEO Featured in Leaders in Payments Podcast.json"
+    "file": "2024-04-03 - Matera CEO Featured in Leaders in Payments Podcast.json",
+    "tags": ["pix", "instant-payments"]
   },
   {
     "title": "Hamsa and Matera Join Forces to Revolutionize the Banking Market With an Integrated Solution to Enable DREX Transactions",
@@ -377,7 +414,8 @@
     "thumbnail": "/assets/hamsa-pr-v1.jpg",
     "excerpt": "Partnership pairs implementation of Brazil's state-owned digital currency, DREX, with Core banking solutions. Hamsa, a global leader in rich data tokenization",
     "externalUrl": "",
-    "file": "2024-01-19 - Hamsa and Matera Join Forces to Revolutionize the Banking Market With an Integra.json"
+    "file": "2024-01-19 - Hamsa and Matera Join Forces to Revolutionize the Banking Market With an Integra.json",
+    "tags": ["stablecoin"]
   },
   {
     "title": "Unleashing the Potential of Instant Payments Through Innovation",
@@ -387,7 +425,8 @@
     "thumbnail": "/assets/payments-journal-article-press.jpg",
     "excerpt": "Instant payments are poised to accelerate in the U.S. now that FedNow has launched. There's an opportunity for banks and credit unions to take the lead again in",
     "externalUrl": "https://www.paymentsjournal.com/unleashing-the-potential-of-instant-payments-through-innovation/",
-    "file": "2024-01-04 - Unleashing the Potential of Instant Payments Through Innovation.json"
+    "file": "2024-01-04 - Unleashing the Potential of Instant Payments Through Innovation.json",
+    "tags": ["instant-payments", "fednow"]
   },
   {
     "title": "Matera Featured in Leaders in Payments Podcast",
@@ -397,7 +436,8 @@
     "thumbnail": "/assets/anytime-anywhere-payments-podcast.png",
     "excerpt": "Matera VP of Strategy and Marketing, Sarah Hoisington, joins Leaders in Payments Podcast for their Anytime Anywhere Payments series to discuss the evolution of",
     "externalUrl": "https://leadersinpayments.com/anytime-anywhere-payments-sarah-hoisington-vp-of-strategy-marketing-at-matera-episode-275/",
-    "file": "2023-12-08 - Matera Featured in Leaders in Payments Podcast.json"
+    "file": "2023-12-08 - Matera Featured in Leaders in Payments Podcast.json",
+    "tags": ["instant-payments"]
   },
   {
     "title": "Matera Brings Digital Twin to U.S. Financial Institutions",
@@ -407,7 +447,8 @@
     "thumbnail": "/assets/shutterstock-3.jpg",
     "excerpt": "Digital Twin is a light ledger that enables real-time transaction authorizations and balance updates 24X7 for DDAs and other financial accounts.",
     "externalUrl": "https://www.businesswire.com/news/home/20230905921873/en/Matera-Brings-Proven-Highly-Scalable-Digital-Ledger-to-US-Financial-Institutions-Enabling-Modernization-Without-Risk",
-    "file": "2023-09-05 - Matera Brings Digital Twin to US Financial Institutions.json"
+    "file": "2023-09-05 - Matera Brings Digital Twin to US Financial Institutions.json",
+    "tags": ["digital-twin"]
   },
   {
     "title": "\"Pix By The Numbers\" report released, July 2023",
@@ -417,7 +458,8 @@
     "thumbnail": "/assets/shutterstock-5.jpg",
     "excerpt": "Matera's latest \"Pix By The Numbers\" has been released, showing that Pix poses a challenge to credit cards.",
     "externalUrl": "https://www.businesswire.com/news/home/20230725094936/en/5492814/Credit-Card-Transactions-in-Brazil-May-Have-Peaked-as-Pix-Continues-to-Surge",
-    "file": "2023-07-26 - Pix By The Numbers report released July 2023.json"
+    "file": "2023-07-26 - Pix By The Numbers report released July 2023.json",
+    "tags": ["pix"]
   },
   {
     "title": "Matera CEO quoted in Felix Salmon's latest Axios article",
@@ -427,7 +469,8 @@
     "thumbnail": "/assets/shutterstock-4.jpg",
     "excerpt": "Matera Co-Founder and CEO, Carlos Netto, was quoted in Felix Salmon's most recent Axios article.",
     "externalUrl": "https://www.axios.com/2023/07/22/fednow-instant-payments-credit-cards",
-    "file": "2023-07-24 - Matera CEO quoted in Felix Salmons latest Axios article.json"
+    "file": "2023-07-24 - Matera CEO quoted in Felix Salmons latest Axios article.json",
+    "tags": ["fednow", "instant-payments"]
   },
   {
     "title": "Matera featured in The Nilson Report",
@@ -437,7 +480,8 @@
     "thumbnail": "/assets/shutterstock-2.jpg",
     "excerpt": "Matera Co-Founder and CEO, Carlos Netto, was interviewed by David Robertson and Chris Cantle of the Nilson Report to talk about Matera's success in Brazil.",
     "externalUrl": "https://nilsonreport.com/articles/instant-payments-software/",
-    "file": "2023-06-14 - Matera featured in The Nilson Report.json"
+    "file": "2023-06-14 - Matera featured in The Nilson Report.json",
+    "tags": ["instant-payments", "pix"]
   },
   {
     "title": "Matera CEO Interviewed By Glenbrook Partners",
@@ -447,7 +491,8 @@
     "thumbnail": "/assets/shutterstock-742212568-1-1.jpg",
     "excerpt": "Matera Co-Founder and CEO, Carlos Netto, and VP Strategy & Marketing for the U.S., Sarah Hoisington, were interviewed by Glenbrook Partners.",
     "externalUrl": "https://glenbrook.com/payments_on_fire/episode-197-the-core-processors-perspective-with-carlos-netto-and-sarah-hoisington-matera-pix-series-2/",
-    "file": "2023-06-06 - Matera CEO Interviewed By Glenbrook Partners.json"
+    "file": "2023-06-06 - Matera CEO Interviewed By Glenbrook Partners.json",
+    "tags": ["pix", "instant-payments"]
   },
   {
     "title": "The Future of Instant Payments in the US",
@@ -457,7 +502,8 @@
     "thumbnail": "/assets/shutterstock-8.jpg",
     "excerpt": "Matera CEO and Co-Founder, Carlos Netto was featured in the Fintech Times to share insights on how instant payments may evolve in the US.",
     "externalUrl": "https://thefintechtimes.com/the-story-of-pix-and-what-us-banks-can-learn/",
-    "file": "2023-06-02 - The Future of Instant Payments in the US.json"
+    "file": "2023-06-02 - The Future of Instant Payments in the US.json",
+    "tags": ["instant-payments", "pix"]
   },
   {
     "title": "Matera to join the FedNow Request for Payments Work Group",
@@ -467,7 +513,8 @@
     "thumbnail": "/assets/shutterstock-12.jpg",
     "excerpt": "Matera was announced as a participant in the Federal Reserve's Request for Payment (RFP) Work Group to establish industry considerations.",
     "externalUrl": "",
-    "file": "2023-01-03 - Matera to join the FedNow Request for Payments Work Group.json"
+    "file": "2023-01-03 - Matera to join the FedNow Request for Payments Work Group.json",
+    "tags": ["fednow"]
   },
   {
     "title": "Matera's Jump into the U.S. Market",
@@ -477,7 +524,8 @@
     "thumbnail": "/assets/shutterstock-379989589-1.jpg",
     "excerpt": "TechCrunch's Mary Ann Azevedo dives into Matera's expansion into the U.S. and their new instant payment solutions they bring to the market.",
     "externalUrl": "https://techcrunch.com/2022/12/11/fintech-interchange-startups/",
-    "file": "2022-12-12 - Materas Jump into the US Market.json"
+    "file": "2022-12-12 - Materas Jump into the US Market.json",
+    "tags": ["instant-payments"]
   },
   {
     "title": "Matera's US Debut Seeks to Duplicate Brazil's Instant Payment, QR Code Success",
@@ -487,7 +535,8 @@
     "thumbnail": "/assets/shutterstock-9.jpg",
     "excerpt": "With immense amounts of popularity in Brazil with Pix Instant Payments, Matera looks to continue its success by debuting its operations in the US.",
     "externalUrl": "https://www.pymnts.com/fraud-prevention/2022/instant-payments-forces-banks-to-put-fraud-prevention-at-the-forefront/",
-    "file": "2022-12-09 - Materas US Debut Seeks to Duplicate Brazils Instant Payment QR Code Success.json"
+    "file": "2022-12-09 - Materas US Debut Seeks to Duplicate Brazils Instant Payment QR Code Success.json",
+    "tags": ["instant-payments", "pix", "qr-code"]
   },
   {
     "title": "Matera's Expansion to the U.S.",
@@ -497,7 +546,8 @@
     "thumbnail": "/assets/shutterstock-7.jpg",
     "excerpt": "From its break-out success with Pix instant payments to unveiling the future with QR code payments, Matera is expanding its operations into the US.",
     "externalUrl": "https://www.businesswire.com/news/home/20221209005121/en/Matera-Brings-World-Class-Instant-Payment-and-QR-Code-Payment-Solutions-to-U.S.-Market",
-    "file": "2022-12-09 - Materas Expansion to the US.json"
+    "file": "2022-12-09 - Materas Expansion to the US.json",
+    "tags": ["instant-payments", "pix", "qr-code"]
   },
   {
     "title": "Tips for payments using Pix",
@@ -507,7 +557,8 @@
     "thumbnail": "/assets/shutterstock-379989589-1.jpg",
     "excerpt": "Escaping the hassle of credit cards, payments and installments can now be done using Pix. Mix Vale highlights key points to keep in mind.",
     "externalUrl": "https://www.mixvale.com.br/2022/08/18/consumidor-pode-parcelar-os-valores-pelo-pix/",
-    "file": "2022-11-09 - Tips for payments using Pix.json"
+    "file": "2022-11-09 - Tips for payments using Pix.json",
+    "tags": ["pix"]
   },
   {
     "title": "Matera targets expansion to United States",
@@ -517,7 +568,8 @@
     "thumbnail": "/assets/shutterstock-10.jpg",
     "excerpt": "Diário Campineiro explains Matera's plans to expand to the United States after leading the banking technology industry in Brazil.",
     "externalUrl": "https://diariocampineiro.com.br/startup-da-unicamp-assume-dianteira-dos-servicos-financeiros-e-mira-os-estados-unidos/",
-    "file": "2022-11-09 - Matera targets expansion to United States.json"
+    "file": "2022-11-09 - Matera targets expansion to United States.json",
+    "tags": []
   },
   {
     "title": "Matera ranked as one of the fastest growing fintechs",
@@ -527,7 +579,8 @@
     "thumbnail": "/assets/screen-shot-2022-11-09-at-8-33-52-am.png",
     "excerpt": "Digital world recently highlighted Matera as one of the fastest growing fintechs.",
     "externalUrl": "https://palavradigital.wordpress.com/2022/08/08/empresas-brasileiras-sao-destaque-no-ranking-da-fintech-energy-como-as-que-mais-crescem/",
-    "file": "2022-11-09 - Matera ranked as one of the fastest growing fintechs.json"
+    "file": "2022-11-09 - Matera ranked as one of the fastest growing fintechs.json",
+    "tags": []
   },
   {
     "title": "Matera named one of the top fast-growing companies in Brazil",
@@ -537,7 +590,8 @@
     "thumbnail": "/assets/shutterstock-11.jpg",
     "excerpt": "Among the top 101 companies, FinTech Energy highlights Matera as one of the top fast-growing businesses emerging in Brazil and beyond.",
     "externalUrl": "https://fintech.energy/brazils-101-fastest-growing-fintech-startups/",
-    "file": "2022-11-09 - Matera named one of the top fast-growing companies in Brazil.json"
+    "file": "2022-11-09 - Matera named one of the top fast-growing companies in Brazil.json",
+    "tags": []
   },
   {
     "title": "Matera featured in American Banker",
@@ -547,7 +601,8 @@
     "thumbnail": "/assets/shutterstock-6.jpg",
     "excerpt": "American Banker featured an article on the decline of credit cards in Brazil due to Pix written by Matera Co-Founder and CEO, Carlos Netto.",
     "externalUrl": "https://www.americanbanker.com/opinion/are-traditional-credit-cards-doomed-in-a-world-of-real-time-payments",
-    "file": "2022-11-09 - Matera featured in American Banker.json"
+    "file": "2022-11-09 - Matera featured in American Banker.json",
+    "tags": ["pix", "instant-payments"]
   },
   {
     "title": "Matera announces the hiring of Patrick Devlin as president of United States",
@@ -557,6 +612,7 @@
     "thumbnail": "/assets/shutterstock.jpg",
     "excerpt": "Executive Channel shares the news regarding the appointment of Patrick Devlin to lead Matera's U.S. operations.",
     "externalUrl": "https://canalexecutivoblog.wordpress.com/2022/07/20/matera-anuncia-a-contratacao-de-patrick-devlin-como-presidente-nos-estados-unidos/",
-    "file": "2022-11-09 - Matera announces the hiring of Patrick Devlin as president of United States.json"
+    "file": "2022-11-09 - Matera announces the hiring of Patrick Devlin as president of United States.json",
+    "tags": []
   }
 ]

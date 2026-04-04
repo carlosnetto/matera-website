@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef, useCallback } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import PageHero from '../../shared/components/PageHero';
 import PageMeta from '../../shared/components/PageMeta';
@@ -11,6 +11,7 @@ interface BlogEntry {
   thumbnail: string;
   excerpt: string;
   file: string;
+  tags?: string[];
 }
 
 interface BlogPost extends BlogEntry {
@@ -18,8 +19,24 @@ interface BlogPost extends BlogEntry {
   author?: string;
 }
 
+const BATCH = 12;
+
+const TAG_LABELS: Record<string, string> = {
+  'pix': 'Pix',
+  'credito': 'Crédito',
+  'regtech': 'RegTech',
+  'dados-ia': 'Dados & IA',
+  'core-banking': 'Core Banking',
+  'stablecoin': 'Stablecoin',
+  'digital-twin': 'Digital Twin',
+  'pagamentos': 'Pagamentos',
+};
+
 function BrBlogList() {
   const [posts, setPosts] = useState<BlogEntry[]>([]);
+  const [visible, setVisible] = useState(BATCH);
+  const [selectedTags, setSelectedTags] = useState<string[]>([]);
+  const sentinelRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     fetch('/data/br/blog/index.json')
@@ -27,18 +44,69 @@ function BrBlogList() {
       .then(setPosts);
   }, []);
 
+  const allTags = Array.from(new Set(posts.flatMap(p => p.tags || [])));
+
+  const filtered = selectedTags.length === 0
+    ? posts
+    : posts.filter(p => selectedTags.every(t => p.tags?.includes(t)));
+
+  const toggleTag = (tag: string) => {
+    setSelectedTags(prev => prev.includes(tag) ? prev.filter(t => t !== tag) : [...prev, tag]);
+    setVisible(BATCH);
+  };
+
+  const loadMore = useCallback(() => {
+    setVisible(v => Math.min(v + BATCH, filtered.length));
+  }, [filtered.length]);
+
+  useEffect(() => {
+    const el = sentinelRef.current;
+    if (!el) return;
+    const observer = new IntersectionObserver(([entry]) => {
+      if (entry.isIntersecting) loadMore();
+    }, { rootMargin: '200px' });
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, [loadMore]);
+
   return (
     <>
       <PageMeta title="Blog" description="Conteúdo sobre pagamentos, Pix, crédito, core banking e tecnologia financeira." url="/br/blog" />
       <PageHero title="Blog" />
       <section style={{ padding: '80px 0' }}>
         <div className="container">
+          {allTags.length > 0 && (
+            <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap', marginBottom: '32px' }}>
+              {allTags.map(tag => {
+                const active = selectedTags.includes(tag);
+                return (
+                  <button key={tag} onClick={() => toggleTag(tag)} style={{
+                    padding: '6px 16px', borderRadius: '20px', fontSize: '0.8rem', fontWeight: 600, cursor: 'pointer',
+                    border: active ? '2px solid var(--matera-green)' : '2px solid var(--matera-blue)',
+                    backgroundColor: active ? 'var(--matera-green)' : '#fff',
+                    color: active ? '#000' : 'var(--matera-blue)',
+                    transition: 'all 0.2s',
+                  }}>
+                    {TAG_LABELS[tag] || tag}
+                  </button>
+                );
+              })}
+              {selectedTags.length > 0 && (
+                <button onClick={() => { setSelectedTags([]); setVisible(BATCH); }} style={{
+                  padding: '6px 16px', borderRadius: '20px', fontSize: '0.8rem', fontWeight: 600, cursor: 'pointer',
+                  border: '2px solid #ccc', backgroundColor: '#fff', color: '#999',
+                }}>
+                  Limpar
+                </button>
+              )}
+            </div>
+          )}
           <div style={{
             display: 'grid',
             gridTemplateColumns: 'repeat(3, 1fr)',
             gap: '32px',
           }}>
-            {posts.map((p) => (
+            {filtered.slice(0, visible).map((p) => (
               <Link
                 key={p.slug}
                 to={`/br/blog/${p.slug}`}
@@ -62,7 +130,7 @@ function BrBlogList() {
               >
                 {p.thumbnail && (
                   <div style={{ aspectRatio: '16/10', overflow: 'hidden' }}>
-                    <img src={p.thumbnail} alt={p.title} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                    <img src={p.thumbnail} alt={p.title} loading="lazy" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                   </div>
                 )}
                 <div style={{ padding: '24px', flex: 1, display: 'flex', flexDirection: 'column' }}>
@@ -79,6 +147,7 @@ function BrBlogList() {
               </Link>
             ))}
           </div>
+          {visible < filtered.length && <div ref={sentinelRef} style={{ height: '1px' }} />}
         </div>
       </section>
     </>
@@ -118,12 +187,12 @@ function BrBlogArticle() {
 
   return (
     <>
-      <PageMeta 
-        title={post.title} 
-        description={post.excerpt || ''} 
-        image={post.thumbnail} 
-        url={'/br/blog/' + post.slug} 
-        article={{ date: post.date, author: post.author }} 
+      <PageMeta
+        title={post.title}
+        description={post.excerpt || ''}
+        image={post.thumbnail}
+        url={'/br/blog/' + post.slug}
+        article={{ date: post.date, author: post.author }}
       />
       {/* Hero */}
       <section style={{

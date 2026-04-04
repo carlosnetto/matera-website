@@ -10,16 +10,21 @@ matera-na-website/
 │   ├── shared/             ← design system, brand assets, layout primitives
 │   │   ├── components/     ← PageHero, ScrollToTop (locale-agnostic)
 │   │   └── utils/          ← markdownToHtml (shared utility)
-│   ├── na/                 ← North America market (serves /en, future /es, /fr)
+│   ├── na/                 ← US & Canada market (/en)
 │   │   ├── NaLayout.tsx    ← NA Header + <Outlet /> + NA Footer
 │   │   ├── components/     ← NA-specific: Header, Footer, Hero, CTA, etc.
 │   │   └── pages/          ← NA pages (Home, Blog, Stablecoin, etc.)
+│   ├── br/                 ← Brazil market (/br)
+│   │   ├── BrLayout.tsx    ← BR Header + <Outlet /> + BR Footer
+│   │   ├── components/     ← BR-specific: Header, Footer
+│   │   └── pages/          ← BR pages (Home, Blog, Cases, 9 solution pages, etc.)
 │   ├── App.tsx             ← router with market-based layout nesting
 │   ├── main.tsx
 │   └── index.css           ← shared design tokens, typography, buttons
 ├── public/
 │   ├── data/
-│   │   └── en/             ← English content JSON (blog, press, podcasts, whitepapers)
+│   │   ├── en/             ← EN content JSON (blog, press, podcasts, whitepapers)
+│   │   └── br/             ← BR content JSON (blog, cases)
 │   ├── fonts/              ← Poppins woff2 (400, 600, 700)
 │   ├── logos/              ← client logos
 │   └── (brand assets)      ← logo SVGs, favicon, images
@@ -31,18 +36,14 @@ matera-na-website/
 
 **Only `dist/` is deployed.** Everything else stays in the repo.
 
-## Multi-Region Strategy
+## Markets
 
-The site is organized by **market**, not language:
+| Market | URL | Language | Source code | Content data |
+|--------|-----|----------|-------------|--------------|
+| US & Canada | `/en` | English | `src/na/` | `public/data/en/` |
+| Brazil | `/br` | Brazilian Portuguese | `src/br/` | `public/data/br/` |
 
-| Market | URL prefix | Source code | Content data |
-|--------|-----------|-------------|--------------|
-| North America | `/en` (English) | `src/na/` | `public/data/en/` |
-| North America | `/es` (Spanish, future) | `src/na/` | `public/data/es/` |
-| North America | `/fr` (French, future) | `src/na/` | `public/data/fr/` |
-| Brazil | `/br` (Portuguese, future) | `src/br/` | `public/data/br/` |
-
-NA and BR are different markets with different products and content. `/es` and `/fr` are translations of the NA market, not separate markets.
+These are separate markets with different products and content — not translations of each other.
 
 ## Pages (EN)
 
@@ -83,14 +84,25 @@ npm run deploy    # build + wrangler pages deploy dist/
 
 ## Content management
 
-All content is stored as static JSON files in `public/data/en/`:
+All content is stored as static JSON files under `public/data/`:
 
-| Content type | Count | Directory | HubSpot integration |
-|-------------|-------|-----------|---------------------|
-| Blog | 35 posts | `public/data/en/blog/` | No |
-| Press | 56 articles | `public/data/en/press/` | No |
-| Podcasts | 11 episodes | `public/data/en/podcasts/` | No |
-| Whitepapers | 12 papers | `public/data/en/whitepapers/` | Yes (gated form → HubSpot API) |
+**EN (US & Canada)**
+
+| Content type | Count | Directory |
+|-------------|-------|-----------|
+| Blog | 35 posts | `public/data/en/blog/` |
+| Press | 56 articles | `public/data/en/press/` |
+| Podcasts | 11 episodes | `public/data/en/podcasts/` |
+| Whitepapers | 12 papers | `public/data/en/whitepapers/` |
+
+**BR (Brazil)**
+
+| Content type | Count | Directory |
+|-------------|-------|-----------|
+| Blog | 99 posts | `public/data/br/blog/` |
+| Cases | 11 studies | `public/data/br/cases/` |
+
+All content entries include a `tags` array for filtering (e.g. `qr-code`, `pix`, `stablecoin`, `credito`). Listing pages show tag filter pills and use infinite scroll.
 
 No CMS — content is managed through Claude Code. See [ADR.md](./ADR.md) for the full architecture.
 
