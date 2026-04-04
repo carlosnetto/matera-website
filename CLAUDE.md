@@ -106,7 +106,9 @@ Hero bg:         #000023   (near-black, from real site matera-black)
 - Territory selector: small flag button (US/CA/BR) with dropdown, replaces old "English" button
 - Mobile (< 1024px): hamburger menu with accordion-style nav drawer, body scroll lock
 
-## Pages (16 EN routes)
+## Pages (16 EN + 22 BR routes)
+
+### EN (US & Canada)
 1. `/` — Redirects to `/en` (production: geo-redirect via `_worker.js`)
 2. `/en` — Home (Hero, TrustBanner, Solutions, Features, Stats, WhyMatera, CTA)
 3. `/en/contact-us` — Contact form + offices
@@ -115,17 +117,39 @@ Hero bg:         #000023   (near-black, from real site matera-black)
 6. `/en/solutions/qr-code-solutions` — QR Code Payments (10 sections: hero, value prop, 3-col why, 9 use cases, Finovate demo, how it works, advanced tools, X9 standard, resources, CTA)
 7. `/en/solutions/wallet-as-a-service` — Wallet as a Service (capabilities, value props, use cases)
 8. `/en/about-us` — Company, stats, timeline (1987-2022)
-9. `/en/blog` + `/en/blog/:slug` — Blog listing + article (JSON-driven)
-10. `/en/press` + `/en/press/:slug` — Press listing + article (JSON-driven)
+9. `/en/blog` + `/en/blog/:slug` — Blog listing + article (JSON-driven, tag filters, infinite scroll)
+10. `/en/press` + `/en/press/:slug` — Press listing + article (JSON-driven, tag filters, infinite scroll)
 11. `/en/whitepapers` + `/en/whitepapers/:slug` — Whitepapers with gated HubSpot form
 12. `/en/podcasts` + `/en/podcasts/:slug` — Podcasts with Spotify + Apple links
 13. `/en/privacy-policy` — Privacy policy
 14. `*` — 404 catch-all with branded error page
 
+### BR (Brazil)
+1. `/br` — Home (Hero with autoplay video, solutions grid, stats, trust banner)
+2. `/br/blog` + `/br/blog/:slug` — Blog listing + article (99 posts, tag filters, infinite scroll)
+3. `/br/cases` + `/br/cases/:slug` — Case studies listing + detail (12 structured cases: challenges, quotes, solution, partnership)
+4. `/br/solucoes` — Solutions overview (9 solution cards)
+5. `/br/solucoes/core-banking` — Core Banking
+6. `/br/solucoes/pagamentos` — Pagamentos (Pix, instant payments)
+7. `/br/solucoes/cash-management` — Cash Management
+8. `/br/solucoes/credito` — Crédito
+9. `/br/solucoes/gestao-de-riscos` — Gestão de Riscos
+10. `/br/solucoes/reg-tech` — RegTech
+11. `/br/solucoes/insights` — Insights (Dados & IA)
+12. `/br/solucoes/matera-digital-twin` — Digital Twin
+13. `/br/solucoes/tesouraria-avancada` — Tesouraria Avançada
+14. `/br/sobre-nos` — Sobre Nós (company info, stats, clients)
+15. `/br/fale-conosco` — Fale Conosco (contact form)
+16. `/br/carreiras` — Carreiras
+17. `/br/esg` — ESG
+18. `/br/politica-de-privacidade` — Política de Privacidade
+19. `/br/relatorio-de-transparencia-e-igualdade-salarial` — Relatório de Transparência
+20. `/br/tendencias-mercado-financeiro-2026` — Tendências do Mercado Financeiro 2026
+
 ## Local Assets
 All assets are self-hosted — **zero Cloudfront dependency**.
 
-- `public/assets/` — 365+ images, icons, SVGs, PDFs, and small videos (migrated from Cloudfront)
+- `public/assets/` — 370+ images, icons, SVGs, PDFs, and small videos (migrated from Cloudfront)
 - `public/logos/` — 15 client logo PNGs (trust banner)
 - `public/matera-logo.svg`, `public/matera-logo-notag.svg` — brand logos
 - `public/fonts/` — Poppins woff2 (400, 600, 700)

@@ -31,6 +31,7 @@ matera-na-website/
 ├── dist/                   ← build output (ONLY this goes to Cloudflare)
 ├── CLAUDE.md               ← project context
 ├── ADR.md                  ← architecture decision records
+├── LESSONS-LEARNED.md      ← pitfalls encountered and their solutions
 └── README.md               ← this file
 ```
 
@@ -53,18 +54,45 @@ These are separate markets with different products and content — not translati
 | `/en/contact-us` | Contact form + office locations |
 | `/en/stablecoin` | Digital Twin for Stablecoins product page |
 | `/en/solutions/digital-twin` | Digital Twin for Real-Time Payments product page |
-| `/en/solutions/qr-code-solutions` | QR Code Solutions product page |
+| `/en/solutions/qr-code-solutions` | QR Code Solutions product page (9 use cases, Finovate demo, X9 standard) |
 | `/en/solutions/wallet-as-a-service` | Wallet as a Service product page |
 | `/en/about-us` | Company info, stats, timeline (1987-2022) |
-| `/en/blog` | Blog listing (35 posts, JSON-driven) |
+| `/en/blog` | Blog listing (35 posts, tag filters, infinite scroll) |
 | `/en/blog/:slug` | Individual blog article |
-| `/en/press` | Press listing (56 articles, JSON-driven) |
+| `/en/press` | Press listing (56 articles, tag filters, infinite scroll) |
 | `/en/press/:slug` | Individual press article |
-| `/en/whitepapers` | Whitepapers listing (12 papers, JSON-driven) |
+| `/en/whitepapers` | Whitepapers listing (12 papers, tag filters, infinite scroll) |
 | `/en/whitepapers/:slug` | Whitepaper detail with gated HubSpot form + PDF download |
-| `/en/podcasts` | Podcasts listing (11 episodes, JSON-driven) |
+| `/en/podcasts` | Podcasts listing (11 episodes, tag filters, infinite scroll) |
 | `/en/podcasts/:slug` | Podcast episode with Spotify + Apple Podcasts links |
 | `/en/privacy-policy` | Privacy policy |
+
+## Pages (BR)
+
+| Route | Description |
+|-------|-------------|
+| `/br` | Homepage (hero with autoplay video, solutions grid, stats, trust banner) |
+| `/br/blog` | Blog listing (99 posts, tag filters, infinite scroll) |
+| `/br/blog/:slug` | Individual blog article |
+| `/br/cases` | Case studies listing (12 structured cases, dark card design) |
+| `/br/cases/:slug` | Case detail (challenges, quotes, solution, partnership sections) |
+| `/br/solucoes` | Solutions overview (9 solution cards) |
+| `/br/solucoes/core-banking` | Core Banking |
+| `/br/solucoes/pagamentos` | Pagamentos (Pix, instant payments) |
+| `/br/solucoes/cash-management` | Cash Management |
+| `/br/solucoes/credito` | Crédito |
+| `/br/solucoes/gestao-de-riscos` | Gestão de Riscos |
+| `/br/solucoes/reg-tech` | RegTech |
+| `/br/solucoes/insights` | Insights (Dados & IA) |
+| `/br/solucoes/matera-digital-twin` | Digital Twin |
+| `/br/solucoes/tesouraria-avancada` | Tesouraria Avançada |
+| `/br/sobre-nos` | Sobre Nós (company info, stats, clients) |
+| `/br/fale-conosco` | Fale Conosco (contact form) |
+| `/br/carreiras` | Carreiras |
+| `/br/esg` | ESG |
+| `/br/politica-de-privacidade` | Política de Privacidade |
+| `/br/relatorio-de-transparencia-...` | Relatório de Transparência e Igualdade Salarial |
+| `/br/tendencias-mercado-financeiro-2026` | Tendências do Mercado Financeiro 2026 |
 
 ## Commands
 
