@@ -19,7 +19,8 @@ NA and BR have different products and content. `/es` and `/fr` are translations 
 
 ## Stack
 - React 19 + TypeScript + Vite 8
-- react-router-dom (client-side routing, 16 routes)
+- react-router-dom (client-side routing, 40+ routes across EN and BR)
+- react-helmet-async (dynamic SEO meta tags per page)
 - Wrangler 4 (deploy: `npm run deploy`)
 - Poppins font — **bundled locally** in `public/fonts/` (400, 600, 700 woff2)
 - HubSpot Forms API (whitepaper lead capture, portal ID: 20392958)
@@ -29,15 +30,19 @@ NA and BR have different products and content. `/es` and `/fr` are translations 
 ```
 src/
 ├── shared/                  ← design system (all markets share this)
-│   ├── components/          ← PageHero, ScrollToTop
+│   ├── components/          ← PageHero, PageMeta, ScrollToTop, TerritorySelector, NotFound
 │   └── utils/               ← markdownToHtml
 ├── na/                      ← North America market
 │   ├── NaLayout.tsx         ← NA Header + Outlet + NA Footer
-│   ├── components/          ← Header, Footer, Hero, Solutions, etc.
-│   └── pages/               ← Home, Blog, Stablecoin, etc.
-├── App.tsx                  ← router (market-based layout nesting)
-├── main.tsx
-└── index.css                ← shared design tokens
+│   ├── components/          ← Header (mobile menu), Footer, Hero, Solutions, etc.
+│   └── pages/               ← Home, Blog, Stablecoin, QrCodeSolutions, etc.
+├── br/                      ← Brazil market
+│   ├── BrLayout.tsx         ← BR Header + Outlet + BR Footer
+│   ├── components/          ← Header (mobile menu), Footer
+│   └── pages/               ← Home, Blog, Cases, Solucoes, 9 solution pages, etc.
+├── App.tsx                  ← router (market-based layout nesting, 40+ routes)
+├── main.tsx                 ← HelmetProvider wraps App
+└── index.css                ← design tokens, responsive breakpoints, mobile overrides
 ```
 
 ## Real Site Source Code
@@ -48,11 +53,14 @@ Blog, Press, Podcasts, and Whitepapers use static JSON files — one JSON per ar
 
 ```
 public/data/
-└── en/              ← English content
-    ├── blog/        35 posts    (index.json + individual JSONs)
-    ├── press/       56 articles (index.json + individual JSONs)
-    ├── podcasts/    11 episodes (index.json + individual JSONs, Spotify + Apple URLs)
-    └── whitepapers/ 12 papers   (index.json + individual JSONs, HubSpot form IDs + PDF URLs)
+├── en/              ← English content (NA market)
+│   ├── blog/        35 posts    (index.json + individual JSONs)
+│   ├── press/       56 articles (index.json + individual JSONs)
+│   ├── podcasts/    11 episodes (index.json + individual JSONs, Spotify + Apple URLs)
+│   └── whitepapers/ 12 papers   (index.json + individual JSONs, HubSpot form IDs + PDF URLs)
+└── br/              ← Portuguese content (BR market)
+    ├── blog/        99 posts    (index.json + individual JSONs)
+    └── cases/       11 studies  (index.json + individual JSONs)
 ```
 
 ### Content sourcing process
@@ -89,34 +97,42 @@ Hero bg:         #000023   (near-black, from real site matera-black)
 - Nav: plain text links with chevrons, **mega menu dropdowns** on hover for Solutions/News/Company
 - Mega menu has invisible hover bridge to prevent dropdown from closing when mouse travels down
 - "Contact us" is a plain text link (no button)
-- "English" is an outline button with chevron
+- Territory selector: small flag button (US/CA/BR) with dropdown, replaces old "English" button
+- Mobile (< 1024px): hamburger menu with accordion-style nav drawer, body scroll lock
 
 ## Pages (16 EN routes)
-1. `/` `/en` — Home (Hero, TrustBanner, Solutions, Features, Stats, WhyMatera, CTA)
-2. `/en/contact-us` — Contact form + offices
-3. `/en/stablecoin` — Stablecoin product page (9 sections)
-4. `/en/solutions/digital-twin` — Digital Twin product page (12 sections)
-5. `/en/solutions/qr-code-solutions` — QR Code product page
-6. `/en/solutions/wallet-as-a-service` — Wallet page
-7. `/en/about-us` — Company, stats, timeline (1987-2022)
-8. `/en/blog` + `/en/blog/:slug` — Blog listing + article (JSON-driven)
-9. `/en/press` + `/en/press/:slug` — Press listing + article (JSON-driven)
-10. `/en/whitepapers` + `/en/whitepapers/:slug` — Whitepapers with gated HubSpot form
-11. `/en/podcasts` + `/en/podcasts/:slug` — Podcasts with Spotify + Apple links
-12. `/en/privacy-policy` — Privacy policy
+1. `/` — Redirects to `/en` (production: geo-redirect via `_worker.js`)
+2. `/en` — Home (Hero, TrustBanner, Solutions, Features, Stats, WhyMatera, CTA)
+3. `/en/contact-us` — Contact form + offices
+4. `/en/stablecoin` — Digital Twin for Stablecoins (Circle partnership, USDC, video demo)
+5. `/en/solutions/digital-twin` — Digital Twin for Real-Time Payments (hero video, capabilities, core integration)
+6. `/en/solutions/qr-code-solutions` — QR Code Payments (10 sections: hero, value prop, 3-col why, 9 use cases, Finovate demo, how it works, advanced tools, X9 standard, resources, CTA)
+7. `/en/solutions/wallet-as-a-service` — Wallet as a Service (capabilities, value props, use cases)
+8. `/en/about-us` — Company, stats, timeline (1987-2022)
+9. `/en/blog` + `/en/blog/:slug` — Blog listing + article (JSON-driven)
+10. `/en/press` + `/en/press/:slug` — Press listing + article (JSON-driven)
+11. `/en/whitepapers` + `/en/whitepapers/:slug` — Whitepapers with gated HubSpot form
+12. `/en/podcasts` + `/en/podcasts/:slug` — Podcasts with Spotify + Apple links
+13. `/en/privacy-policy` — Privacy policy
+14. `*` — 404 catch-all with branded error page
 
 ## Local Assets
-- Logo: `public/matera-logo.svg` and `public/matera-logo-notag.svg`
-- Client logos: `public/logos/` (15 PNG files)
-- Why Matera bg: `public/why-matera-bg.webp`
-- Menu images: `public/header-menu-image.jpg`, `public/news-menu-image.jpg`
-- Favicon: `public/favicon.ico`, `public/icon.png` (from matera.com)
+All assets are self-hosted — **zero Cloudfront dependency**.
 
-## Cloudfront Assets
-- Video: `d2lq74zxbg4jiz.cloudfront.net/anim_matera_V2_82378a33e4.mp4`
-- Stablecoin icon: `d2lq74zxbg4jiz.cloudfront.net/stablecoin_2abb4b6254.svg`
-- RTP icon: `d2lq74zxbg4jiz.cloudfront.net/real_time_payments_f333b57894.svg`
-- QR icon: `d2lq74zxbg4jiz.cloudfront.net/qr_code_e9a72b7bb1.svg`
+- `public/assets/` — 365+ images, icons, SVGs, PDFs, and small videos (migrated from Cloudfront)
+- `public/logos/` — 15 client logo PNGs (trust banner)
+- `public/matera-logo.svg`, `public/matera-logo-notag.svg` — brand logos
+- `public/fonts/` — Poppins woff2 (400, 600, 700)
+- `public/favicon.ico`, `public/icon.png`
+- Gitignored (large videos): `digital-twin-explainer.mp4` (38MB), `br-hero-video.mp4` (28MB)
+
+## SEO Infrastructure
+- `react-helmet-async` — dynamic `<title>`, meta descriptions, OG/Twitter tags, hreflang, JSON-LD per page
+- `public/_worker.js` — Cloudflare Pages worker: geo-redirect `/` → `/en` or `/br`, server-side meta injection for crawlers, `cf-country` cookie
+- `public/sitemap.xml` — 256 URLs (regenerate with `node scripts/generate-sitemap.mjs`)
+- `public/robots.txt` — allows all, points to sitemap
+- JSON-LD schemas: Organization, WebSite, BreadcrumbList, Article, VideoObject
+- `src/shared/components/PageMeta.tsx` — centralized SEO component used by all pages
 
 ## Commands
 ```bash

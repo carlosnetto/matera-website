@@ -4,6 +4,18 @@ Reverse-chronological log of improvements to the Matera website.
 
 ---
 
+## 2026-04-03: Update CLAUDE.md to reflect current project state
+
+- Updated source structure to include `br/`, shared components (PageMeta, TerritorySelector, NotFound)
+- Updated page list: 14 EN routes + 22 BR routes + 404 catch-all
+- Replaced Cloudfront Assets section with Local Assets (365+ files in `public/assets/`)
+- Added SEO Infrastructure section (react-helmet-async, _worker.js, sitemap, robots.txt, JSON-LD schemas)
+- Updated Stack section: added react-helmet-async, 40+ routes
+- Updated Content Architecture: added BR content (99 blog, 11 cases)
+- Updated Header section: territory selector, mobile hamburger menu
+
+---
+
 ## 2026-04-03: Rebuild QR Code Solutions page from Sarah Hoisington's brief
 
 Complete rewrite of `/en/solutions/qr-code-solutions` based on GM North America's product brief:
