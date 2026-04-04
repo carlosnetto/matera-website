@@ -58,7 +58,7 @@ const solutions = [
     title: 'Digital Twin',
     text: 'Ledger de alta velocidade para pagamentos em tempo real e stablecoins. Operação 24x7 com resiliência e performance.',
     href: '/br/solucoes/matera-digital-twin',
-    icon: '⚡',
+    icon: '📒',
   },
   {
     slug: 'tesouraria-avancada',
@@ -159,7 +159,7 @@ export default function Home() {
             </Link>
           </div>
 
-          {/* Right: Purple card with photo */}
+          {/* Right: Purple card with video */}
           <div className="hero-video" style={{
             width: '100%',
             maxWidth: '480px',
@@ -167,15 +167,18 @@ export default function Home() {
             borderRadius: '24px',
             overflow: 'hidden',
             backgroundColor: 'var(--matera-purple)',
-            padding: '0',
           }}>
-            <div style={{ height: '180px' }} />
-            <img
-              src="/assets/hero-about-us.jpg"
-              alt="Profissionais analisando dados financeiros"
-              style={{ width: '100%', display: 'block', objectFit: 'cover', height: '280px' }}
-            />
-            <div style={{ height: '80px' }} />
+            <div style={{ height: '60px' }} />
+            <video
+              autoPlay
+              muted
+              loop
+              playsInline
+              style={{ width: '100%', display: 'block', objectFit: 'cover', height: '340px' }}
+            >
+              <source src="/assets/br-hero-video.mp4" type="video/mp4" />
+            </video>
+            <div style={{ height: '60px' }} />
           </div>
         </div>
       </section>

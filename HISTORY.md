@@ -4,6 +4,14 @@ Reverse-chronological log of improvements to the Matera website.
 
 ---
 
+## 2026-04-03: BR hero video + Digital Twin ledger icon
+
+- Replaced static image in BR homepage hero with autoplay video from matera.com/br (`br-hero-video.mp4`, 28MB, gitignored)
+- Changed Digital Twin emoji from ⚡ to 📒 (ledger — better represents the product)
+- Video plays inside purple card with rounded corners, matching real site design
+
+---
+
 ## 2026-04-03: Replace card/globe icons with QR code/lightning per brand guidelines
 
 - Replaced Pagamentos card icon (💳) with mobile icon (📱) on BR Home

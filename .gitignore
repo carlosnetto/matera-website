@@ -23,5 +23,6 @@ dist-ssr
 *.sln
 *.sw?
 
-# Large video (38MB, too large for git)
+# Large videos (too large for git)
 public/assets/digital-twin-explainer.mp4
+public/assets/br-hero-video.mp4
