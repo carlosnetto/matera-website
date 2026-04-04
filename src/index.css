@@ -237,12 +237,12 @@ header .container {
   }
 
   /* Ensure hero sections clear the fixed header on mobile */
-  main > section:first-child {
-    padding-top: 7rem !important;
+  main > section:first-of-type {
+    padding-top: 6rem !important;
   }
 
   /* Reduce non-hero section padding on mobile */
-  main > section:not(:first-child) {
+  main > section:not(:first-of-type) {
     padding-top: 48px !important;
     padding-bottom: 48px !important;
   }

@@ -96,7 +96,6 @@ const TrustBanner: React.FC = () => {
                     height: '28px',
                     width: 'auto',
                     objectFit: 'contain',
-                    filter: 'brightness(0) invert(1)',
                     opacity: 0.7,
                   }}
                 />

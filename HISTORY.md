@@ -4,7 +4,17 @@ Reverse-chronological log of improvements to the Matera website.
 
 ---
 
-## 2026-04-03: Fix trust banner logos — remove white backgrounds
+## 2026-04-03: Fix mobile hero spacing + trust banner logos
+
+- Mobile hero `padding-top` CSS selector changed from `section:first-child` to `section:first-of-type` — the old selector never matched because Helmet injects `<script>` tags as the actual first child of `<main>`
+- Adjusted mobile hero padding to `6rem` for comfortable spacing below the fixed header
+- Trust banner logos: 8 of 15 had opaque white backgrounds causing gray rectangles with the `brightness(0) invert(1)` CSS filter
+- Re-downloaded all 15 logos, upscaled 4x via ImageMagick, pre-rendered as white-on-transparent PNGs (320-668px wide)
+- Removed CSS `brightness(0) invert(1)` filter from TrustBanner — logos are now pre-rendered white, no runtime filter needed
+
+---
+
+## 2026-04-03: Content tagging, infinite scroll, tag filters across all listing pages
 
 - 8 of 15 client logos had solid white backgrounds (no alpha channel)
 - The CSS `brightness(0) invert(1)` filter turned the white backgrounds into visible gray rectangles
