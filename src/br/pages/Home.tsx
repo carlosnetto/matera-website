@@ -16,7 +16,7 @@ const solutions = [
     title: 'Pagamentos',
     text: 'Conecte-se aos principais tipos de pagamentos através de uma plataforma moderna e escalável.',
     href: '/br/solucoes/pagamentos',
-    icon: '💳',
+    icon: '📱',
   },
   {
     slug: 'cash-management',
@@ -56,9 +56,9 @@ const solutions = [
   {
     slug: 'digital-twin',
     title: 'Digital Twin',
-    text: 'Ofereça a experiência de contas globais e multimoedas, assegurando uma operação 24x7 preparada para um futuro financeiro cada vez mais transfronteiriço.',
+    text: 'Ledger de alta velocidade para pagamentos em tempo real e stablecoins. Operação 24x7 com resiliência e performance.',
     href: '/br/solucoes/matera-digital-twin',
-    icon: '🌐',
+    icon: '⚡',
   },
   {
     slug: 'tesouraria-avancada',

@@ -42,7 +42,7 @@ const solutions = [
     href: '/br/solucoes/core-banking',
   },
   {
-    icon: '/assets/icon_icon_1_5dcf9bdba3.svg',
+    icon: '/assets/qr_code_e9a72b7bb1.svg',
     title: 'Pagamentos',
     description: 'Conecte-se aos principais tipos de pagamentos através de uma plataforma moderna e escalável.',
     href: '/br/solucoes/pagamentos',
@@ -78,7 +78,7 @@ const solutions = [
     href: '/br/solucoes/insights',
   },
   {
-    icon: '/assets/digital_twin_br_01c9d15309.svg',
+    icon: '/assets/real_time_payments_f333b57894.svg',
     title: 'Digital Twin',
     description: 'Ofereça a experiência de contas globais e multimoedas, assegurando uma operação 24x7 preparada para um futuro financeiro cada vez mais transfronteiriço.',
     href: '/br/solucoes/matera-digital-twin',

@@ -4,6 +4,17 @@ Reverse-chronological log of improvements to the Matera website.
 
 ---
 
+## 2026-04-03: Replace card/globe icons with QR code/lightning per brand guidelines
+
+- Replaced Pagamentos card icon (💳) with mobile icon (📱) on BR Home
+- Replaced Pagamentos card SVG icon with QR code SVG on BR Soluções page
+- Replaced Digital Twin globe icon (🌐) with lightning (⚡) on BR Home — conveys speed/real-time
+- Replaced Digital Twin globe SVG with real-time payments SVG on BR Soluções page
+- Updated Digital Twin description to emphasize speed and real-time ledger
+- Fixed mobile section padding — hero sections no longer squished by global CSS override
+
+---
+
 ## 2026-04-03: Fix 75 broken asset files + corrupted string literals
 
 - The original Cloudfront migration script failed to download 76 files (trailing quote in URL extraction)

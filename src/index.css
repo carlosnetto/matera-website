@@ -236,15 +236,10 @@ header .container {
     flex-direction: column !important;
   }
 
-  /* Reduce section padding */
-  section {
+  /* Reduce non-hero section padding on mobile */
+  main > section:not(:first-child) {
     padding-top: 48px !important;
     padding-bottom: 48px !important;
-  }
-
-  /* Fix hero padding (needs room for fixed header) */
-  section:first-child {
-    padding-top: 6rem !important;
   }
 
   /* Blog/content images */
