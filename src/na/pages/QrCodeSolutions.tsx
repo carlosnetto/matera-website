@@ -1,3 +1,6 @@
+// QR Code Solutions page — rebuilt 2026-04-03 from product brief by
+// Sarah Hoisington (GM, Matera North America). This was in her backlog
+// for 6+ months. Brief delivered to Carlos Netto on 2026-04-03.
 import { Link } from 'react-router-dom';
 import PageMeta from '../../shared/components/PageMeta';
 
@@ -92,8 +95,8 @@ export default function QrCodeSolutions() {
           </div>
           <div style={{ display: 'flex', justifyContent: 'center' }}>
             <img
-              src="/assets/qr-code-payments-how-they-work.jpg"
-              alt="QR code payment transaction flow"
+              src="/assets/qr-code-use-cases-1.webp"
+              alt="Person scanning a QR code to make an instant payment"
               style={{ width: '100%', borderRadius: '16px' }}
             />
           </div>

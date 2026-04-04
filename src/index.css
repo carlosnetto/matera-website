@@ -236,6 +236,11 @@ header .container {
     flex-direction: column !important;
   }
 
+  /* Ensure hero sections clear the fixed header on mobile */
+  main > section:first-child {
+    padding-top: 7rem !important;
+  }
+
   /* Reduce non-hero section padding on mobile */
   main > section:not(:first-child) {
     padding-top: 48px !important;

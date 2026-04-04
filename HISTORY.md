@@ -4,6 +4,13 @@ Reverse-chronological log of improvements to the Matera website.
 
 ---
 
+## 2026-04-03: Fix mobile hero spacing + replace card image in QR Code page
+
+- Added global CSS rule: first section in `<main>` gets `padding-top: 7rem` on mobile to clear fixed header
+- Replaced card payment image in QR Code "Smarter Payments" section with QR code scanning image (per CONSTITUTION.md: no card imagery)
+
+---
+
 ## 2026-04-03: Update CLAUDE.md to reflect current project state
 
 - Updated source structure to include `br/`, shared components (PageMeta, TerritorySelector, NotFound)
@@ -18,7 +25,7 @@ Reverse-chronological log of improvements to the Matera website.
 
 ## 2026-04-03: Rebuild QR Code Solutions page from Sarah Hoisington's brief
 
-Complete rewrite of `/en/solutions/qr-code-solutions` based on GM North America's product brief:
+Requested by **Sarah Hoisington** (GM, Matera North America) — this was in her backlog for 6+ months. Complete rewrite of `/en/solutions/qr-code-solutions` based on her product brief:
 
 - **Hero**: "QR Codes: Modern Tech for Faster Payments" with 4 key attributes
 - **Smarter Payments section**: value prop with 3 bullet points + demo image
