@@ -4,6 +4,12 @@ Reverse-chronological log of improvements to the Matera website.
 
 ---
 
+## 2026-04-04: Rename GitHub repo to `matera-website`
+
+Renamed `carlosnetto/matera-site` → `carlosnetto/matera-website` on GitHub. Local directory remains `matera-na-website`. Updated remote URL and references in README.md, STRUCTURE.md.
+
+---
+
 ## 2026-04-04: Redesign BR Cases — structured data, listing cards, detail pages
 
 Complete rebuild of `/br/cases` to match the live matera.com/br/cases/ design.

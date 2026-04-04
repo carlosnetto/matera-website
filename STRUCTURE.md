@@ -5,7 +5,7 @@ This document explains where every file belongs and why. The organizing principl
 ## Directory Map
 
 ```
-matera-na-website/
+matera-website/
 ├── src/
 │   ├── App.tsx              ← router (all markets, all routes)
 │   ├── main.tsx             ← React entry point

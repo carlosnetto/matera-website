@@ -5,7 +5,7 @@ Static copies of **matera.com** — no CMS, no database, no server. Built with R
 ## Architecture
 
 ```
-matera-na-website/
+matera-website/
 ├── src/
 │   ├── shared/             ← design system, brand assets, layout primitives
 │   │   ├── components/     ← PageHero, ScrollToTop (locale-agnostic)
