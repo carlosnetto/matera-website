@@ -93,11 +93,11 @@ export default function QrCodeSolutions() {
             </p>
             <Link to="/en/contact-us" className="btn-matera btn-green">Let's talk →</Link>
           </div>
-          <div style={{ display: 'flex', justifyContent: 'center' }}>
+          <div style={{ display: 'flex', justifyContent: 'center', paddingLeft: '24px' }}>
             <img
-              src="/assets/qr-code-use-cases-1.webp"
-              alt="Person scanning a QR code to make an instant payment"
-              style={{ width: '100%', borderRadius: '16px' }}
+              src="/assets/qr-code-hero-illustration.png"
+              alt="Isometric illustration of QR code payment ecosystem with phones scanning codes"
+              style={{ width: '100%', maxWidth: '520px', borderRadius: '16px', objectFit: 'contain' }}
             />
           </div>
         </div>
