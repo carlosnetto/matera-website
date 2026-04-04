@@ -4,6 +4,17 @@ Reverse-chronological log of improvements to the Matera website.
 
 ---
 
+## 2026-04-03: Fix 75 broken asset files + corrupted string literals
+
+- The original Cloudfront migration script failed to download 76 files (trailing quote in URL extraction)
+- These files existed as 0-byte placeholders, causing broken images across the site
+- Downloaded all 75 missing files from Cloudfront (icons, logos, hero images)
+- Fixed 15+ source files where the fix script accidentally ate closing quotes from JS string literals
+- Fixed broken `url()` CSS path in DigitalTwin.tsx backgroundImage
+- Fixed broken PDF paths in RelatorioTransparencia.tsx
+
+---
+
 ## 2026-04-03: Payment imagery guideline + fix Pagamentos hero
 
 - Added `CONSTITUTION.md` — brand guidelines for imagery, stats, navigation order
