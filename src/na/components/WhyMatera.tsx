@@ -66,7 +66,7 @@ const WhyMatera: React.FC = () => {
         </div>
 
         {/* Right: photo */}
-        <div style={{
+        <div className="why-matera-photo" style={{
           position: 'relative',
           height: '100%',
           minHeight: '500px',
@@ -80,6 +80,7 @@ const WhyMatera: React.FC = () => {
               width: '100%',
               height: '100%',
               objectFit: 'cover',
+              objectPosition: 'center',
               borderRadius: '16px',
             }}
           />
@@ -90,6 +91,14 @@ const WhyMatera: React.FC = () => {
         @media (max-width: 768px) {
           .container {
             grid-template-columns: 1fr !important;
+          }
+          .why-matera-photo {
+            min-height: auto !important;
+            height: auto !important;
+            aspect-ratio: 16 / 9;
+          }
+          .why-matera-photo img {
+            object-position: center 30% !important;
           }
         }
       `}</style>

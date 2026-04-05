@@ -266,6 +266,23 @@ header .container {
     flex-wrap: wrap !important;
     justify-content: center !important;
   }
+
+  /* Testimonial: stack vertically, photo above quote */
+  .testimonial-container {
+    flex-direction: column !important;
+    gap: 24px !important;
+    text-align: center;
+  }
+  .testimonial-photo {
+    width: 96px !important;
+    height: 96px !important;
+  }
+  .testimonial-container blockquote {
+    border-left: none !important;
+    padding-left: 0 !important;
+    border-top: 4px solid var(--matera-green);
+    padding-top: 16px;
+  }
 }
 
 /* Tablet: 2-col grids stay, 3-col becomes 2 */

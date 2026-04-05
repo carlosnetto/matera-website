@@ -94,11 +94,56 @@ export default function SobreNos() {
             alt="História da Matera"
             style={{ width: '100%', borderRadius: '12px', marginBottom: '48px' }}
           />
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
-            {timeline.map((t) => (
-              <div key={t.year} style={{ display: 'flex', gap: '24px', alignItems: 'flex-start' }}>
-                <span style={{ fontSize: '1.25rem', fontWeight: 700, color: 'var(--matera-purple)', minWidth: '60px' }}>{t.year}</span>
-                <p style={{ color: '#444', lineHeight: 1.6 }}>{t.text}</p>
+          <div style={{ position: 'relative', paddingLeft: '40px' }}>
+            {/* Vertical line */}
+            <div style={{
+              position: 'absolute',
+              left: '7px',
+              top: '8px',
+              bottom: '8px',
+              width: '2px',
+              backgroundColor: '#e0e0e0',
+            }} />
+
+            {timeline.map((t, i) => (
+              <div key={t.year} style={{
+                position: 'relative',
+                paddingBottom: i < timeline.length - 1 ? '40px' : '0',
+              }}>
+                {/* Bullet */}
+                <div style={{
+                  position: 'absolute',
+                  left: '-40px',
+                  top: '4px',
+                  width: '16px',
+                  height: '16px',
+                  borderRadius: '50%',
+                  backgroundColor: 'var(--matera-purple)',
+                  border: '3px solid #fff',
+                  boxShadow: '0 0 0 2px var(--matera-purple)',
+                  zIndex: 1,
+                }} />
+
+                {/* Year */}
+                <div style={{
+                  fontSize: '0.8rem',
+                  fontWeight: 700,
+                  color: 'var(--matera-purple)',
+                  textTransform: 'uppercase',
+                  letterSpacing: '0.08em',
+                  marginBottom: '6px',
+                }}>
+                  {t.year}
+                </div>
+
+                {/* Text */}
+                <p style={{
+                  color: '#444',
+                  lineHeight: 1.7,
+                  fontSize: '1rem',
+                }}>
+                  {t.text}
+                </p>
               </div>
             ))}
           </div>

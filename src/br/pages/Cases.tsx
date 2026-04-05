@@ -82,47 +82,57 @@ function BrCasesList() {
                   overflow: 'hidden',
                   backgroundColor: '#1a1a2e',
                   transition: 'transform 0.2s',
-                  display: 'flex',
-                  flexDirection: 'column',
+                  display: 'block',
                   position: 'relative',
-                  padding: '28px',
-                  minHeight: '420px',
+                  aspectRatio: '1',
                 }}
                 onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-4px)'; }}
                 onMouseLeave={e => { e.currentTarget.style.transform = 'none'; }}
               >
-                {/* Logo as background */}
+                {/* Logo fills entire card */}
                 {c.thumbnail && (
                   <img
                     src={c.thumbnail}
-                    alt=""
+                    alt={c.client || c.title}
                     loading="lazy"
                     style={{
                       position: 'absolute',
-                      top: '20%',
-                      left: '50%',
-                      transform: 'translate(-50%, -50%)',
-                      maxWidth: '70%',
-                      maxHeight: '45%',
-                      objectFit: 'contain',
-                      opacity: 0.5,
+                      inset: 0,
+                      width: '100%',
+                      height: '100%',
+                      objectFit: 'cover',
+                      filter: 'grayscale(1)',
+                      opacity: 0.4,
                     }}
                   />
                 )}
+                {/* Gradient overlay for text legibility */}
+                <div style={{
+                  position: 'absolute',
+                  inset: 0,
+                  background: 'linear-gradient(to top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.4) 40%, transparent 70%)',
+                }} />
                 {/* Content at bottom */}
-                <div style={{ marginTop: 'auto', position: 'relative', zIndex: 1 }}>
-                  <h3 style={{ fontSize: '1.2rem', fontWeight: 700, color: '#fff', marginBottom: '12px' }}>
+                <div style={{
+                  position: 'absolute',
+                  bottom: 0,
+                  left: 0,
+                  right: 0,
+                  padding: '28px',
+                  zIndex: 1,
+                }}>
+                  <h3 style={{ fontSize: '1.5rem', fontWeight: 400, color: '#fff', marginBottom: '8px', lineHeight: 1.2 }}>
                     {c.title}
                   </h3>
-                  <p style={{ fontSize: '0.85rem', color: 'rgba(255,255,255,0.7)', lineHeight: 1.6 }}>
+                  <p style={{ fontSize: '0.875rem', color: '#fff', lineHeight: 1.5 }}>
                     {c.excerpt}
                   </p>
                 </div>
                 {/* Arrow button */}
                 <div style={{
                   position: 'absolute',
-                  bottom: '24px',
-                  right: '24px',
+                  top: '16px',
+                  right: '16px',
                   width: '36px',
                   height: '36px',
                   borderRadius: '8px',
@@ -132,6 +142,7 @@ function BrCasesList() {
                   justifyContent: 'center',
                   color: '#fff',
                   fontSize: '1.1rem',
+                  zIndex: 1,
                 }}>
                   →
                 </div>

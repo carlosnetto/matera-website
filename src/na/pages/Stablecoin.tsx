@@ -168,11 +168,12 @@ export default function Stablecoin() {
       </section>
 
       {/* Testimonial */}
-      <section style={{ padding: '80px 0' }}>
-        <div className="container" style={{ maxWidth: '900px', display: 'flex', gap: '40px', alignItems: 'center' }}>
+      <section className="testimonial-section" style={{ padding: '80px 0' }}>
+        <div className="container testimonial-container" style={{ maxWidth: '900px', display: 'flex', gap: '40px', alignItems: 'center' }}>
           <img
             src="/assets/carlos.webp"
             alt="Carlos Netto, CEO of Matera"
+            className="testimonial-photo"
             style={{ width: '140px', height: '140px', borderRadius: '50%', objectFit: 'cover', flexShrink: 0 }}
           />
           <div>
